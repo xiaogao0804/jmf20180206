@@ -1,0 +1,47 @@
+body{
+	background-color:#495165;
+}
+.info-contain {
+  width: 100%;
+}
+.info-contain .info-header {
+  width: 94%;
+  background-color: #495165;
+  margin:0.5rem auto;
+  color: #fff;
+  text-indent: 0.2rem;
+  font-size: 0.7467rem;
+}
+.info-contain .info-header	.info-header-name{
+	font-size:0.8rem;
+}
+.info-contain .info-header	.zhuxiao{
+	color:#fff;
+	width:60px;
+	height:30px;
+	text-align:center;
+	line-height:30px;
+	font-size:0.4rem;
+	border-radius:36px;
+	border:none;
+	background-color:#b3b3b3;
+	box-shadow:0 3px 6px #495165;
+	
+}
+.info-contain .info-list {
+  width: 100%;
+  margin-top:40px;
+}
+.info-contain .info-list table {
+  width: 100%;
+  text-align: center;
+}
+
+.info-contain .info-list table	td{
+	width:32%;
+	border:1px solid #495165;
+}
+.info-contain .info-list table img {
+  width: 100%;
+  float:left;
+}

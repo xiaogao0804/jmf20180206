@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="../../../publicJs/flexible.js"></script>
+    <link rel="stylesheet" href="../../../publicCss/reset.css">
+    <link rel="stylesheet" href="../../../publicCss/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/productInfo.css">
+    <title>盘点</title>
+</head>
+<body>
+    <div class="product-contain">
+        <div class="receiving-header">
+            <i class="fa fa-angle-left fa-3x"></i>
+            <span>库位产品信息</span>
+        </div>
+        <div class="product-name clearFix">
+            <p class="name-letter">A</p>
+            <button class="name-btn">确定</button>
+        </div>
+        <div class="product-info">
+            <h1>产品信息</h1>
+            <table>
+                <tr>
+                    <td>批号</td>
+                    <td>G695667920001920170702</td>
+                </tr>
+                <tr>
+                    <td>品名</td>
+                    <td>肉丁炸酱</td>
+                </tr>
+                <tr>
+                    <td>结存</td>
+                    <td>500</td>
+                </tr>
+            </table>
+            <div class="btn-wrap">
+                <input type="text" placeholder="实盘数" class="trading-num">
+            </div>
+        </div>
+        <div class="product-info">
+            <h1>产品信息</h1>
+            <table>
+                <tr>
+                    <td>批号</td>
+                    <td>G695667920001920170702</td>
+                </tr>
+                <tr>
+                    <td>品名</td>
+                    <td>肉丁炸酱</td>
+                </tr>
+                <tr>
+                    <td>结存</td>
+                    <td>500</td>
+                </tr>
+            </table>
+            <div class="btn-wrap">
+                <input type="text" placeholder="实盘数" class="trading-num">
+            </div>
+        </div>
+        <div class="product-remarks">
+            <p class="remarks-name">备注</p>
+            <P class="remarks-con" contenteditable="true"></P>
+        </div>
+    </div>
+</body>
+<script src="../../../publicJs/jquery-3.2.1.min.js"></script>
+<script>
+    //获取高度
+    var winHeight = window.innerHeight;
+    window.addEventListener('resize', function(event){
+        winHeight = window.innerHeight;
+        console.log(winHeight);
+    });
+    $('.product-contain').height(winHeight);
+
+    //返回上一页
+    $('.receiving-header i').on('click',function(){
+        window.history.back();
+    });
+</script>
+</html>

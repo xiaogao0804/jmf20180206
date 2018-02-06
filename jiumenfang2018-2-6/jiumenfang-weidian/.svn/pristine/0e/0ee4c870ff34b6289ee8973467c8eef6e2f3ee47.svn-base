@@ -1,0 +1,148 @@
+.wrap {
+  width: 100%;
+}
+.wrap .coupon-banner {
+  width: 100%;
+  margin: 0 auto 0.5rem;
+}
+.wrap .coupon-banner img {
+  width: 100%;
+}
+.wrap .coupon-tab {
+  width: 100%;
+}
+.wrap .coupon-tab .coupon-tab-item {
+  width: 100%;
+}
+.wrap .coupon-tab .coupon-tab-item .tab-item-left {
+  width: 49.5%;
+  float: left;
+  font-size: 0.3733rem;
+  border: 1px solid #797979;
+  border-left: none;
+  padding: 0.2rem 0;
+  background-color: #F2F2F2;
+  text-align: center;
+  color: #333;
+}
+.wrap .coupon-tab .coupon-tab-item .tab-item-right {
+  width: 49.5%;
+  float: right;
+  font-size: 0.3733rem;
+  border: 1px solid #797979;
+  border-right: none;
+  padding: 0.2rem 0;
+  background-color: #F2F2F2;
+  text-align: center;
+  color: #333;
+}
+.wrap .coupon-tab .coupon-tab-list {
+  width: 100%;
+}
+.wrap .coupon-tab .coupon-tab-list .tab-list-item {
+  width: 100%;
+  border-bottom: 1px solid #C9C9C9;
+}
+.wrap .coupon-tab .coupon-tab-list .tab-list-item .tab-list-item-info {
+  width: 92%;
+  height: 3rem;
+  border: 1px solid #797979;
+  margin: 0.3rem auto;
+}
+.wrap .coupon-tab .coupon-tab-list .tab-list-item .tab-list-item-info img {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+.wrap .coupon-tab .coupon-tab-list .tab-list-item .tab-list-item-info .tab-list-item-text-wrap {
+  width: 49%;
+  height: 100%;
+  float: right;
+  border-left: 1px solid #797979;
+}
+.wrap .coupon-tab .coupon-tab-list .tab-list-item .tab-list-item-info .tab-list-item-text-wrap .tab-list-item-text {
+  width: 100%;
+  margin: 0.15rem auto 0;
+}
+.wrap .coupon-tab .coupon-tab-list .tab-list-item .tab-list-item-info .tab-list-item-text-wrap .tab-list-item-text p {
+  text-align: center;
+  margin-top: 0.1rem;
+}
+.wrap .coupon-tab .coupon-tab-list .tab-list-item .tab-list-item-info .tab-list-item-text-wrap .tab-list-item-text .item-text-name {
+  color: #333;
+  font-size: 0.3733rem;
+}
+.wrap .coupon-tab .coupon-tab-list .tab-list-item .tab-list-item-info .tab-list-item-text-wrap .tab-list-item-text .item-text-price {
+  font-size: 0.4267rem;
+}
+.wrap .coupon-tab .coupon-tab-list .tab-list-item .tab-list-item-info .tab-list-item-text-wrap .tab-list-item-text .item-text-coupon {
+  font-size: 0.1rem;
+}
+.wrap .coupon-tab .coupon-tab-list .tab-list-item .tab-list-item-info .tab-list-item-text-wrap .tab-list-item-text .item-text-coupon {
+  width: 60%;
+  font-size: 0.3733rem;
+  padding: 0.07rem 0;
+  margin: 0.1rem auto;
+  color: #333;
+  text-align: center;
+  background-color: #DAE2E4;
+  border: 1px solid #838B8D;
+}
+.wrap .coupon-tab .coupon-tab-list .tab-list-item .tab-list-item-info .tab-list-item-text-wrap .tab-list-item-text .item-text-coupon a {
+  color: #333;
+}
+.wrap .coupon-tab .coupon-tab-list-classics {
+  width: 100%;
+  display: none;
+}
+.wrap .coupon-tab .coupon-tab-list-classics .tab-list-item {
+  width: 100%;
+  border-bottom: 1px solid #C9C9C9;
+}
+.wrap .coupon-tab .coupon-tab-list-classics .tab-list-item .tab-list-item-info {
+  width: 92%;
+  height: 3rem;
+  border: 1px solid #797979;
+  margin: 0.3rem auto;
+}
+.wrap .coupon-tab .coupon-tab-list-classics .tab-list-item .tab-list-item-info img {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+.wrap .coupon-tab .coupon-tab-list-classics .tab-list-item .tab-list-item-info .tab-list-item-text-wrap {
+  width: 49%;
+  height: 100%;
+  float: right;
+  border-left: 1px solid #797979;
+}
+.wrap .coupon-tab .coupon-tab-list-classics .tab-list-item .tab-list-item-info .tab-list-item-text-wrap .tab-list-item-text {
+  width: 100%;
+  margin: 0.15rem auto 0;
+}
+.wrap .coupon-tab .coupon-tab-list-classics .tab-list-item .tab-list-item-info .tab-list-item-text-wrap .tab-list-item-text p {
+  text-align: center;
+  margin-top: 0.1rem;
+}
+.wrap .coupon-tab .coupon-tab-list-classics .tab-list-item .tab-list-item-info .tab-list-item-text-wrap .tab-list-item-text .item-text-name {
+  color: #333;
+  font-size: 0.3733rem;
+}
+.wrap .coupon-tab .coupon-tab-list-classics .tab-list-item .tab-list-item-info .tab-list-item-text-wrap .tab-list-item-text .item-text-price {
+  font-size: 0.4267rem;
+}
+.wrap .coupon-tab .coupon-tab-list-classics .tab-list-item .tab-list-item-info .tab-list-item-text-wrap .tab-list-item-text .item-text-coupon {
+  font-size: 0.1rem;
+}
+.wrap .coupon-tab .coupon-tab-list-classics .tab-list-item .tab-list-item-info .tab-list-item-text-wrap .tab-list-item-text .item-text-coupon {
+  width: 60%;
+  font-size: 0.3733rem;
+  padding: 0.07rem 0;
+  margin: 0.1rem auto;
+  text-align: center;
+  background-color: #DAE2E4;
+  border: 1px solid #838B8D;
+}
+.wrap .coupon-tab .coupon-tab-list-classics .tab-list-item .tab-list-item-info .tab-list-item-text-wrap .tab-list-item-text .item-text-coupon a {
+  color: #333;
+}

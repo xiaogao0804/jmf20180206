@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="jiumenfang-web/publicJs/flexible.js"></script>
+    <link rel="stylesheet" href="jiumenfang-web/publicCss/reset.css">
+    <link rel="stylesheet" href="jiumenfang-web/WeChat/shopping/src/css/series.css">
+    <title>明星系列</title>
+</head>
+<body>
+    <div class="contain">
+        <a href="singlePro.html">
+            <img src="jiumenfang-web/WeChat/shopping/src/image/banner.jpg" alt="">
+        </a>
+        <a href="singlePro.html">
+            <img src="jiumenfang-web/WeChat/shopping/src/image/banner.jpg" alt="">
+        </a>
+        <a href="singlePro.html">
+            <img src="jiumenfang-web/WeChat/shopping/src/image/banner.jpg" alt="">
+        </a>
+        <a href="singlePro.html">
+            <img src="jiumenfang-web/WeChat/shopping/src/image/banner.jpg" alt="">
+        </a>
+        <a href="singlePro.html">
+            <img src="jiumenfang-web/WeChat/shopping/src/image/banner.jpg" alt="">
+        </a>
+        <a href="singlePro.html">
+            <img src="jiumenfang-web/WeChat/shopping/src/image/banner.jpg" alt="">
+        </a>
+    </div>
+</body>
+</html>

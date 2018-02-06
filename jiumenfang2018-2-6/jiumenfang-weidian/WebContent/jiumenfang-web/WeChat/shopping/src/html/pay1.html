@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="jiumenfang-web/publicJs/flexible.js"></script>
+    <link rel="stylesheet" href="jiumenfang-web/publicCss/reset.css">
+    <link rel="stylesheet" href="jiumenfang-web/publicCss/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="jiumenfang-web/WeChat/shopping/src/css/pay.css">
+    <title>支付</title>
+</head>
+<body>
+    <div class="contain">
+        <!--头部-->
+     <!--   <div class="header">
+            <i class="fa fa-arrow-left"></i>
+            <span>支付</span>
+            <i class="fa fa-remove"></i>
+        </div>-->
+        <!--订单列表-->
+        <div class="foods-list">
+            <div class="foods-list-item clearFix">
+               <div class="foods-item-img">
+                   <img src="../image/icon.png" alt="">
+               </div>
+                <div class="foods-item-name">
+                    <p>香菇炸酱</p>
+                    <p><i class="fa fa-rmb">12</i></p>
+                </div>
+                <div class="foods-item-num">
+                    X<span>2</span>
+                </div>
+            </div>
+        </div>
+        <div class="foods-list">
+            <div class="foods-list-item clearFix">
+                <div class="foods-item-img">
+                    <img src="../image/icon.png" alt="">
+                </div>
+                <div class="foods-item-name">
+                    <p>香菇炸酱</p>
+                    <p><i class="fa fa-rmb">12</i></p>
+                </div>
+                <div class="foods-item-num">
+                    X<span>2</span>
+                </div>
+            </div>
+        </div>
+        <!--运费-->
+        <div class="carriage clearFix">
+            <p class="carriage-name">运费</p>
+            <p class="carriage-price"> <i class="fa fa-rmb">0.00</i></p>
+        </div>
+        <!--个人信息-->
+        <div class="user-info">
+            <div class="user-info-name clearFix">
+                <div class="user-name clearFix">
+                    <p>收件人:</p>
+                    <p class="user-ipt-name"><input type="text" value="李小白"></p>
+                </div>
+                <div class="user-tel clearFix">
+                    <p>收件人电话:</p>
+                    <p class="user-ipt-tel"><input type="text" value="13323457890" class="ss"></p>
+                </div>
+            </div>
+            <div class="user-info-site clearFix">
+                <p class="site-name">邮寄地址:</p>
+                <div id="province"></div>
+                <div class="clear"></div>
+                <div class="user-address">
+                    <input type="text" value="幸福街道100号">
+                </div>
+                <div class="order-num">
+                    订单号:<span></span>
+                </div>
+                <div class="unpaid">
+                    待支付:<i class="fa fa-rmb">42.00</i>
+                </div>
+            </div>
+        </div>
+        <!--底部支付-->
+        <div class="footer">
+            <div class="footer-paid">
+                支付
+            </div>
+        </div>
+    </div>
+</body>
+<script src="jiumenfang-web/publicJs/jquery-3.2.1.min.js"></script>
+<script src="jiumenfang-web/publicJs/jquery.provincesCity.js"></script>
+<script src="jiumenfang-web/publicJs/provincesData.js"></script>
+<script src="jiumenfang-web/WeChat/shopping/src/js/order.js"></script>
+<script src="jiumenfang-web/WeChat/shopping/src/js/pay.js"></script>
+</html>

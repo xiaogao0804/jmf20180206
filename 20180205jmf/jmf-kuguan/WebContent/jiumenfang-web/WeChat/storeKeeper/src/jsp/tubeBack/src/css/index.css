@@ -1,0 +1,1119 @@
+/* 账号管理 */
+.contain .con .con-right .permission-page {
+  width: 92%;
+  margin:43px 64px;
+}
+.contain .con .con-right .permission-page .establish-top .establish-ipt {
+  width: 100%;
+  font-size:0.46rem;
+}
+.contain .con .con-right .permission-page .establish-top .establish-ipt form{
+	float:left;
+}
+.contain .con .con-right .permission-page .establish-top .establish-ipt form input {
+  width: 200px;
+  height: 36px;
+  border:none;
+  background-color:#fff;
+  border-radius:5px;
+  margin-right:100px;
+}
+.contain .con .con-right .permission-page .establish-top .establish-sle {
+  width: 100%;
+  margin-top: 19px;
+}
+.contain .con .con-right .permission-page .establish-top .establish-sle .sle-left,
+.contain .con .con-right .permission-page .establish-top .establish-sle .sle-right
+ {
+  border-radius: 5px;
+  margin-left: 50px;
+}
+.contain .con .con-right .permission-page .establish-top .establish-sle .sle-right{
+	margin-top:31px;
+}
+.contain .con .con-right .permission-page .establish-top .establish-sle .sle-left .sle-left-name,
+.contain .con .con-right .permission-page .establish-top .establish-sle .sle-right .sle-right-name
+ {
+  font-size: 0.46rem;
+  float:left;
+}
+.contain .con .con-right .permission-page .establish-top .establish-sle .sle-left .k,
+.contain .con .con-right .permission-page .establish-top .establish-sle .sle-right .h
+{
+	position:relative;
+}
+.contain .con .con-right .permission-page .establish-top .establish-sle .sle-left .kk,
+.contain .con .con-right .permission-page .establish-top .establish-sle .sle-right .ht
+{
+	width:30px;
+	height:30px;
+	background-color:#fff;
+	position:relative;
+	top:7px;
+	margin-right:10px;
+}
+.contain .con .con-right .permission-page .establish-top .establish-sle .sle-left .ks,
+.contain .con .con-right .permission-page .establish-top .establish-sle .sle-right .hs
+{
+	margin-right:50px;
+}
+.contain .con .con-right .permission-page .establish-top .establish-sle .sle-left .sle-left-con,
+.contain .con .con-right .permission-page .establish-top .establish-sle .sle-right .sle-right-con
+ {
+ width:92%;
+  font-size: 0.46rem;
+  float:left;
+  padding:12px	25px;
+  background-color:#fff;
+  margin-left:10px;
+}
+.contain .con .con-right .permission-page .establish-top .establish-sle .sle-left .sle-left-check input {
+  float: left;
+  margin-top: 30px;
+  margin-left: 5px;
+}
+.contain .con .con-right .permission-page .establish-top .establish-btn {
+  float: right;
+  padding: 5px 15px;
+  font-size: 0.64rem;
+  color: #000;
+  cursor: pointer;
+  background-color: #f9535b;
+  border-radius: 10px;
+  border:none;
+}
+.contain .con .con-right .permission-page h5 {
+  width: 100%;
+  margin-top: 42.5px;
+  border-top: 1px solid #b2b2b2;
+}
+.contain .con .con-right .permission-page .management-below {
+  width: 100%;
+  margin-top:43.5px;
+}
+.contain .con .con-right .permission-page .management-below	.tb-wrap{
+	width:100%;
+	height:480px;
+	margin:23px	auto;
+	border:1px solid #b2b2b2;
+}
+.contain .con .con-right .permission-page .management-below .below-name{
+	font-size:0.67rem;	
+}
+.contain .con .con-right .permission-page .management-below table {
+  width: 100%;
+  background-color: #fff;
+  font-size: 0.46rem;
+}
+.contain .con .con-right .permission-page .management-below table th{
+	font-weight:lighter;
+}
+.contain .con .con-right .permission-page .management-below table th:nth-child(1){
+	width:10%;
+}
+.contain .con .con-right .permission-page .management-below table th:nth-child(2){
+	width:38%;
+}
+.contain .con .con-right .permission-page .management-below table th:nth-child(3){
+	width:40%;
+}
+.contain .con .con-right .permission-page .management-below	.below-wrap{
+	width:100%;
+	height:430px;
+	overflow-y:scroll;
+}
+.contain .con .con-right .permission-page .management-below .below-tb{
+/* 	width:99%;
+	border-right:1px solid	#b2b2b2; */
+}
+.contain .con .con-right .permission-page .management-below table tr {
+  height: 50px;
+  border-bottom: 1px solid #ccc;
+  position:relative;
+}
+.contain .con .con-right .permission-page .management-below table tr td {
+  text-align: center;
+}
+.contain .con .con-right .permission-page .management-below table tr td:nth-child(1) {
+  width:10%;
+}
+.contain .con .con-right .permission-page .management-below table td:nth-child(2){
+	width:38%;
+}
+.contain .con .con-right .permission-page .management-below table td:nth-child(3){
+	width:40%;
+}
+.contain .con .con-right .permission-page .management-below table tr td input[type='checkbox']{
+	width:30px;
+	height:30px;
+	margin-left:20px;
+	position:relative;
+	top:7px;
+}
+.contain .con .con-right .permission-page .management-below table tr td input[type='button'] {
+  padding: 4px 10px;
+  background-color: #f9535b;
+  color: #000;
+  border: 1px solid #95989a;
+  border-radius: 10px;
+  font-size:0.37rem;
+  cursor:pointer;
+}
+
+.infolist{box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;width:100%;float:left;clear:both;}
+
+.contain {
+  width: 100%;
+  background-color: #F7F8FD;
+  font-family:'Helvetica Neue';
+}
+.contain .header {
+  width: 100%;
+  height:109px;
+}
+.contain .header .header-left {
+  width: 15%;
+  height:100%;
+  float: left;
+  background-color: #F9535B;
+  font-size: 0.62rem;
+  text-align: center;
+}
+.contain .header .header-left	span{
+	
+}
+ .header .header-left	.zhuxiao{
+ 	border:none;
+ 	padding:3px	18px;
+ 	border-radius:56px;
+ 	background-color:#b3b3b3;
+ 	font-size:0.37rem;
+ 	cursor:pointer;
+ }
+.contain .header .header-right {
+  width: 85%;
+  height:100%;
+  float: right;
+  background-color: #495165;
+
+}
+.contain .header .header-right	li{
+	margin-right:5px;
+}
+.contain .con {
+  width: 100%;
+ background-color:#f5f6fc;
+}
+.contain .con .con-left {
+  width: 15%;
+  height: 100%;
+  float: left;
+}
+.contain .con .con-left ul {
+  width: 100%;
+  height: 100%;
+  background-color: #495165;
+}
+.contain .con .con-left ul li {
+  cursor: pointer;
+}
+.contain .con .con-left ul li img{
+	width:100%;
+	height:100%;
+	float:left;
+}
+.con-left ul li a{
+  text-decoration: none;
+  color: #000;
+  
+}
+.contain .con .con-right {
+  width: 85%;
+  height: 100%;
+  background-color: #f5f6fc;
+  float: right;
+}
+.contain .header-right li{
+	float:left;
+}
+.contain .con .con-right .select {
+  display: block;
+}
+/* .contain .con .con-right .noselect {
+  display: none;
+} */
+
+.contain .con .con-right .inventory-page .shipments-page .rrr{
+  width: 100%;
+    background-color: #fff;
+}
+.contain .con .con-right .inventory-page .shipments-page .kk{
+  width: 100%;
+  background-color:#DFE9EB;
+  margin-top:32px;
+}
+.inventory-page .shipments-page .kk	.fenye-td	span{
+	font-size:0.24rem;
+	padding-right:39px;
+}
+.inventory-page .shipments-page .kk	.fenye-td	input{
+	font-size:0.24rem;
+	background-color:#50679c;
+	color:#fff;
+	padding:4px	12px;
+	border:none;
+	border-radius:10px;
+	margin-right:20px;
+	cursor:pointer;
+}
+.contain .con .con-right .inventory-page .shipments-page .bbb{
+  width: 30%;
+  height:760px;
+  float: right;
+  font-size: 18px;
+  margin-top:16.5px;
+  display:block;
+  border:1px solid #95989a;
+}
+.contain .con .con-right .inventory-page .shipments-page .bbb .tb-headerWrap{
+	width:100%;
+	height:80px;
+	font-size:0.33rem;
+	background-color:#dfe9eb;
+}
+.con .con-right .inventory-page .shipments-page .bbb .tb-headerWrap .header-name{
+	width:78.4%;
+	height:40px;
+	line-height:40px;
+	margin:0 auto;
+	border-bottom:1px solid #ddd;
+}	
+.con .con-right .inventory-page .shipments-page .bbb .tb-headerWrap .header-tb{
+	width:100%;
+}
+.con .con-right .inventory-page .shipments-page .bbb .tb-headerWrap .header-tb td:nth-child(1){
+	text-indent:30px;
+	width:126px;
+}
+.con .con-right .inventory-page .shipments-page .bbb .tb-headerWrap .header-tb td:nth-child(2){
+	width:130px;
+}
+.con .con-right .inventory-page .shipments-page .bbb .tb-headerWrap .header-tb td:nth-child(3){
+	width:100px;
+}
+.contain .con .con-right .inventory-page .shipments-page .bbb .ll-wrap{
+	  overflow-y:scroll;
+	    height:680px;
+}
+.contain .con .con-right .inventory-page .shipments-page .bbb .ll{
+  width: 100%;
+  height:688px;
+  font-size: 15px;
+
+}
+.contain .con .con-right .inventory-page .shipments-page .bbb .ll tr td{
+	height:40px;
+}
+.contain .con .con-right .inventory-page .shipments-page .bbb .ll tr td:nth-child(1){
+	text-indent:30px;
+	width:126px;
+}
+.contain .con .con-right .inventory-page .shipments-page .bbb .ll tr td:nth-child(2){
+	width:130px;
+}
+.contain .con .con-right .inventory-page .shipments-page .bbb .ll tr td:nth-child(3){
+	width:100px;
+}
+.ccc{
+  width: 63%;
+  float: left;
+  margin-top:16.5px;
+}
+.ccc .rrr th{
+	font-size:0.33rem;
+	color:#000;
+	font-weight:normal;
+	text-align:left;
+}
+.ccc .rrr .ooo .aaa{
+	width:50px;
+	height:25px;
+	border:1px solid #dfe9eb;
+} 
+.ccc .rrr .ttt .ck{
+	border:none;
+	margin-left:10px;
+}
+.export-excel{
+	display:block;
+    color: #fff;
+  	font-size:0.3333rem;
+ 	padding: 5.5px 10px;
+  	background-color: #50679c;
+    cursor: pointer;
+    border-radius: 10px;
+    position:absolute;
+    top:17px;
+    right:0;
+}
+.contain .con .con-right .inventory-page .shipments-page {
+	width:92%;
+	margin:35px	auto;
+  	font-size: 14px;
+}
+.contain .con .con-right .inventory-page .shipments-page .excel-wrap{
+	width:100%;
+	height:65px;
+	border-bottom:1px solid #b2b2b2;
+	position:relative;
+}
+.contain .con .con-right .inventory-page .shipments-page table tr {
+  height: 40px;
+}
+.contain .con .con-right .inventory-page .shipments-page table tr td {
+  text-align: left;
+  font-size:0.27rem;
+  color:#000;
+}
+.contain .con .con-right .inventory-page .shipments-page table tr td .con-txt {
+  width: 100px;
+  height: 30px;
+  text-align: center;
+}
+.contain .con .con-right .inventory-page .shipments-page .con-btn {
+  float: left;
+}
+.contain .con .con-right .inventory-page .shipments-page .con-btn input {
+  padding: 14px 12px;
+  color: #fff;
+  background-color: #50679c; 
+  cursor: pointer;
+  font-size:0.37rem;
+  border:none;
+  border-radius:10px;
+}
+.contain .con .con-right .inventory-page .order-page .order-ipt {
+  width: 85%;
+  float: left;
+  margin: 1.9rem 2.44rem;
+}
+.contain .con .con-right .inventory-page .order-page .order-ipt .order-slt form {
+  float: left;
+  margin-right: 100px;
+}
+.contain .con .con-right .inventory-page .order-page .order-ipt .order-slt	.waybill-wrap{
+	position:relative;
+}
+
+.contain .con .con-right .inventory-page .order-page .order-ipt .order-slt form .waybill-num{
+	width:5rem;
+	height:36px;
+	background-color:#fff;
+	border:none;
+	border-radius:10px;
+	margin-left:32px;
+	position:relative;
+	top:-2px;
+}
+.contain .con .con-right .inventory-page .order-page .order-ipt .order-slt	form lable{
+	font-size:0.46rem;
+	color:#000;
+}
+.contain .con .con-right .inventory-page .order-page .order-ipt .order-slt form .order-slt-name {
+  font-size: 24px;
+}
+.contain .con .con-right .inventory-page .order-page .order-ipt .order-slt form select {
+  font-size: 0.46rem;1111
+  color:#b2b2b2;
+  padding:0	0.78rem;
+  height: 36px;
+  border:none;
+  border-radius:10px;
+  margin-left:0.59rem;
+  background-color:#fff;
+}
+
+.contain .con .con-right .inventory-page .order-page .order-ipt .order-site {
+  margin-top: 35px;
+}
+.contain .con .con-right .inventory-page .order-page .order-ipt .order-site .site-name {
+  font-size: 24px;
+  float: left;
+}
+.contain .con .con-right .inventory-page .order-page .order-ipt .order-site #province {
+  float: left;
+  font-size: 0.46rem;
+  margin-left: 32px;
+}
+.contain .con .con-right .inventory-page .order-page .order-ipt .order-site #province select {
+  border: none;
+  background-color:#fff;
+ width:2.2rem;
+ padding-left:0.25rem;
+ margin-right:0.15rem;
+ border-radius:10px;
+ height:36px;
+ line-height:36px;
+ color:#b2b2b2;
+}
+.contain .con .con-right .inventory-page .order-page .order-ipt .order-site #province input {
+  	border: none;
+	width:6.8rem;
+	height:36px;
+	line-height:36px;
+	border-radius:10px;
+}
+.contain .con .con-right .inventory-page .order-page .order-ipt .order-site #province input::placeholder{
+	text-align:center;
+	color:#b2b2b2;
+}
+.contain .con .con-right .inventory-page .order-page .order-ipt	.shoujian{
+	font-size:0.46rem;
+	margin-top:35px;
+}
+.contain .con .con-right .inventory-page .order-page .order-ipt	.shoujian	lable{
+	margin-right:32px;
+}
+.contain .con .con-right .inventory-page .order-page .order-ipt	.shoujian	input{
+	border:none;
+	border-radius:10px;
+	background-color:#fff;
+	height:36px;
+	line-height:36px;
+}
+.contain .con .con-right .inventory-page .order-page .order-ipt	.shoujian	.addressee-name{
+	width:2.35rem;
+}
+.contain .con .con-right .inventory-page .order-page .order-ipt	.shoujian	.tel{
+	width:4.63rem;
+}
+.contain .con .con-right .inventory-page .order-page .order-ipt	.shoujian	input::placeholder{
+	text-align:center;
+	color:#b2b2b2;
+}
+.contain .con .con-right .inventory-page .order-page .order-ipt .order-site .ff {
+  margin-bottom: 35px;
+}
+.contain .con .con-right .inventory-page .order-page .order-ipt .order-site .ff  input {
+  border: none;
+  border-bottom: 1px solid #000;
+}
+.contain .con .con-right .inventory-page .order-page .order-ipt .order-site .ff  .remark-name {
+  color: #000;
+  font-size:0.46rem;
+}
+.contain .con .con-right .inventory-page .order-page .order-ipt .order-site .ff  .remark {
+  width: 61%;
+  height:35px;
+  border:none;
+  border-radius:10px;
+  margin-left:32px;
+}
+.contain .con .con-right .inventory-page .order-page .order-ipt .order-site .ff  .province {
+  width: 100px;
+}
+.contain .con .con-right .inventory-page .order-page .order-ipt .order-site .ff  .city {
+  width: 100px;
+}
+.contain .con .con-right .inventory-page .order-page .order-ipt .order-site .ff  .district {
+  width: 100px;
+}
+.contain .con .con-right .inventory-page .order-page .order-ipt .order-site .ff  .addressee-name {
+  width: 100px;
+}
+.contain .con .con-right .inventory-page .order-page .order-btn {
+  float: left;
+  width:130px;
+  height:52px;
+  background-color:#50679c;
+  margin: 96px 0;
+  font-size:0.37rem;
+  text-align:center;
+  line-height:52px;
+  border-radius:10px;
+    cursor: pointer;
+}
+.contain .con .con-right .inventory-page .order-page .order-btn input {
+  background-color: #50679c;
+  color: #fff;
+  border:none;
+
+}
+
+/* 订单 */
+.contain .con .con-right .shipmentOrder-page {
+  width: 92%;
+  margin:43px 64px;
+}
+.contain .con .con-right .shipmentOrder-page .order-inquire {
+  	width:100%;
+	height:60px;
+	border-bottom:1px solid #b2b2b2;
+	position:relative;
+}
+.contain .con .con-right .shipmentOrder-page .order-inquire	.goods-date{
+	position:relative;
+}
+ .shipmentOrder-page .order-inquire	.goods-date	.
+.contain .con .con-right .shipmentOrder-page .order-inquire select {
+  float: left;
+  width: 60px;
+  height: 30px;
+}
+.con-right .shipmentOrder-page .order-inquire .con-right-time .laydate-txt{
+	font-size:0.46rem;
+	margin-right:10px;
+	position:relative;
+	top:5px;
+}
+.con-right .shipmentOrder-page .order-inquire .con-right-time .laydate-icon{
+	border:none;
+	background-color:#fff;
+	height:36px;
+	width:3.7rem;
+	margin-right:0.74rem;
+}	
+.con-right .shipmentOrder-page .order-inquire .con-right-time	.laydate-search	input{
+	color:#fff;
+	background-color:#50679c;
+	font-size:0.46rem;
+	border-radius:10px;
+	padding:0.1rem	0.2rem;
+	border:none;
+	position:relative;
+	top:5px;
+	cursor:pointer;
+}
+.contain .con .con-right .shipmentOrder-page .order-inquire .inquire-btn {
+  float: left;
+  margin: 18px 50px 18px 30px;
+  color: #fff;
+  padding: 6px 18px;
+  background-color: #5B6478;
+  cursor: pointer;
+  border: 1px solid #fff;
+  border-radius: 6px;
+}
+.contain .con .con-right .shipmentOrder-page .order-inquire .export-excel {
+	display:block;
+    color: #fff;
+  	font-size:0.3333rem;
+ 	padding: 5.5px 10px;
+  	background-color: #50679c;
+    cursor: pointer;
+    border-radius: 10px;
+    position:absolute;
+    top:8px;
+    right:0;
+    border:none;
+}
+.contain .con .con-right .shipmentOrder-page .order-list{
+	width:100%;
+	margin-top:17px;
+}
+.contain .con .con-right .shipmentOrder-page .order-list .pop-up {
+  width: 150px;
+  height: 120px;
+  border: 1px solid #000;
+  font-size: 16px;
+  background-color: #fff;
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  z-index: 999;
+  display: none;
+}
+.contain .con .con-right .shipmentOrder-page .order-list .pop-up p {
+  margin-top: 15px;
+  cursor: pointer;
+}
+.contain .con .con-right .shipmentOrder-page .order-list .s{
+  width: 100%;
+  float: left;
+  background-color: #fff;
+  font-size: 18px;
+  margin-bottom:32px;
+}
+.contain .con .con-right .shipmentOrder-page .order-list .s	th{
+	text-align:left;
+	font-size:0.33rem;
+	font-weight:initial;
+}
+.contain .con .con-right  .page-num{
+	width:100%;
+	background-color:#dfe9eb;
+}
+.contain .con .con-right  .page-num	tr{
+	height:40px;
+}
+.contain .con .con-right  .page-num	td{
+	font-size:0.27rem;
+	color:#000;
+	text-align:center;
+}
+.contain .con .con-right  .page-num	td	input{
+	font-size:0.24rem;
+	background-color:#50679c;
+	color:#fff;
+	padding:4px	12px;
+	border:none;
+	border-radius:10px;
+	margin-right:20px;
+	cursor:pointer;
+}
+.contain .con .con-right  .page-num	td	span{
+	font-size:0.24rem;
+	padding-right:39px;
+}
+.contain .con .con-right .shipmentOrder-page .order-list table tr {
+  height: 40px;
+}
+.contain .con .con-right .shipmentOrder-page .order-list table tr .td-txt {
+  color: #3399FF;
+}
+.contain .con .con-right .shipmentOrder-page .order-list table tr td {
+  font-size:0.28rem;
+}
+
+
+/*盘点*/
+.contain .con .con-right .check-page {
+  width: 92%;
+  margin:43px 64px;
+}
+.contain .con .con-right .check-page .order-inquire {
+    width:100%;
+	height:60px;
+	border-bottom:1px solid #b2b2b2;
+	position:relative;
+}
+.contain .con .con-right .check-page .order-inquire	.goods-date{
+	position:relative;
+}
+.con-right .check-page .order-inquire .con-right-time .laydate-txt{
+	font-size:0.46rem;
+	margin-right:10px;
+	position:relative;
+	top:5px;
+}
+.con-right .check-page .order-inquire .con-right-time .laydate-icon{
+	border:none;
+	background-color:#fff;
+	height:36px;
+	width:3.7rem;
+	margin-right:0.74rem;
+}	
+.con-right .check-page .order-inquire .con-right-time	.laydate-search	input{
+	color:#fff;
+	background-color:#50679c;
+	font-size:0.46rem;
+	border-radius:10px;
+	padding:0.1rem	0.2rem;
+	border:none;
+	position:relative;
+	top:5px;
+	cursor:pointer;
+}
+.con-right .check-page .order-inquire .con-right-time	.laydate-open	input{
+	color:#fff;
+	background-color:#50679c;
+	font-size:0.46rem;
+	border-radius:10px;
+	padding:0.1rem	0.2rem;
+	border:none;
+	position:relative;
+	top:5px;
+	left:40px;
+	cursor:pointer;
+}
+.contain .con .con-right .check-page .order-inquire .export-excel {
+	display:block;
+    color: #fff;
+  	font-size:0.3333rem;
+ 	padding: 5.5px 10px;
+  	background-color: #50679c;
+    cursor: pointer;
+    border-radius: 10px;
+    position:absolute;
+    top:8px;
+    right:0;
+    border:none;
+}
+
+.contain .con .con-right .check-page .order-list table {
+  width: 100%;
+  float: left;
+  margin: 16.5px auto;
+  font-size: 18px;
+  margin-bottom:15.5px;
+}
+.contain .con .con-right .check-page .order-list table tr {
+  height: 40px;
+}
+.contain .con .con-right .check-page .order-list table tr th {
+  font-size:0.33rem;
+  font-weight:initial;
+}
+.contain .con .con-right .check-page .order-list table tr td {
+  text-align: center;
+  font-size:0.28rem;
+}
+
+/*单据 */
+.contain .con .con-right .pappers-page {
+  width: 92%;
+  margin:43px 64px;
+}
+.contain .con .con-right .pappers-page .order-inquire {
+    width:100%;
+	height:60px;
+	border-bottom:1px solid #b2b2b2;
+	position:relative;
+}
+.contain .con .con-right .pappers-page .order-inquire	.goods-date{
+	position:relative;
+}
+.con-right .pappers-page .order-inquire .con-right-time .laydate-txt{
+	font-size:0.46rem;
+	margin-right:10px;
+	position:relative;
+	top:5px;
+}
+.con-right .pappers-page .order-inquire .con-right-time .laydate-icon{
+	border:none;
+	background-color:#fff;
+	height:36px;
+	width:3.7rem;
+	margin-right:0.74rem;
+}	
+.con-right .pappers-page .order-inquire .con-right-time	.laydate-search	input{
+	color:#fff;
+	background-color:#50679c;
+	font-size:0.46rem;
+	border-radius:10px;
+	padding:0.1rem	0.2rem;
+	border:none;
+	position:relative;
+	top:5px;
+	cursor:pointer;
+}
+.con-right .pappers-page .order-inquire .con-right-time	.laydate-open	input{
+	color:#fff;
+	background-color:#50679c;
+	font-size:0.46rem;
+	border-radius:10px;
+	padding:0.1rem	0.2rem;
+	border:none;
+	position:relative;
+	top:5px;
+	left:40px;
+	cursor:pointer;
+}
+.contain .con .con-right .pappers-page .order-inquire .export-excel {
+	display:block;
+    color: #fff;
+  	font-size:0.3333rem;
+ 	padding: 5.5px 10px;
+  	background-color: #50679c;
+    cursor: pointer;
+    border-radius: 10px;
+    position:absolute;
+    top:8px;
+    right:0;
+    border:none;
+}
+
+.contain .con .con-right .pappers-page .order-list .eee {
+  width: 100%;
+  float: left;
+  margin: 16.5px auto;
+  font-size: 18px;
+  margin-bottom:30px;
+}
+.contain .con .con-right .pappers-page .order-list table tr:nth-child(1) {
+  height: 40px;
+}
+.contain .con .con-right .pappers-page .order-list .eee tr th {
+  font-size:0.33rem;
+  font-weight:initial;
+  text-align:left;
+}
+.contain .con .con-right .pappers-page .order-list .eee tr td {
+  text-align: left;
+  font-size:0.28rem;
+}
+.contain .con .con-right .pappers-page .order-list .eee tr td:nth-child(1)
+{
+	width:200px;
+}
+.contain .con .con-right .pappers-page .order-list .eee tr td:nth-child(2){
+	width:250px;
+}
+.contain .con .con-right .pappers-page .order-list .eee tr {
+  height: 70px;
+}
+
+
+
+/* 退换 */
+.contain .con .con-right .returns-page {
+  width: 92%;
+  margin:43px 64px;
+}
+.contain .con .con-right .returns-page .order-inquire {
+    width:100%;
+	height:60px;
+	border-bottom:1px solid #b2b2b2;
+	position:relative;
+}
+.contain .con .con-right .returns-page .order-inquire	.goods-date{
+	position:relative;
+}
+.con-right .returns-page .order-inquire .con-right-time .laydate-txt{
+	font-size:0.46rem;
+	margin-right:10px;
+	position:relative;
+	top:5px;
+}
+.con-right .returns-page .order-inquire .con-right-time .laydate-icon{
+	border:none;
+	background-color:#fff;
+	height:36px;
+	width:3.7rem;
+	margin-right:0.74rem;
+}	
+.con-right .returns-page .order-inquire .con-right-time	.laydate-search	input{
+	color:#fff;
+	background-color:#50679c;
+	font-size:0.46rem;
+	border-radius:10px;
+	padding:0.1rem	0.2rem;
+	border:none;
+	position:relative;
+	top:5px;
+	cursor:pointer;
+}
+.con-right .returns-page .order-inquire .con-right-time	.laydate-open	input{
+	color:#fff;
+	background-color:#50679c;
+	font-size:0.46rem;
+	border-radius:10px;
+	padding:0.1rem	0.2rem;
+	border:none;
+	position:relative;
+	top:5px;
+	left:40px;
+	cursor:pointer;
+}
+.contain .con .con-right .returns-page .order-inquire .export-excel {
+	display:block;
+    color: #fff;
+  	font-size:0.3333rem;
+ 	padding: 5.5px 10px;
+  	background-color: #50679c;
+    cursor: pointer;
+    border-radius: 10px;
+    position:absolute;
+    top:8px;
+    right:0;
+    border:none;
+}
+
+.contain .con .con-right .returns-page .order-list table {
+  width: 100%;
+  float: left;
+  margin: 16.5px auto;
+  font-size: 18px;
+  margin-bottom:15.5px;
+}
+.contain .con .con-right .returns-page .order-list table tr:nth-child(1) {
+  height: 40px;
+}
+.contain .con .con-right .returns-page .order-list table tr th {
+  font-size:0.33rem;
+  font-weight:initial;
+}
+.contain .con .con-right .returns-page .order-list table tr td {
+  text-align: center;
+  font-size:0.28rem;
+}
+.contain .con .con-right .returns-page .order-list .xxx tr td {
+  text-align: left;
+}
+.contain .con .con-right .returns-page .order-list .xxx tr td:nth-child(1),
+.contain .con .con-right .returns-page .order-list .xxx tr td:nth-child(2){
+	width:200px;
+}
+.contain .con .con-right .returns-page .order-list .xxx tr th{
+  text-align: left;
+}
+.contain .con .con-right .returns-page .order-list .xxx tr th:nth-child(1){
+  text-align: left;
+  text-indent:30px;
+}
+.contain .con .con-right .returns-page .order-list .xxx tr {
+  height: 70px;
+}
+
+
+/* 账号管理 */
+.contain .con .con-right .permission-page {
+  width: 92%;
+  margin:43px 64px;
+}
+.contain .con .con-right .permission-page .establish-top .establish-ipt {
+  width: 100%;
+  font-size:0.46rem;
+}
+.contain .con .con-right .permission-page .establish-top .establish-ipt form{
+	float:left;
+}
+.contain .con .con-right .permission-page .establish-top .establish-ipt form input {
+  width: 200px;
+  height: 36px;
+  border:none;
+  background-color:#fff;
+  border-radius:5px;
+  margin-right:100px;
+}
+.contain .con .con-right .permission-page .establish-top .establish-sle {
+  width: 100%;
+  margin-top: 19px;
+}
+.contain .con .con-right .permission-page .establish-top .establish-sle .sle-left,
+.contain .con .con-right .permission-page .establish-top .establish-sle .sle-right
+ {
+  border-radius: 5px;
+  margin-left: 50px;
+}
+.contain .con .con-right .permission-page .establish-top .establish-sle .sle-right{
+	margin-top:31px;
+}
+.contain .con .con-right .permission-page .establish-top .establish-sle .sle-left .sle-left-name,
+.contain .con .con-right .permission-page .establish-top .establish-sle .sle-right .sle-right-name
+ {
+  font-size: 0.46rem;
+  float:left;
+}
+.contain .con .con-right .permission-page .establish-top .establish-sle .sle-left .k,
+.contain .con .con-right .permission-page .establish-top .establish-sle .sle-right .h
+{
+	position:relative;
+}
+.contain .con .con-right .permission-page .establish-top .establish-sle .sle-left .kk,
+.contain .con .con-right .permission-page .establish-top .establish-sle .sle-right .ht
+{
+	width:30px;
+	height:30px;
+	background-color:#fff;
+	position:relative;
+	top:7px;
+	margin-right:10px;
+}
+.contain .con .con-right .permission-page .establish-top .establish-sle .sle-left .ks,
+.contain .con .con-right .permission-page .establish-top .establish-sle .sle-right .hs
+{
+	margin-right:50px;
+}
+.contain .con .con-right .permission-page .establish-top .establish-sle .sle-left .sle-left-con,
+.contain .con .con-right .permission-page .establish-top .establish-sle .sle-right .sle-right-con
+ {
+ width:92%;
+  font-size: 0.46rem;
+  float:left;
+  padding:12px	25px;
+  background-color:#fff;
+  margin-left:10px;
+}
+.contain .con .con-right .permission-page .establish-top .establish-sle .sle-left .sle-left-check input {
+  float: left;
+  margin-top: 30px;
+  margin-left: 5px;
+}
+/* .contain .con .con-right .permission-page .establish-top .establish-sle .sle-left .sle-left-check span {
+  float: left;
+  margin-right: 50px;
+  margin-top: 30px;
+} */
+
+/* .contain .con .con-right .permission-page .establish-top .establish-sle .sle-right .sle-right-name {
+  font-size: 22px;
+}
+.contain .con .con-right .permission-page .establish-top .establish-sle .sle-right .sle-right-check input {
+  float: left;
+  margin-top: 30px;
+  margin-left: 5px;
+}
+.contain .con .con-right .permission-page .establish-top .establish-sle .sle-right .sle-right-check span {
+  float: left;
+  margin-right: 50px;
+  margin-top: 30px;
+} */
+.contain .con .con-right .permission-page .establish-top .establish-btn {
+  float: right;
+  padding: 5px 15px;
+  font-size: 0.64rem;
+  color: #000;
+  cursor: pointer;
+  background-color: #f9535b;
+  border-radius: 10px;
+  border:none;
+}
+.contain .con .con-right .permission-page h5 {
+  width: 100%;
+  margin-top: 42.5px;
+  border-top: 1px solid #b2b2b2;
+}
+.contain .con .con-right .permission-page .management-below {
+  width: 100%;
+  margin-top:43.5px;
+}
+.contain .con .con-right .permission-page .management-below	.tb-wrap{
+	width:100%;
+	height:480px;
+	margin:23px	auto;
+	border:1px solid #b2b2b2;
+}
+.contain .con .con-right .permission-page .management-below .below-name{
+	font-size:0.67rem;	
+}
+.contain .con .con-right .permission-page .management-below table {
+  width: 100%;
+  background-color: #fff;
+  font-size: 0.46rem;
+}
+.contain .con .con-right .permission-page .management-below table th{
+	font-weight:lighter;
+}
+.contain .con .con-right .permission-page .management-below table th:nth-child(1){
+	width:10%;
+	background-color:red;
+}
+.contain .con .con-right .permission-page .management-below table tr {
+  height: 50px;
+  border-bottom: 1px solid #ccc;
+  position:relative;
+}
+.contain .con .con-right .permission-page .management-below table tr td {
+  text-align: center;
+}
+.contain .con .con-right .permission-page .management-below table tr td:nth-child(1) {
+  width:10%;
+}
+.contain .con .con-right .permission-page .management-below table tr td input[type='checkbox']{
+	width:30px;
+	height:30px;
+	margin-left:20px;
+	position:relative;
+	top:7px;
+}
+.contain .con .con-right .permission-page .management-below table tr td input[type='button'] {
+  padding: 2px 3px;
+  background-color: #FD6C6E;
+  color: #fff;
+  box-shadow: 0 0 5px #ccc;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+.infolist{box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;width:100%;float:left;clear:both;}

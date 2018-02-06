@@ -1,0 +1,66 @@
+.stockupInfo-contain {
+  width: 100%;
+  background-color: #F4F2F4;
+}
+.stockupInfo-contain .receiving-header {
+  width: 100%;
+  background-color: #5B6478;
+  padding: 0.1rem 0;
+  color: #fff;
+  position: relative;
+}
+.stockupInfo-contain .receiving-header i {
+  text-indent: 0.2rem;
+}
+.stockupInfo-contain .receiving-header span {
+  position: absolute;
+  left: 50%;
+  top: 28%;
+  transform: translateX(-50%);
+  font-size: 0.5367rem;
+}
+.stockupInfo-contain .stockUp-name {
+  width: 100%;
+  background-color: #fff;
+  padding: 0.3rem 0;
+}
+.stockupInfo-contain .stockUp-name form {
+  float: left;
+  margin-left: 0.6rem;
+}
+.stockupInfo-contain .stockUp-name form span {
+  font-size: 0.52rem;
+}
+.stockupInfo-contain .stockUp-name form select {
+  font-size: 0.3733rem;
+}
+.stockupInfo-contain .stockUp-name .stock-name {
+  float: left;
+  margin-left: 0.3rem;
+  font-size: 0.56rem;
+}
+.stockupInfo-contain .stockUp-name .stock-btn {
+  float: right;
+  margin-right: 0.8rem;
+  background-color: #169BD5;
+  font-size: 0.3733rem;
+  color: #fff;
+  padding: 0.05rem 0.15rem;
+  border: none;
+  border-radius: 5px;
+  margin-top: 0.1rem;
+}
+.stockupInfo-contain .stockUp-con {
+  width: 100%;
+  background-color: #fff;
+  margin-top: 0.3rem;
+}
+.stockupInfo-contain .stockUp-con table {
+  width: 100%;
+  font-size: 0.52rem;
+}
+.stockupInfo-contain .stockUp-con table tr td:nth-child(1) {
+  text-align: center;
+  color: #B0ACAD;
+  width: 3rem;
+}

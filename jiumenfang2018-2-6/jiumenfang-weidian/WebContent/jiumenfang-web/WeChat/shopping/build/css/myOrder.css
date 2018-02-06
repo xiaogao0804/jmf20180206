@@ -1,0 +1,189 @@
+.wrap {
+  width: 100%;
+}
+.wrap .contain {
+  width: 100%;
+  position: relative;
+}
+.wrap .contain .header {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  line-height: 0.7rem;
+  top: 0.2rem;
+  color: #000;
+}
+.wrap .contain .header .fa-long-arrow-left {
+  color: #ABABAB;
+  position: absolute;
+  left: 0.2rem;
+}
+.wrap .contain .header .fa-remove {
+  color: #ABABAB;
+  position: absolute;
+  top: 0.1rem;
+  right: 0.1rem;
+  font-size: 0.5rem;
+}
+.wrap .contain .con-list-wrap {
+  width: 100%;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #ccc;
+}
+.wrap .contain .con-list-wrap .con-list {
+  width: 95%;
+  margin-left: 0.5rem;
+  position: relative;
+  top: 0.5rem;
+}
+.wrap .contain .con-list-wrap .con-list .con-list-item {
+  margin-bottom: 0.3rem;
+  font-size: 0.3733rem;
+}
+.wrap .contain .con-list-wrap .con-list .con-list-item .item-num {
+  float: left;
+}
+.wrap .contain .con-list-wrap .con-list .con-list-item .item-num .recipient {
+  float: left;
+}
+.wrap .contain .con-list-wrap .con-list .con-list-item .item-num .tel {
+  float: left;
+  margin-left: 3.5rem;
+}
+.wrap .contain .con-list-wrap .con-list .con-list-item .item-price {
+  float: right;
+  margin-right: 1rem;
+  color: red;
+}
+.wrap .contain .con-list-wrap .con-list .pay-btn {
+  padding: 0.1rem 0.2rem;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  font-size: 0.3rem;
+  background-color: #FF9933;
+}
+.wrap .contain .con-list-wrap .con-list .pay-btn a {
+  color: #fff;
+  text-decoration: none;
+}
+.wrap .contain .con-list-wrap .con-list .shipments-btn {
+  padding: 0.1rem 0.2rem;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  font-size: 0.3rem;
+  background-color: #C9C9C9;
+}
+.wrap .contain .con-list-wrap .con-list .shipments-btn a {
+  color: #000;
+  text-decoration: none;
+}
+.wrap .contain .con-list-wrap .con-list .refund-btn {
+  padding: 0.1rem 0.2rem;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  font-size: 0.3rem;
+  background-color: #C9C9C9;
+}
+.wrap .contain .con-list-wrap .con-list .refund-btn a {
+  color: #000;
+  text-decoration: none;
+}
+.wrap .contain .mask-pop {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.wrap .contain .mask-pop .pop-info {
+  width: 5rem;
+  border: 1px solid #7E7E7E;
+  border-radius: 0.25rem;
+  padding: 1rem 1rem;
+  background-color: #fff;
+  margin: 50% auto;
+  text-align: center;
+  font-size: 0.3733rem;
+}
+.wrap .contain .mask-pop .pop-info .pop-txt {
+  margin-bottom: 1rem;
+  color: #3C3333;
+}
+.wrap .contain .mask-pop .pop-info .pop-cancel {
+  float: left;
+  padding: 0.1rem 0.8rem;
+  border-radius: 0.13rem;
+  border: 1px solid #A0A0A0;
+  background-color: #F4F4F4;
+  color: #656567;
+}
+.wrap .contain .mask-pop .pop-info .pop-confirm {
+  float: right;
+  padding: 0.1rem 0.8rem;
+  border-radius: 0.13rem;
+  border: 1px solid #A0A0A0;
+  background-color: #F4F4F4;
+  color: #656567;
+}
+.wrap .contain .mask-pop .pop-del {
+  width: 0.75rem;
+  height: 0.75rem;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 0.75rem;
+  color: #fff;
+  margin: 6rem auto 0;
+}
+.wrap .contain .mask-pop-logistics {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.wrap .contain .mask-pop-logistics .pop-info {
+  width: 5rem;
+  border: 1px solid #7E7E7E;
+  border-radius: 0.25rem;
+  padding: 1rem 1rem;
+  background-color: #fff;
+  margin: 50% auto;
+  text-align: center;
+  font-size: 0.3733rem;
+}
+.wrap .contain .mask-pop-logistics .pop-info .pop-txt {
+  margin-bottom: 1rem;
+  color: #3C3333;
+}
+.wrap .contain .mask-pop-logistics .pop-info .pop-cancel {
+  float: left;
+  padding: 0.1rem 0.8rem;
+  border-radius: 0.13rem;
+  border: 1px solid #A0A0A0;
+  background-color: #F4F4F4;
+  color: #656567;
+}
+.wrap .contain .mask-pop-logistics .pop-info .pop-confirm {
+  float: right;
+  padding: 0.1rem 0.8rem;
+  border-radius: 0.13rem;
+  border: 1px solid #A0A0A0;
+  background-color: #F4F4F4;
+  color: #656567;
+}
+.wrap .contain .mask-pop-logistics .pop-del {
+  width: 0.75rem;
+  height: 0.75rem;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 0.75rem;
+  color: #fff;
+  margin: 6rem auto 0;
+}

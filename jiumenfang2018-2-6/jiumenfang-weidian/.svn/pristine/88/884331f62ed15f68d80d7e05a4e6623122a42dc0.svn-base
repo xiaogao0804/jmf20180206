@@ -1,0 +1,54 @@
+.wrap{
+    width: 100%;
+}
+.wrap .header{
+    width:100%;
+    height:100px;
+    background-color: #000;
+    vertical-align: 100px;
+    position: fixed;
+    z-index: 9999;
+}
+.header .logo-wrap{
+    width:45%;
+    text-align: center;
+    float: left;
+}
+.header .tab-wrap{
+    width:55%;
+    float: right;
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+}
+.tab-wrap .tab li {
+    float: left;
+    padding:3px 12px;
+}
+.tab-wrap .tab li a{
+    color: #fff;
+    font-size: 22px;
+}
+.tab-wrap .tab li a:hover{
+    color: #f58466;
+}
+
+/*滚到上部*/
+.top-wrap{
+    width:100%;
+    text-align: center;
+}
+.top-wrap img{
+    position: relative;
+    top:-35px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+/*底部*/
+.footer{
+    width:100%;
+}
+.footer img{
+    width:100%;
+}

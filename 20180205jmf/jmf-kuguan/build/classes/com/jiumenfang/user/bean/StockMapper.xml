@@ -1,0 +1,457 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jiumenfang.user.dao.RepDao">
+
+	<resultMap type="Repertory" id="jmf"></resultMap> 
+
+	<!-- 登录 -->
+	<select id="login" parameterType="user" resultType="user">
+		select * from user u left join user_per up on u.user_id=up.user_id left join perht p on up.per_hid=p.per_hid  where u.user_name=#{user_name} and u.user_password=#{user_password}
+	</select>
+	<!-- 查询库存 -->
+	<select id="stock" parameterType="map" resultType="Repertory">
+		select * from repertory r left join barcode b on r.bar_id=b.bar_id left join shelf s on r.shelf_id=s.shelf_id left join user u on r.user_id=u.user_id limit #{index},#{pagesize} 
+	</select>
+	<select id="queryal4" resultType="Huocun">
+		select * from repertory r left join barcode b on r.bar_id=b.bar_id left join shelf s on r.shelf_id=s.shelf_id left join user u on r.user_id=u.user_id 
+	</select>
+	<select id="findCount" resultType="int">
+		select count(*) from repertory r left join barcode b on r.bar_id=b.bar_id left join shelf s on r.shelf_id=s.shelf_id
+	</select>
+	<!-- 添加出库数 -->
+	<insert id="insertOut" parameterType="map">
+		insert into outs set out_num=#{out_num},rep_id=#{rep_id},out_date=#{out_date},user_id=#{user_id}
+	</insert>
+	
+	
+	<!-- 根据rep_out查询out_id -->
+	<select id="selectOut1" parameterType="map" resultType="Repertory">
+		select out_id,out_date,rep_id,out_num from outs where out_date=#{out_date} and user_id=#{user_id}
+	</select>
+	
+	
+	
+	
+	<!-- 查询渠道 -->
+	<select id="chan" parameterType="ArrayList" resultType="Channal">
+		select * from channal
+	</select> 
+	<!-- 查询运输类型 -->
+	<select id="tran" parameterType="ArrayList" resultType="Transport">
+		select * from transport
+	</select> 
+	<!-- 根据rep_id查询商品信息 -->
+	<select id="r" parameterType="int" resultType="Repertory">
+		select * from repertory where rep_id=#{rep_id}
+	</select>
+	<!-- 添加地址信息 -->
+	<insert id="insertAddress" parameterType="map">
+		insert into address set address_name=#{address_name},address_notes=#{address_notes},address_date=#{address_date},user_id=#{user_id},yundan=#{yundan}
+	</insert>
+	<!-- 添加用户信息 -->
+	<insert id="insertClient" parameterType="map">
+		insert into client set client_name=#{client_name},client_tel=#{client_tel},client_date=#{client_date},user_id=#{user_id}
+	</insert>
+	<!-- 根据address_date查询address_id -->
+	 <select id="selectAddress" parameterType="map" resultType="Address">
+		select address_id from address where address_date=#{address_date} and user_id=#{user_id}
+	</select> 
+	<!-- 根据client_date查询client_id -->
+	 <select id="selectClient" parameterType="String" resultType="Client">
+		select client_id from client where client_date=#{client_date} and user_id=#{user_id}
+	</select> 
+
+	<!-- 添加订单号与时间 -->
+	<insert id="insertOrders" parameterType="map">
+		insert into orders set order_num=#{order_num},orders_date=#{orders_date},status_id=#{status_id},orders_date1=#{orders_date1}
+	</insert>
+	<!-- 根据订单号查询订单id -->
+	<select id="selectOrders" parameterType="ArrayList" resultType="Orders">
+		select * from orders o where order_num=#{order_num}
+	</select>
+	<!-- 查询repertory -->
+	<select id="selectRep" parameterType="map" resultType="Repertory">
+		select * from repertory r left join barcode b on r.bar_id=b.bar_id left join shelf s on r.shelf_id=s.shelf_id where rep_id=#{rep_id}  
+	</select>
+	
+	<!--向reps中添加数据  -->
+	<insert id="insertReps" parameterType="map">
+		insert into reps set rep_id=#{rep.rep_id},orders_id=#{orders_id},rep_enters=#{rep.rep_enter},bar_message=#{rep.bar_message},shelf_type=#{rep.shelf_type},reps_date=#{reps_date},address_id=#{address_id},client_id=#{client_id},city_id=#{city_id},out_sum=#{out_sum},date1=#{date1},chan_id=#{chan_id},tran_id=#{tran_id},user_id=#{user_id},out_id=#{out_id}
+	</insert>
+	
+	<!-- 查询reps中的数据 -->
+	<select id="selectReps" parameterType="ArrayList" resultType="Reps">
+		select * from reps where rep_id=#{rep_id1}
+	</select>
+	<!--修改reps表中的地址id  -->
+	<update id="updateAddressId" parameterType="map">
+		update reps set address_id=#{address_id} where user_id=#{user_id} and reps_date=#{reps_date} and rep_id=#{rep_id}
+	</update>
+	<!-- 修改reps表中的用户id-->
+	<update id="updateClientId" parameterType="map">
+		update reps set client_id=#{client_id} where rep_id=#{rep_id} and reps_date=#{reps_date} and user_id=#{user_id}
+	</update>
+	
+	<!--  -->
+	<select id="selectOuts" parameterType="ArrayList" resultType="Repertory">
+		select rep_id,out_id,out_date from outs where out_date=#{time1} 
+	</select>
+	
+	
+	<!--  -->
+	<update id="updateReps" parameterType="map">
+		update reps set out_id=#{out_id} where rep_id=#{rep_id} and reps_date=#{reps_date}  
+	</update>
+	
+	
+	<!--  -->
+	<update id="updateOrder" parameterType="map">
+		update orders set orders_date=#{orders_date} where order_num=#{order_num} and user_id=#{user_id}
+	</update>
+	
+	<!--  -->
+	<select id="selectOrder_id" parameterType="map" resultType="Orders">
+		select order_id from orders where orders_date=#{orders_date}
+	</select>
+	<!--  -->
+	<select id="selectReps_id" parameterType="map" resultType="Reps">
+		select reps_id from reps where address_id=#{address_id}
+	</select>
+	
+	<!-- 向chan_reps中间表中添加数据 -->
+	<insert id="insertChan_rep" parameterType="map">
+		insert into chan_rep set chan_id=#{chan_id},rep_id=#{rep_id},user_id=#{user_id},chan_rep_date=#{chan_rep_date}
+	</insert>
+	<!-- 向tran_reps中间表中添加数据 -->
+	<insert id="insertTran_rep" parameterType="map">
+		insert into tran_rep set tran_id=#{tran_id},rep_id=#{rep_id},user_id=#{user_id},tran_rep_date=#{tran_rep_date}
+	</insert>
+	<select id="selectChan_id" parameterType="map" resultType="Channal">
+		select cr.chan_id from chan_rep cr left join repertory r on cr.rep_id=r.rep_id left join channal c on cr.chan_id=c.chan_id where cr.user_id=#{user_id} and cr.chan_rep_date=#{chan_rep_date}
+	</select>
+	
+	
+	<!-- 添加城市 -->
+	<insert id="insertCity_name" parameterType="map">
+		insert into city set city_name=#{city_name},city_date=#{city_date},user_id=#{user_id}
+	</insert>
+	<!-- 查询城市id-->
+	<select id="selectCity_id" parameterType="map" resultType="City">
+		select city_id from city where user_id=#{user_id} and city_date=#{city_date}
+	</select>
+	
+	<insert id="insertOrder_rep" parameterType="map">
+		insert into repertory_order set order_id=#{orders_id},rep_id=#{rep.rep_id}
+	</insert>
+	<update id="updateOutsOrdersId" parameterType="map">
+		update outs set orders_id=#{orders_id} where rep_id=#{rep.rep_id} and out_date=#{out_date}
+	</update>
+	
+	<!--  -->
+	<insert id="insertOrders_out" parameterType="map">
+		insert into orders_outs set orders_id=#{orders_id},out_id=#{out_id}
+	</insert>
+	
+	
+	
+	<!--  -->
+	<update id="updateRepsChan_id" parameterType="map">
+		update reps set chan_id=#{chan_id},tran_id=#{tran_id} where orders_id=#{order_id}
+	</update>
+	
+	<!--  -->
+	<select id="selectOrdersId" parameterType="map" resultType="Orders">
+		select * from orders where order_num=#{order_num} and orders_date=#{orders_date}
+	</select>
+	
+	<!--  -->
+	<insert id="insertRepsOrder" parameterType="map">
+		insert into reps_order set reps_id=#{reps_id},order_id=#{order_id} 
+	</insert>
+	
+	
+<!-- 	
+	<select id="chu" parameterType="map" resultType="Reps">
+		select * from orders o
+		 left join reps r on o.order_id=r.orders_id
+		   left join status stu on o.status_id=stu.status_id
+		   left join outs outs on r.out_id=outs.out_id
+		   left join address adds on r.address_id=adds.address_id
+		   left join client cli on r.client_id=cli.client_id
+		   left join user u on r.user_id=u.user_id
+		   left join city city on r.city_id=city.city_id
+		   left join transport tran on r.tran_id=tran.tran_id
+		   left join channal chan on r.chan_id=chan.chan_id
+		    where o.status_id=#{status_id}
+		    <if test="start!='' and start!=null"> 
+  				and o.orders_date1 &gt;= #{start} 
+ 		 </if> 
+		  <if test="end!='' and end!=null"> 
+		  		and o.orders_date1 &lt;= #{end} 
+		  </if>
+		  limit #{index},#{pagesize};
+	</select> -->
+	<!-- 出货订单-->
+	<select id="chu1" parameterType="map" resultType="Reps">
+		select * from orders o
+		 left join reps r on o.order_id=r.orders_id
+		   left join outs outs on r.out_id=outs.out_id
+		   left join address adds on r.address_id=adds.address_id
+		   left join client cli on r.client_id=cli.client_id
+		   left join user u on r.user_id=u.user_id
+		   left join city city on r.city_id=city.city_id
+		   left join transport tran on r.tran_id=tran.tran_id
+		   left join channal chan on r.chan_id=chan.chan_id
+		    <if test="start!='' and start!=null"> 
+  				where o.orders_date1 &gt;= #{start} 
+ 		 </if> 
+		  <if test="end!='' and end!=null"> 
+		  		and o.orders_date1 &lt;= #{end} 
+		  </if>
+		  limit #{index},#{pagesize};
+	</select> 
+	<select id="findCount1" parameterType="map" resultType="int">
+		select count(*) from orders o
+		 left join reps r on o.order_id=r.orders_id
+		   left join status stu on o.status_id=stu.status_id
+		   left join outs outs on r.out_id=outs.out_id
+		   left join address adds on r.address_id=adds.address_id
+		   left join client cli on r.client_id=cli.client_id
+		   left join user u on r.user_id=u.user_id
+		   left join city city on r.city_id=city.city_id
+		   left join transport tran on r.tran_id=tran.tran_id
+		   left join channal chan on r.chan_id=chan.chan_id
+		      <if test="start!='' and start!=null"> 
+  				where o.orders_date1 &gt;= #{start} 
+ 		 </if> 
+		  <if test="end!='' and end!=null"> 
+		  		and o.orders_date1 &lt;= #{end} 
+		  </if>
+		   
+	</select>
+	
+	<!-- 盘点 -->
+	<select id="pan" parameterType="map" resultType="Pa">
+		select distinct n.number_num,p.p_date,s.shelf_type,r.rep_enter,r.rep_end,bar.bar_message,u.user_name,b.bz_name from pa p left join user u on p.user_id=u.user_id left join bz b on p.bz_id=b.bz_id left join shelf s on p.shelf_id=s.shelf_id left join repertory r on p.rep_id=r.rep_id left join number n on p.number_id=n.number_id left join barcode bar on r.bar_id=bar.bar_id
+		   <if test="start!='' and start!=null"> 
+  				where p.pa_date1 &gt;= #{start} 
+ 		 </if> 
+		  <if test="end!='' and end!=null"> 
+		  		and p.pa_date1 &lt;= #{end} 
+		  </if>
+		  limit #{index},#{pagesize};
+	</select>
+	<select id="findCount2" resultType="int">
+		select count(*) from pa p 
+		left join user u on p.user_id=u.user_id
+		left join bz b on p.bz_id=b.bz_id 
+		left join shelf s on p.shelf_id=s.shelf_id 
+		left join repertory r on p.rep_id=r.rep_id 
+		left join number n on p.number_id=n.number_id 
+		left join barcode bar on r.bar_id=bar.bar_id
+		<if test="start!='' and start!=null"> 
+  				where p.pa_date1 &gt;= #{start} 
+ 		 </if> 
+		  <if test="end!='' and end!=null"> 
+		  		and p.pa_date1 &lt;= #{end} 
+		  </if>
+	</select>
+	<!-- 查询权限 -->
+	<select id="selectPermission" resultType="Permission">
+		select * from permission
+	</select>
+	<select id="selectPerh" resultType="PerHt">
+		select * from perht
+	</select>
+	
+	<!-- 添加用户 -->
+	<insert id="insertUser" parameterType="map">
+		insert into user set user_name=#{user_name},user_password=#{user_password}
+	</insert>
+	<!-- 查询添加用户的ID -->
+	<select id="selectUserId" parameterType="map" resultType="User">
+		select * from user where user_name=#{user_name} and user_password=#{user_password}
+	</select>
+	<select id="selectUser" parameterType="map" resultType="User">
+		select user_name from user where user_name=#{user_name}
+	</select>
+	<insert id="insertUser_Per" parameterType="map">
+		insert into user_per set user_id=#{user_id},per_id=#{per_id},per_hid=#{per_hid}
+	</insert>
+	<insert id="insertUser_Per1" parameterType="map">
+		insert into user_per set user_id=#{user_id},per_id=#{per_id}
+	</insert>
+	<insert id="insertUser_Per2" parameterType="map">
+		insert into user_per set user_id=#{user_id},per_hid=#{per_hid}
+	</insert>
+	<select id="test" parameterType="String" resultType="User">
+		select user_name from user where user_name=#{user_name}
+	</select>
+	
+	
+	
+	
+	<select id="zs" parameterType="int" resultType="Reps">
+		select * from reps r left join outs o on r.out_id=o.out_id left join repertory rep on r.rep_id=rep.rep_id where r.rep_id=#{rep_id} 
+	</select>
+	<select id="selectEndNum" parameterType="int" resultType="Reps">
+		select * from ends where rep_id=#{rep_id}
+	</select>
+	
+	<select id="chaUser" resultType="User">
+		select * from user
+	</select>
+	
+	<!-- 查询单证 -->
+	<select id="chaDan" parameterType="map" resultType="Upload">
+		select * from upload u  left join user u1 on u.user_id=u1.user_id
+		  <if test="start!='' and start!=null"> 
+  				where u.uploadDate1 &gt;= #{start} 
+ 		 </if> 
+		  <if test="end!='' and end!=null"> 
+		  		and u.uploadDate1 &lt;= #{end} 
+		  </if>
+		  limit #{index},#{pagesize};
+	</select>
+	<select id="findCount3" resultType="int">
+		select count(*) from upload u  
+		left join user u1 on u.user_id=u1.user_id
+		  <if test="start!='' and start!=null"> 
+  				where u.uploadDate1 &gt;= #{start} 
+ 		 </if> 
+		  <if test="end!='' and end!=null"> 
+		  		and u.uploadDate1 &lt;= #{end} 
+		  </if>
+	</select>
+	<!-- 查询退货 -->
+	<select id="chaTui" parameterType="map" resultType="Upload1">
+		select * from upload1 u  left join user u1 on u.user_id=u1.user_id
+		 <if test="start!='' and start!=null"> 
+  				where u.uploadDate2 &gt;= #{start} 
+ 		 </if> 
+		  <if test="end!='' and end!=null"> 
+		  		and u.uploadDate2 &lt;= #{end} 
+		  </if>
+		  limit #{index},#{pagesize};
+	</select>
+	<select id="findCount4" resultType="int">
+		select count(*) from upload1 u  
+		left join user u1 on u.user_id=u1.user_id
+		 <if test="start!='' and start!=null"> 
+  				where u.uploadDate2 &gt;= #{start} 
+ 		 </if> 
+		  <if test="end!='' and end!=null"> 
+		  		and u.uploadDate2 &lt;= #{end} 
+		  </if>
+	</select>
+	
+	<select id="cha" parameterType="map" resultType="User">
+		select * from user_per up left join user u on up.user_id=u.user_id left join permission p on up.per_id=p.per_id left join perht ph on up.per_hid=ph.per_hid where up.user_id=#{user_id}
+	</select>
+	<select id="cha1" parameterType="int" resultType="User">
+		select * from user_per up left join user u on up.user_id=u.user_id left join permission p on up.per_id=p.per_id left join perht ph on up.per_hid=ph.per_hid where up.user_id=#{user_id}
+	</select>
+	
+	<delete id="deletePer_id" parameterType="map">
+		delete from user_per where user_id=#{user_id}
+	</delete>
+	
+	
+	<insert id="insertUser_per" parameterType="map">
+		insert into user_per set user_id=#{user_id},per_id=#{per_id},per_hid=#{per_hid}
+	</insert>
+	
+	<delete id="delete" parameterType="int">
+		delete from user_per where user_id=#{user_id}
+	</delete>
+	<delete id="deleteUser" parameterType="int">
+		delete from user where user_id=#{user_id}
+	</delete>
+	
+	
+	<select id="queryall" resultType="chuOrder">
+		select * from reps r left join orders o on r.orders_id=o.order_id left join outs os on r.out_id=os.out_id left join channal chan on r.chan_id=chan.chan_id left join transport tran on r.tran_id=tran.tran_id left join city c on r.city_id=c.city_id left join user u on r.user_id=u.user_id left join address adds on r.address_id=adds.address_id left join client cli on r.client_id=cli.client_id
+	</select>
+	<select id="queryPan" resultType="Pandian">
+		select distinct n.number_num,p.p_date,s.shelf_type,r.rep_enter,r.rep_end,bar.bar_message,u.user_name,b.bz_name from pa p left join user u on p.user_id=u.user_id left join bz b on p.bz_id=b.bz_id left join shelf s on p.shelf_id=s.shelf_id left join repertory r on p.rep_id=r.rep_id left join number n on p.number_id=n.number_id left join barcode bar on r.bar_id=bar.bar_id
+	</select>
+	<select id="queryDan" resultType="Danzheng">
+		select * from upload up left join user u on up.user_id=u.user_id left join upload_path up1 on up.upload_id=up1.upload_id left join path p on up1.path_id=p.path_id
+	</select>
+	<select id="queryTui" resultType="Tuihuo">
+		select * from upload1 up left join user u on up.user_id=u.user_id left join upload1_path1 up1 on up.upload1_id=up1.upload1_id left join path1 p on up1.path1_id=p.path1_id
+	</select>
+	
+	<select id="selectPath" parameterType="int" resultType="Upload">
+		select * from upload_path up left join path p on up.path_id=p.path_id where up.upload_id=#{upload_id}
+	</select>
+	<select id="selectPath1" parameterType="int" resultType="Upload1">
+		select * from upload1_path1 up left join path1 p on up.path1_id=p.path1_id where up.upload1_id=#{upload1_id}
+	</select>
+	
+	<select id="chaUpload" resultType="Upload">
+		select * from upload
+	</select>
+	
+	<select id="chaUpload1" resultType="Upload1">
+		select * from upload1
+	</select>
+	
+	
+	<delete id="delectUpload" parameterType="int">
+		delete from upload where upload_id=#{upload_id}
+	</delete>
+	<delete id="deleteUpload_path" parameterType="int">
+		delete from upload_path where upload_id=#{upload_id}
+	</delete>
+	<delete id="deletePath" parameterType="int">
+		delete from path where path_id=#{path_id}
+	</delete>
+	<delete id="delectUpload1" parameterType="int">
+		delete from upload1 where upload1_id=#{upload1_id}
+	</delete>
+	<delete id="deleteUpload1_path1" parameterType="int">
+		delete from upload1_path1 where upload1_id=#{upload1_id}
+	</delete>
+	<delete id="deletePath1" parameterType="int">
+		delete from path1 where path1_id=#{path1_id}
+	</delete>
+	<select id="selectUpload_path" parameterType="int" resultType="Upload">
+		select * from upload_path where upload_id=#{upload_id}
+	</select>
+	<select id="selectUpload1_path1" parameterType="int" resultType="Upload1">
+		select * from upload1_path1 where upload1_id=#{upload1_id}
+	</select>
+	
+	
+	
+	<select id="selectOutNum" parameterType="map" resultType="Outs">
+		select * from outs where out_date=#{out_date}
+	</select>
+	
+	
+	<update id="updateRep_end" parameterType="map">
+		update repertory set rep_end=#{rep_end}-#{out_num} where rep_id=#{rep_id}
+	</update>
+	
+	
+	<select id="selectRepEnd" parameterType="map" resultType="Repertory">
+		select * from repertory where rep_id=#{rep_id}
+	</select>
+	
+	
+	<insert id="insertEndNum" parameterType="map">
+		insert into ends set rep_id=#{rep_id},end_num=#{end_num}
+	</insert>
+	
+	<select id="selectUid" parameterType="ArrayList" resultType="User">
+		select * from user
+	</select>
+	
+	<update id="updateUid" parameterType="map">
+		update user set uid=#{uid} where user_id=#{user_id}
+	</update>
+
+</mapper>

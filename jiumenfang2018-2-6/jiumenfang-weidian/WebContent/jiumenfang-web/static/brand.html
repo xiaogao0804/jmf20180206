@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="keywords" content="九门坊，小酱仙，酱，面，料理">
+    <meta name="description" content="九门坊，小酱仙，酱，面，料理">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>九门坊官网</title>
+</head>
+<body>
+   <div class="wrap">
+       <div class="header">
+         <div class="header-wrap">
+              <div class="logo-wrap">
+                <img src="image/logo.png" alt="">
+            </div>
+           <div class="tab-wrap">
+               <ul class="tab">
+                   <li>
+                       <a href="index.html">首页</a>
+                   </li>
+                   <li>
+                       <a href="brand.html" style="color: #f58466;">品牌</a>
+                   </li>
+                   <li>
+                       <a href="products.html">产品</a>
+                   </li>
+                   <li>
+                       <a href="info.html">公司</a>
+                   </li>
+                   <li>
+                       <a href="contact.html">联系</a>
+                   </li>
+               </ul>
+           </div>
+         </div>
+       </div>
+       <div class="content-brand">
+           <img src="image/brand.png" alt="">
+       </div>
+       <div class="top-wrap">
+           <img src="image/top.png" alt="" class="returnTop">
+       </div>
+       <div class="footer">
+           <img src="image/footer.png" alt="">
+       </div>
+   </div>
+</body>
+<script src="jquery-3.2.1.min.js"></script>
+<script>
+    $('.returnTop').click(function(){
+        $('body,html').animate({ scrollTop: 0 }, 500);
+        return false;
+    })
+</script>
+</html>

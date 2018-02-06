@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="../../../publicJs/flexible.js"></script>
+    <link rel="stylesheet" href="../../../publicCss/reset.css">
+    <link rel="stylesheet" href="../../../publicCss/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/stockUp.css">
+    <title>出货</title>
+</head>
+<body>
+   <div class="stockUp-contain">
+       <div class="receiving-header">
+           <i class="fa fa-angle-left fa-3x"></i>
+           <span>出货列表</span>
+       </div>
+       <div class="goods-date">
+           <form action="" class="clearFix">
+               <span>月份</span> &nbsp;
+               <select name="month">
+                   <option value="">1</option>
+                   <option value="">2</option>
+                   <option value="">3</option>
+                   <option value="">4</option>
+                   <option value="">5</option>
+                   <option value="">6</option>
+                   <option value="">7</option>
+                   <option value="">8</option>
+                   <option value="">9</option>
+                   <option value="">10</option>
+                   <option value="">11</option>
+                   <option value="">12</option>
+               </select>
+               &nbsp; &nbsp; &nbsp;
+               <span>日期</span> &nbsp;
+               <select name="date">
+                   <option value="">1</option>
+                   <option value="">2</option>
+                   <option value="">3</option>
+                   <option value="">4</option>
+                   <option value="">5</option>
+                   <option value="">6</option>
+                   <option value="">7</option>
+                   <option value="">8</option>
+                   <option value="">9</option>
+                   <option value="">10</option>
+                   <option value="">11</option>
+                   <option value="">12</option>
+                   <option value="">13</option>
+                   <option value="">14</option>
+                   <option value="">15</option>
+                   <option value="">16</option>
+                   <option value="">17</option>
+                   <option value="">18</option>
+                   <option value="">19</option>
+                   <option value="">20</option>
+                   <option value="">21</option>
+                   <option value="">22</option>
+                   <option value="">23</option>
+                   <option value="">24</option>
+                   <option value="">25</option>
+                   <option value="">26</option>
+                   <option value="">27</option>
+                   <option value="">28</option>
+                   <option value="">29</option>
+                   <option value="">30</option>
+                   <option value="">31</option>
+               </select>
+               <input type="button" value="查询">
+           </form>
+
+       </div>
+       <ul>
+           <li class="clearFix">
+               <div class="goods-img">
+                   <img src="image/odd.png" alt="">
+               </div>
+               <div class="goods-info">
+                     <p class="goods-info-odd">20170910001</p>
+                     <p class="goods-info-num">出货数量 5</p>
+               </div>
+               <div class="goods-state">
+                   <span>完成</span>
+                   <i class="fa fa-angle-right"></i>
+               </div>
+           </li>
+           <li class="clearFix">
+               <div class="goods-img">
+                   <img src="image/odd.png" alt="">
+               </div>
+               <div class="goods-info">
+                   <p class="goods-info-odd">20170910001</p>
+                   <p class="goods-info-num">出货数量 5</p>
+               </div>
+               <div class="goods-state">
+                   <span style="color: #FF0000;">未完成</span>
+                   <i class="fa fa-angle-right"></i>
+               </div>
+           </li>
+       </ul>
+   </div>
+</body>
+<script src="../../../publicJs/jquery-3.2.1.min.js"></script>
+<script src="js/stockUp.js"></script>
+</html>

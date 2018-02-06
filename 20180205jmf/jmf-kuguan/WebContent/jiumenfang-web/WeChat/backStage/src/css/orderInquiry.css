@@ -1,0 +1,156 @@
+.contain-inquiry {
+  width: 100%;
+  min-width: 1200px;
+}
+.contain-inquiry .con-left {
+  width: 12%;
+  height: 100%;
+  float: left;
+  border: 1px solid #797979;
+  background-color: #66CC99;
+}
+.contain-inquiry .con-left .con-left-name {
+  width: 100%;
+  text-align: center;
+  margin: 10px 0;
+  font-size: 18px;
+  color: #668575;
+}
+.contain-inquiry .con-left .con-left-list {
+  width: 100%;
+  margin: 40px auto;
+}
+.contain-inquiry .con-left .con-left-list .con-left-item {
+  width: 100%;
+  margin: 40px auto;
+}
+.contain-inquiry .con-left .con-left-list .con-left-item .con-admin {
+  text-indent: 12px;
+}
+.contain-inquiry .con-left .con-left-list .con-left-item .con-admin i {
+  color: #767676;
+  font-size: 26px;
+}
+.contain-inquiry .con-left .con-left-list .con-left-item .con-admin span {
+  font-size: 20px;
+  padding-left: 8px;
+  color: #333;
+}
+.contain-inquiry .con-left .con-left-list .con-left-item .con-admin .con-admin-name {
+  margin-left: 35px;
+}
+.contain-inquiry .con-left .con-left-list .con-left-item .con-admin-list {
+  width: 100px;
+  margin: 10px auto;
+  font-size: 16px;
+}
+.contain-inquiry .con-left .con-left-list .con-left-item .con-admin-list li {
+  margin: 8px 0;
+  color: #333;
+  cursor: pointer;
+}
+.contain-inquiry .con-left .con-left-list .con-left-item .con-admin-list li a {
+  color: #000;
+}
+.contain-inquiry .con-left .con-left-list .con-left-item .con-admin-list li i {
+  color: #747474;
+}
+.contain-inquiry .con-left .con-left-list .con-left-item .con-admin-list .order-inquiry {
+  color: #783886;
+}
+.contain-inquiry .con-left .con-left-list .con-left-item .con-admin-list li:nth-child(2) {
+  text-indent: 15px;
+}
+.contain-inquiry .con-right {
+  width: 87.5%;
+  height: 100%;
+  float: right;
+}
+.contain-inquiry .con-right .con-right-select {
+  width: 70%;
+  margin: 50px 50px 70px;
+  font-size: 14px;
+}
+.contain-inquiry .con-right .con-right-select #status-select {
+  float: left;
+  height: 20px;
+}
+.contain-inquiry .con-right .con-right-select .con-right-ipt {
+  float: left;
+  margin-left: 50px;
+}
+.contain-inquiry .con-right .con-right-select .con-right-ipt input {
+  margin-right: 20px;
+  height: 20px;
+}
+.contain-inquiry .con-right .con-right-select .con-right-ipt .con-ipt-rmb {
+  width: 60px;
+  border: none;
+  color: #FF0101;
+  border-bottom: 1px solid #A9A9A9;
+}
+.contain-inquiry .con-right .con-right-time {
+  width: 100%;
+}
+.contain-inquiry .con-right .con-right-time li {
+  float: left;
+  margin-left: 48px;
+}
+.contain-inquiry .con-right .con-right-time .laydate-icon {
+  width: 130px;
+  cursor: pointer;
+}
+.contain-inquiry .con-right .con-right-time .laydate-txt {
+  margin: 5px 0 0 5px;
+  color: #444;
+  font-size: 14px;
+}
+.contain-inquiry .con-right .con-right-time .laydate-search {
+  margin: 5px 20px;
+  font-size: 14px;
+}
+.contain-inquiry .con-right .con-right-time .laydate-search i {
+  font-size: 16px;
+  color: #737373;
+}
+.contain-inquiry .con-right .con-right-time .laydate-search button {
+  height: 20px;
+  width: 45px;
+  text-align: center;
+  color: #444;
+  cursor: pointer;
+}
+.contain-inquiry .con-right table {
+  margin: 50px 30px;
+  width: 70%;
+  font-size: 14px;
+  color: #333;
+}
+.contain-inquiry .con-right table tr {
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+.contain-inquiry .con-right table tr .desc {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.contain-inquiry .con-right table tr .as {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.contain-inquiry .con-right table tr .order-num {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.contain-inquiry .con-right table tr .order-state {
+  text-decoration: underline;
+  cursor: pointer;
+  position: relative;
+}
+.contain-inquiry .con-right table tr .order-state i {
+  position: absolute;
+  top: 1px;
+  right: 3px;
+  color: #8B8B8B;
+}

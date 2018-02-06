@@ -1,0 +1,139 @@
+.contain {
+  width: 100%;
+  background-color: #5B6478;
+}
+.contain .logo {
+  width: 100%;
+  text-align: center;
+}
+.contain .logo img {
+  width: 72%;
+  margin-top: 16%;
+}
+.contain .logo	.logo-name{
+	color:#fff;
+	font-size:0.67rem;
+	margin:38px	auto 0;
+}
+.contain .login {
+  width: 100%;
+  margin: 18% auto 0;
+}
+.contain .login .user-account {
+  width: 71%;
+  margin: 10px auto;
+}
+.contain .login .user-account .account-img {
+/*   width: 0.9333rem;
+  height: 0.9333rem;
+  background: url("../image/user.png") 0 0 no-repeat;
+  background-size: 100% 100%; */
+  font-size:0.67rem;
+  color:#fff;
+  float: left;
+}
+.contain .login .user-account .account-ipt {
+  float: left;
+  margin-left: 0.2rem;
+}
+.contain .login .user-account .account-ipt input {
+  width: 160px;
+  height: 1rem;
+  text-align:center;
+  line-height:1rem;
+ background-color:rgb(255,255,255);
+  border: none;
+  border-radius: 46px;
+  color: #000;
+  font-size: 0.6rem;
+}
+.contain .login .user-account .account-ipt input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+.contain .login .user-account .pwd-wrap {
+  margin-top: 1rem;
+}
+.contain .login .user-account .pwd-wrap .pwd-img {
+/*   width: 0.9333rem;
+  height: 0.9333rem;
+  background: url("../image/lock.png") 0 0 no-repeat;
+  background-size: 100% 100%; */
+  font-size:0.67rem;
+  color:#fff;
+  float: left;
+}
+.contain .login .user-account .pwd-wrap .pwd-ipt {
+  float: left;
+  margin-left: 0.2rem;
+}
+.contain .login .user-account .pwd-wrap .pwd-ipt input {
+  width: 160px;
+  height: 1rem;
+  text-align:center;
+  line-height:1rem;
+ background-color:rgb(255,255,255);
+  border: none;
+  border-radius: 46px;
+  color: #000;
+  font-size: 0.6rem;
+}
+.contain .login .user-account .pwd-wrap .pwd-ipt input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+.contain .login .user-account .submit-btn {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+.contain .login .user-account .submit-btn input {
+  background-color: #fff;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.5rem;
+  color: #495165;
+  border:none;
+  font-size: 0.4667rem;
+}
+/* .contain .login .user-account .submit-btn	.cancel{
+	margin-right:0.5rem;
+} */
+.contain .login .user-account .submit-btn	.dengru{
+	margin-left:1rem;
+}
+.login-contain {
+  width: 100%;
+}
+.login-contain h2 {
+  width: 21%;
+  font-size: 26px;
+  margin: 30px auto;
+}
+.login-contain .login-ipt {
+  width: 20%;
+  margin: 100px auto;
+  position: relative;
+}
+.login-contain .login-ipt .ipt-txt span {
+  font-size: 22px;
+}
+.login-contain .login-ipt .ipt-txt input {
+  width: 70%;
+  font-size: 16px;
+  padding: 4px 5px;
+  margin-bottom: 15px;
+  position: relative;
+  top: -2px;
+}
+.login-contain .login-ipt .ipt-btn {
+  width: 55%;
+  margin: 15px 85px;
+  position: relative;
+}
+.login-contain .login-ipt .ipt-btn input {
+  padding: 1px 10px;
+  background-color: #efebeb;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.login-contain .login-ipt .ipt-btn .btn-login {
+  position: absolute;
+  right: 0px;
+}

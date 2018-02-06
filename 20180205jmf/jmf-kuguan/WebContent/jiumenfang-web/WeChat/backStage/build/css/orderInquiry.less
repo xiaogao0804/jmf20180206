@@ -1,0 +1,158 @@
+.contain-inquiry{
+  width:100%;
+  min-width: 1200px;
+  .con-left{
+    width:12%;
+    height:100%;
+    float: left;
+    border:1px solid #797979;
+    background-color:#66CC99;
+    .con-left-name{
+      width:100%;
+      text-align: center;
+      margin:10px 0;
+      font-size:18px;
+      color: #668575;
+    }
+    .con-left-list{
+      width:100%;
+      margin:40px auto;
+      .con-left-item{
+        width:100%;
+        margin:40px auto;
+        .con-admin{
+          text-indent: 12px;
+          i{
+            color: #767676;
+            font-size: 26px;
+          }
+          span{
+            font-size: 20px;
+            padding-left: 8px;
+            color: #333;
+          }
+          .con-admin-name{
+            margin-left: 35px;
+          }
+        }
+        .con-admin-list{
+          width:100px;
+          margin:10px auto;
+          font-size: 16px;
+          li{
+            margin:8px 0;
+            color: #333;
+            cursor: pointer;
+            a{
+              color: #000;
+            }
+            i{
+              color: #747474;
+            }
+          }
+          .order-inquiry{
+            color: #783886;
+          }
+          li:nth-child(2){
+            text-indent: 15px;
+          }
+        }
+      }
+
+    }
+  }
+  .con-right{
+    width:87.5%;
+    height:100%;
+    float: right;
+    .con-right-select{
+      width:70%;
+      margin:50px 50px 70px;
+      font-size: 14px;
+      #status-select{
+        float: left;
+        height:20px;
+      }
+      .con-right-ipt{
+        float: left;
+        margin-left: 50px;
+        input{
+          margin-right: 20px;
+          height:20px;
+        }
+        .con-ipt-rmb{
+          width:60px;
+          border:none;
+          color: #FF0101;
+          border-bottom: 1px solid #A9A9A9;
+        }
+      }
+    }
+    .con-right-time{
+      width:100%;
+      li{
+        float: left;
+        margin-left: 48px;
+      }
+      .laydate-icon{
+        width:130px;
+        cursor: pointer;
+      }
+      .laydate-txt{
+        margin:5px 0 0 5px;
+        color: #444;
+        font-size: 14px;
+      }
+      .laydate-search{
+        margin:5px 20px;
+        font-size:14px;
+        i{
+          font-size: 16px;
+          color: #737373;
+        }
+        button{
+          height:20px;
+          width:45px;
+          text-align: center;
+          color: #444;
+          cursor: pointer;
+        }
+      }
+
+    }
+    table{
+      margin:50px 30px;
+      width:70%;
+      font-size: 14px;
+      color: #333;
+      tr{
+        height:30px;
+        text-align: center;
+        line-height: 30px;
+        .desc{
+          text-decoration: underline;
+          cursor: pointer;
+        }
+        .as{
+          text-decoration: underline;
+          cursor: pointer;
+        }
+        .order-num{
+          text-decoration: underline;
+          cursor: pointer;
+        }
+        .order-state{
+          text-decoration: underline;
+          cursor: pointer;
+          position: relative;
+          i{
+            position: absolute;
+            top:1px;
+            right:3px;
+            color: #8B8B8B;
+          }
+        }
+      }
+    }
+  }
+}

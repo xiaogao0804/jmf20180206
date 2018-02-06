@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="../../../../publicJs/flexible.js"></script>
+    <link rel="stylesheet" href="../../../../publicCss/reset.css">
+    <link rel="stylesheet" href="../css/cartBag.css">
+    <title>详情</title>
+</head>
+<body id="cartBag">
+    <div class="wrap">
+        <div class="cart-bag-wrap">
+            <div class="cart-bag-cancel">取消</div>
+            <div class="clear"></div>
+            <div class="cart-bag-con">
+               <p>我的卡卷</p>
+                <div class="cart-bag-list">
+                    <div class="cart-bag-item clearFix">
+                        <div class="cart-bag-logo">logo</div>
+                        <div class="cart-bag-txt">
+                            <p>北京九门坊商贸股份有限公司</p>
+                            <p>老北京炸酱</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-bag-list">
+                    <div class="cart-bag-item clearFix">
+                        <div class="cart-bag-logo">logo</div>
+                        <div class="cart-bag-txt">
+                            <p>北京九门坊商贸股份有限公司</p>
+                            <p>老北京炸酱</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-bag-list">
+                    <div class="cart-bag-item clearFix">
+                        <div class="cart-bag-logo">logo</div>
+                        <div class="cart-bag-txt">
+                            <p>北京九门坊商贸股份有限公司</p>
+                            <p>老北京炸酱</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-bag-list">
+                    <div class="cart-bag-item clearFix">
+                        <div class="cart-bag-logo">logo</div>
+                        <div class="cart-bag-txt">
+                            <p>北京九门坊商贸股份有限公司</p>
+                            <p>老北京炸酱</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../../../../publicJs/zepto.js"></script>
+<script src ="../js/cartBag.js"></script>
+</html>

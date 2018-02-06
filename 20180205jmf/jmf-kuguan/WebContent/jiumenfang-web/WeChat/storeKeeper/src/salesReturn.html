@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="../../../publicJs/flexible.js"></script>
+    <link rel="stylesheet" href="../../../publicCss/reset.css">
+    <link rel="stylesheet" href="../../../publicCss/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/salesReturn.css">
+    <title>退货</title>
+</head>
+<body>
+   <div class="pappers-contain">
+       <div class="receiving-header">
+           <i class="fa fa-angle-left fa-3x"></i>
+           <span>退货</span>
+       </div>
+       <div class="pappers-info">
+              <form class="pappers-ipt" action="">
+                  <span>快递</span>
+                  <input type="text">
+              </form>
+
+           <form class="pappers-ipt" action="">
+               <span>运单</span>
+               <input type="text">
+           </form>
+
+           <form class="pappers-ipt" action="">
+               <span>产品</span>
+               <input type="text">
+           </form>
+           <form action="" class="pappers-num">
+               <span>数量</span>
+               <input type="text">
+           </form>
+       </div>
+       <div class="pappers-camera">
+           <div class="pappers-photograph">
+               <img src="image/camera.png" alt="">
+           </div>
+           <ul class="pappers-picture">
+               <li>
+                   <input id="fileBtn" type="file" onchange="upload('#fileBtn', '#img');" accept="image/*" capture="camera"/>
+                   <img src="" id="img" style="width:100%;height:100%;"/>
+                   <span>+</span>
+               </li>
+               <li>
+                   <input id="fileBtn2" type="file" onchange="upload('#fileBtn2', '#img2');" accept="image/*" capture="camera"/>
+                   <img src="" id="img2" style="width:100%;height:100%;"/>
+                   <span>+</span>
+               </li>
+               <li>
+                   <input id="fileBtn3" type="file" onchange="upload('#fileBtn3', '#img3');" accept="image/*" capture="camera"/>
+                   <img src="" id="img3" style="width:100%;height:100%;"/>
+                   <span>+</span>
+               </li>
+               <li>
+                   <input id="fileBtn4" type="file" onchange="upload('#fileBtn4', '#img4');" accept="image/*" capture="camera"/>
+                   <img src="" id="img4" style="width:100%;height:100%;"/>
+                   <span>+</span>
+               </li>
+               <li>
+                   <input id="fileBtn5" type="file" onchange="upload('#fileBtn5', '#img5');" accept="image/*" capture="camera"/>
+                   <img src="" id="img5" style="width:100%;height:100%;"/>
+                   <span>+</span>
+               </li>
+               <li>
+                   <input id="fileBtn6" type="file" onchange="upload('#fileBtn6', '#img6');" accept="image/*" capture="camera"/>
+                   <img src="" id="img6" style="width:100%;height:100%;"/>
+                   <span>+</span>
+               </li>
+           </ul>
+           <div class="clear"></div>
+            <div  class="pappers-btn">
+                <input type="button" value="提交">
+            </div>
+       </div>
+   </div>
+</body>
+<script src="../../../publicJs/jquery-3.2.1.min.js"></script>
+<script src="js/salesReturn.js"></script>
+</html>

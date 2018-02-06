@@ -1,0 +1,54 @@
+.wrap {
+  width: 100%;
+}
+.wrap .get-coupon-wrap {
+  width: 85%;
+  border: 1px solid #797979;
+  background-color: #F2F2F2;
+  margin: 2rem auto;
+  position: relative;
+}
+.wrap .get-coupon-wrap .coupon-company {
+  width: 100%;
+  color: #A1A1A1;
+  text-align: center;
+  margin: 1rem auto;
+}
+.wrap .get-coupon-wrap .coupon-name {
+  width: 100%;
+  text-align: center;
+  margin: 0.5rem auto 1rem;
+  font-size: 0.6933rem;
+  font-weight: bold;
+}
+.wrap .get-coupon-wrap .coupon-time {
+  color: #A1A1A1;
+  padding: 0.3rem 0;
+  text-indent: 0.5rem;
+  border-top: 1px solid #E4E4E4;
+}
+.wrap .get-coupon-wrap .cart-bag {
+  width: 40%;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #797979;
+  padding: 0.2rem 0;
+  margin: 0.3rem auto;
+}
+.wrap .get-coupon-wrap .cart-bag a {
+  color: #333333;
+  text-decoration: none;
+}
+.wrap .get-coupon-wrap .coupon-logo {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #fff;
+  text-align: center;
+  z-index: 999;
+  border: 1px solid #797979;
+  border-radius: 50%;
+  position: absolute;
+  top: -0.725rem;
+  left: 50%;
+  transform: translateX(-50%);
+}

@@ -1,0 +1,94 @@
+.contain {
+  width: 100%;
+  min-width: 1200px;
+}
+.contain .con-left {
+  width: 12%;
+  height: 100%;
+  float: left;
+  border: 1px solid #797979;
+  background-color: #66CC99;
+}
+.contain .con-left .con-left-name {
+  width: 100%;
+  text-align: center;
+  margin: 10px 0;
+  font-size: 18px;
+  color: #668575;
+}
+.contain .con-left .con-left-list {
+  width: 100%;
+  margin: 40px auto;
+}
+.contain .con-left .con-left-list .con-left-item {
+  width: 100%;
+  margin: 40px auto;
+}
+.contain .con-left .con-left-list .con-left-item .con-admin {
+  text-indent: 12px;
+}
+.contain .con-left .con-left-list .con-left-item .con-admin i {
+  color: #767676;
+  font-size: 26px;
+}
+.contain .con-left .con-left-list .con-left-item .con-admin span {
+  font-size: 20px;
+  padding-left: 8px;
+  color: #333;
+}
+.contain .con-left .con-left-list .con-left-item .con-admin .con-admin-name {
+  margin-left: 35px;
+}
+.contain .con-left .con-left-list .con-left-item .con-admin-list {
+  width: 100px;
+  margin: 10px auto;
+  font-size: 16px;
+}
+.contain .con-left .con-left-list .con-left-item .con-admin-list li {
+  margin: 8px 0;
+  color: #333;
+  cursor: pointer;
+}
+.contain .con-left .con-left-list .con-left-item .con-admin-list li i {
+  color: #747474;
+}
+.contain .con-left .con-left-list .con-left-item .con-admin-list li:nth-child(2) {
+  text-indent: 15px;
+}
+.contain .con-right {
+  width: 87.5%;
+  float: right;
+}
+.contain .con-right .con-right-name {
+  width: 450px;
+  margin: 20px auto;
+  font-size: 26px;
+  color: #4D4D4D;
+  font-weight: bolder;
+}
+.contain .con-right .con-right-login {
+  width: 500px;
+  margin: 200px auto;
+}
+.contain .con-right .con-right-login form {
+  font-size: 20px;
+  margin: 15px 0;
+}
+.contain .con-right .con-right-login form ::-webkit-input-placeholder {
+  font-size: 14px;
+  text-align: center;
+}
+.contain .con-right .con-right-login form ::-webkit-input-placeholder input {
+  font-size: 14px;
+}
+.contain .con-right .con-right-login .con-right-btn {
+  font-size: 14px;
+  margin-top: 30px;
+}
+.contain .con-right .con-right-login .con-right-btn input {
+  padding: 2px 16px;
+  border-radius: 3px;
+  margin: 5px 10px 5px 60px;
+  background-color: #F1F1F1;
+  cursor: pointer;
+}

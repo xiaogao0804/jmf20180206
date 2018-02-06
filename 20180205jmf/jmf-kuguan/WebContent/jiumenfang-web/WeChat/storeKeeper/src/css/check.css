@@ -1,0 +1,40 @@
+.check-contain {
+  width: 100%;
+  position: relative;
+  background-color:#495165;
+}
+.check-contain .receiving-header {
+  width: 100%;
+  background-color: #495165;
+  padding: 0.1rem 0;
+  color: #fff;
+  position: relative;
+}
+.check-contain .receiving-header i {
+  text-indent: 0.2rem;
+}
+.check-contain .receiving-header span {
+  position: absolute;
+  left: 50%;
+  top: 28%;
+  transform: translateX(-50%);
+  font-size: 0.5367rem;
+}
+.check-contain .storage-list {
+  width: 100%;
+  position: absolute;
+  left: 50.2%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.check-contain .storage-list li {
+  width: 24.6%;
+  text-align: center;
+  padding: 0.7rem 0;
+  background-color: #fff;
+  margin-right: 0.04rem;
+  margin-top: 0.04rem;
+  color: #495165;
+  float: left;
+  font-size: 1.0133rem;
+}

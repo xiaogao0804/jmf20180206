@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="keywords" content="九门坊，小酱仙，酱，面，料理">
+    <meta name="description" content="九门坊，小酱仙，酱，面，料理">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>九门坊官网</title>
+</head>
+<body style="background-color: #f1f1f1">
+ <div class="wrap">
+     <div class="header">
+         <div class="header-wrap">
+              <div class="logo-wrap">
+                <img src="image/logo.png" alt="">
+              </div>
+           <div class="tab-wrap">
+               <ul class="tab">
+                   <li>
+                       <a href="index.html">首页</a>
+                   </li>
+                   <li>
+                       <a href="brand.html">品牌</a>
+                   </li>
+                   <li>
+                       <a href="products.html" style="color: #f58466;">产品</a>
+                   </li>
+                   <li>
+                       <a href="info.html">公司   </a>
+                   </li>
+                   <li>
+                       <a href="contact.html">联系</a>
+                   </li>
+               </ul>
+           </div>
+         </div>
+       </div>
+     <div class="content-products">
+         <div class="products-banner" style="position:relative">
+             <img src="image/products-banner.png" alt="">
+             <a href="https://shop316095576.taobao.com/?spm=a230r.7195193.1997079397.2.y8UwWC" class="map6"></a>
+         </div>
+         <div class="products-list">
+              <div class="all-txt">
+                  <img src="image/all.png" alt="">
+              </div>
+             <div class="products-wrap">
+                 <ul class="products-all clearFix">
+                     <li>
+                         <a href="javascript:void(0)">
+                             <img src="image/products_1.jpg" alt="">
+                         </a>
+                     </li>
+                     <li>
+                         <a href="javascript:void(0)">
+                             <img src="image/products_2.jpg" alt="">
+                         </a>
+                     </li>
+                     <li>
+                         <a href="javascript:void(0)">
+                             <img src="image/products_3.jpg" alt="">
+                         </a>
+                     </li>
+                    <!--  <li>
+                         <a href="javascript:void(0)">
+                             <img src="image/products_4.jpg" alt="">
+                         </a>
+                     </li> -->
+                     <li>
+                         <a href="javascript:void(0)">
+                             <img src="image/products_5.jpg" alt="">
+                         </a>
+                     </li>
+                 </ul>
+                 <ul class="products-all clearFix">
+                     <li>
+                         <a href="javascript:void(0)">
+                             <img src="image/products_6.jpg" alt="">
+                         </a>
+                     </li>
+                    <!--  <li>
+                         <a href="javascript:void(0)">
+                             <img src="image/products_7.jpg" alt="">
+                         </a>
+                     </li> -->
+                     <li>
+                         <a href="javascript:void(0)">
+                             <img src="image/products_8.jpg" alt="">
+                         </a>
+                     </li>
+                  <li>
+                     <a href="javascript:void(0)">
+                         <img src="image/products_9.jpg" alt="">
+                     </a>
+                     </li>
+                     <!-- <li>
+                         <a href="javascript:void(0)">
+                             <img src="image/products_10.jpg" alt="">
+                         </a>
+                     </li> -->
+                     <li style="border: none;">
+                         <a href="javascript:void(0)">
+                             <img src="" alt="">
+                         </a>
+                     </li>
+                 </ul>
+                 <ul class="products-all clearFix">
+                     <li style="border: none;">
+                         <a href="javascript:void(0)">
+                             <img src="" alt="">
+                         </a>
+                     </li>
+                 </ul>
+             </div>
+
+         </div>
+     </div>
+     <div class="top-wrap">
+         <img src="image/top.png" alt="" class="returnTop">
+     </div>
+     <div class="footer">
+         <img src="image/footer.png" alt="">
+     </div>
+ </div>
+</body>
+<script src="jquery-3.2.1.min.js"></script>
+<script>
+    $('.returnTop').click(function(){
+        $('body,html').animate({ scrollTop: 0 }, 500);
+        return false;
+    })
+</script>
+</html>

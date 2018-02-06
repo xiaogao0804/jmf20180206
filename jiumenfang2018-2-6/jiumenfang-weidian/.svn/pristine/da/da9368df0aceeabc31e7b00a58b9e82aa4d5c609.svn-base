@@ -1,0 +1,97 @@
+body,html{
+    width:100%;
+}
+
+.content{
+    width:100%;
+    padding-top: 100px;
+}
+
+.content .banner img, .content .brand img, .content .products img, .content .info img, .content .contact img{
+    width:100%;
+}
+.content .banner, .content .brand, .content .products, .content .lun, .content .info, .content .contact{
+    width:100%;
+}
+.wrap .lun .swiper-button-next{
+        background-image: url(../image/icon-right.png);
+}
+.wrap .lun .swiper-button-prev{
+    background-image: url(../image/icon-left.png);
+}
+.swiper-container,.swiper-wrapper, .swiper-slide{
+    width:100%;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active{
+    background: #f68563;
+}
+.lun .swiper-slide img{
+    width:100%;
+}
+
+/*閸濅胶澧濈粻锟界矙*/
+.content-brand{
+    width:100%;
+    padding-top: 100px;
+}
+.content-brand img{
+    width:100%;
+}
+
+/*閸忣剙寰冪粻锟界矙*/
+.content-info{
+    width:100%;
+    padding-top: 100px;
+}
+.content-info img{
+    width:100%;
+}
+
+/*閸忋劑鍎存禍褍鎼�/
+.content-products{
+    width:100%;
+    background-color: #f1f1f1;
+    padding-top: 100px;
+}
+.products-banner{
+    width:100%;
+}
+.products-banner img{
+    width:100%;
+}
+.products-list{
+    width:100%;
+    margin:0 auto;
+}
+.products-wrap{
+    width:100%;
+    margin:80px auto;
+}
+.all-txt img{
+    width:100%;
+}
+.products-all{
+    width:92%;
+    margin:40px auto;
+    display: flex;
+    display:-webkit-flex;
+    flex-direction: row;
+    justify-content:center;
+}
+.products-all li{
+    float: left;
+    margin-right:35px;
+    border-radius: 12px;
+    box-shadow:0px 0px 4px #f1edea;
+    flex-grow:1;
+    flex-shrink:1;
+    flex-basis: 25%;
+}
+.products-all li img{
+    width:100%;
+    display: block;
+}
+.products-all li:last-child{
+    margin-right: 0;
+}

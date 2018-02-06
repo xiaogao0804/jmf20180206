@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../../publicCss/reset.css">
+    <link rel="stylesheet" href="../../../publicCss/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>后台</title>
+</head>
+<body>
+   <div class="contain">
+       <div class="header clearFix">
+           <div class="header-left">超级管理员</div>
+           <div class="header-right clearFix">
+               <img src="image/logo.png" alt="">
+           </div>
+
+       </div>
+       <div class="con clearFix">
+           <div class="con-left">
+               <ul>
+                   <li>
+                       <a href="inventory.html">库存</a>
+                   </li>
+                   <li style="background-color:#F7F8FD;color:#FD6C6E;">
+                       <a href="shipmentOrder.html">出货订单</a>
+                   </li>
+                   <li>
+                       <a href="check.html">盘点</a>
+                   </li>
+                   <li>
+                       <a href="pappers.html">单证</a>
+                   </li>
+                   <li>
+                       <a href="returns.html">退货</a>
+                   </li>
+                   <li>
+                       <a href="permission.html">权限管理</a>
+                   </li>
+               </ul>
+           </div>
+           <div class="con-right clearFix">
+               <div class="shipmentOrder-page page clearFix">
+                  <div class="order-inquire clearFix">
+                      <select name="" id="year">
+                          <option value="年份">年份</option>
+                          <option value="2017">2017</option>
+                      </select>
+                      <select name="" id="month">
+                          <option value="月份">月份</option>
+                          <option value="1月">1月</option>
+                          <option value="2月">2月</option>
+                          <option value="3月">3月</option>
+                          <option value="4月">4月</option>
+                          <option value="5月">5月</option>
+                          <option value="6月">6月</option>
+                          <option value="7月">7月</option>
+                          <option value="8月">8月</option>
+                          <option value="9月">9月</option>
+                          <option value="10月">10月</option>
+                          <option value="11月">11月</option>
+                          <option value="12月">12月</option>
+                      </select>
+                      <input type="button" value="查询" class="inquire-btn">
+                      <input  type="button" class="export-excel" value="导出Excel">
+                  </div>
+                   <div class="order-list">
+                       <table>
+                           <tr>
+                               <th>订单号</th>
+                               <th>入库批次</th>
+                               <th style="position: relative;">
+                                   品名
+                                   <div class="pop-up">
+                                       <p>老北京肉丁杂酱</p>
+                                       <p>老北京肉丁杂酱</p>
+                                       <p>老北京肉丁杂酱</p>
+                                   </div>
+                                   <img src="image/arrow.jpg" alt="" class="arrow" style="cursor:pointer;position: absolute;right:30px;top:50%;transform: translateY(-50%)">
+                               </th>
+                               <th>发货数</th>
+                               <th>库位</th>
+                               <th>渠道</th>
+                               <th>运输</th>
+                               <th>城市</th>
+                               <th>库管</th>
+                           </tr>
+                           <tr>
+                               <td>20170901001</td>
+                               <td>G695667920001920170702</td>
+                               <td>老北京肉丁杂酱</td>
+                               <td>2</td>
+                               <td>A</td>
+                               <td class="td-txt">订单回指</td>
+                               <td class="td-txt">订单回指</td>
+                               <td class="td-txt">订单回指</td>
+                               <td class="td-txt">前端回指</td>
+                           </tr>
+                           <tr>
+                               <td>20170901001</td>
+                               <td>G695667920001920170702</td>
+                               <td>老北京肉丁杂酱</td>
+                               <td>2</td>
+                               <td>A</td>
+                               <td class="td-txt">订单回指</td>
+                               <td class="td-txt">订单回指</td>
+                               <td class="td-txt">订单回指</td>
+                               <td class="td-txt">前端回指</td>
+                           </tr>
+                           <tr>
+                               <td>20170901001</td>
+                               <td>G695667920001920170702</td>
+                               <td>老北京肉丁杂酱</td>
+                               <td>2</td>
+                               <td>A</td>
+                               <td class="td-txt">订单回指</td>
+                               <td class="td-txt">订单回指</td>
+                               <td class="td-txt">订单回指</td>
+                               <td class="td-txt">前端回指</td>
+                           </tr>
+                           <tr>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                           </tr>
+                           <tr>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                           </tr>
+                           <tr>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                           </tr>
+                           <tr>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                           </tr>
+                           <tr>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                           </tr>
+                           <tr>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                           </tr>
+                           <tr>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                           </tr>
+                       </table>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+</body>
+<script src="../../../publicJs/jquery-3.2.1.min.js"></script>
+<script src="../../../publicJs/jquery.provincesCity.js"></script>
+<script src="../../../publicJs/provincesData.js"></script>
+<script src="js/index.js"></script>
+</html>

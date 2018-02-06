@@ -1,0 +1,131 @@
+.contain {
+  width: 100%;
+  border-top: 1px solid #fff;
+}
+.contain .cart-foods-list {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.contain .cart-foods-list .cart-foods {
+  border-bottom: 1px solid #ccc;
+  padding: 0.7rem 0;
+  position: relative;
+}
+.contain .cart-foods-list .cart-foods .checkbox {
+  float: left;
+  margin-left: 0.25rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.5rem;
+  color: #DADADA;
+}
+.contain .cart-foods-list .cart-foods .checkbox .fa-check-circle {
+  color: #DC9148;
+  display: none;
+}
+.contain .cart-foods-list .cart-foods img {
+  width: 2rem;
+  height: 1.6rem;
+  float: left;
+  margin-left: 1.2rem;
+}
+.contain .cart-foods-list .cart-foods .cart-foods-info {
+  float: left;
+  margin-left: 3.7rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.3733rem;
+}
+.contain .cart-foods-list .cart-foods .cart-foods-info .cart-foods-price {
+  color: #FFA54C;
+  margin-top: 0.2rem;
+}
+.contain .cart-foods-list .cart-foods .change-num {
+  border: 1px solid #CFCFCF;
+  position: absolute;
+  top: 50%;
+  right: 0.35rem;
+  transform: translateY(-50%);
+}
+.contain .cart-foods-list .cart-foods .change-num p {
+  float: left;
+  padding: 0.05rem 0.3rem;
+  border-right: 1px solid #CFCFCF;
+  font-size: 0.3733rem;
+}
+.contain .cart-foods-list .cart-foods .change-num .foods-add {
+  border-right: none;
+  color: #FF9933;
+}
+.contain .cart-foods-list .cart-foods-btn {
+  width: 2rem;
+  height: 100%;
+  font-size: 0.3733rem;
+  background-color: #FF0000;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  margin-left: 10rem;
+}
+.contain .cart-foods-list .cart-foods-btn span {
+  position: absolute;
+  top: 50%;
+  left: 32%;
+  transform: translateY(-50%);
+}
+.contain .cart-accounts {
+  width: 100%;
+  height: 1rem;
+  position: fixed;
+  bottom: 0;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+  z-index: 999;
+}
+.contain .cart-accounts .checkboxAll {
+  width: 20%;
+  float: left;
+  margin-left: 0.25rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.5rem;
+  color: #DADADA;
+}
+.contain .cart-accounts .checkboxAll .fa-check-circle {
+  color: #DC9148;
+  display: none;
+}
+.contain .cart-accounts .checkboxAll span {
+  color: #000;
+  font-size: 0.3733rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0.55rem;
+}
+.contain .cart-accounts .priceAll {
+  float: left;
+  margin-left: 4.8rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.contain .cart-accounts .priceAll .price {
+  font-size: 0.3733rem;
+}
+.contain .cart-accounts .priceAll .notCar {
+  font-size: 0.16rem;
+  color: #807e7e;
+}
+.contain .cart-accounts .accounts {
+  color: #fff;
+  padding: 0.32rem 1rem;
+  background-color: #FF9933;
+  float: right;
+  font-size: 0.3733rem;
+}

@@ -1,0 +1,57 @@
+html,
+body {
+  font-size: 10px;
+}
+.contain {
+  width: 90%;
+  margin: 0 auto;
+}
+.contain .header {
+  margin-top: 1.5rem;
+}
+.contain .header .header-name {
+  text-align: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #bbb;
+  position: relative;
+}
+.contain .header .header-name a {
+  position: absolute;
+  top: 1rem;
+  right: 1.2rem;
+  text-decoration: underline;
+}
+.contain .content {
+  width: 90%;
+  margin: 0rem auto;
+}
+.contain .content .content-banner {
+  margin: 1rem auto;
+  text-align: center;
+}
+.contain .content .content-banner a {
+  display: inline-block;
+}
+.contain .content .content-banner a img {
+  width: 100%;
+}
+.contain .content .content-list {
+  width: 100%;
+}
+.contain .content .content-list .content-item {
+  position: relative;
+}
+.contain .content .content-list .content-item h2 {
+  margin: 1rem 0;
+}
+.contain .content .content-list .content-item img {
+  width: 100%;
+}
+.contain .content .content-list .content-item i {
+  padding: 0.2rem 0.8rem;
+  background-color: #999999;
+  border: 1px solid #797979;
+  position: absolute;
+  bottom: 0.6rem;
+  right: 0;
+}

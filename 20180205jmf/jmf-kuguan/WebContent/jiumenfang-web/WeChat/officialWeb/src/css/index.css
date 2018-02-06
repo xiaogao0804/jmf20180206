@@ -1,0 +1,109 @@
+.contain {
+  width: 100%;
+}
+.contain .header {
+  width: 100%;
+  background-color: #F2F2F2;
+  border-bottom: 1px solid #000;
+  padding: 0.25rem 0;
+  text-align: center;
+  font-size: 0.5333rem;
+  position: relative;
+  font-weight: bold;
+}
+.contain .header i {
+  position: absolute;
+  color: #000;
+  left: 0.2rem;
+  top: 0.33rem;
+}
+.contain .banner {
+  width: 100%;
+  border-bottom: 1px solid #000;
+}
+.contain .banner img {
+  width: 100%;
+  vertical-align: top;
+  display: block;
+}
+.contain .list {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+.contain .list .list-item {
+  margin-top: 0.35rem;
+  width: 100%;
+}
+.contain .list .list-item h2 {
+  text-align: center;
+}
+.contain .list .list-item ul {
+  width: 80%;
+  margin: 0 auto;
+}
+.contain .list .list-item ul li {
+  width: 45%;
+  float: left;
+  padding: 0.3rem 0;
+}
+.contain .list .list-item ul li p {
+  text-align: center;
+  margin-top: 0.2rem;
+}
+.contain .list .list-item ul li .price {
+  color: #FF5D39;
+}
+.contain .list .list-item ul li img {
+  width: 100%;
+}
+.contain .list .list-item ul li:nth-child(2n) {
+  float: right;
+}
+.contain .list .list-hot {
+  display: none;
+}
+.contain .list .list-nohot {
+  display: none;
+}
+.contain .bar {
+  width: 100%;
+  background-color: #AEAEAE;
+}
+.contain .bar .select {
+  display: block;
+}
+.contain .bar .all-val {
+  width: 100%;
+  padding: 0.18rem 0;
+  position: relative;
+  border-bottom: 1px solid #000;
+}
+.contain .bar .all-val span {
+  margin-left: 0.2rem;
+}
+.contain .bar .all-val i {
+  position: absolute;
+  right: 0.25rem;
+  top: 0.08rem;
+}
+.contain .bar ul {
+  width: 100%;
+  display: none;
+  position: absolute;
+  background-color: #AEAEAE;
+  z-index: 999;
+}
+.contain .bar ul li {
+  width: 100%;
+  padding: 0.18rem 0;
+  position: relative;
+  border-bottom: 1px solid #000;
+}
+.contain .bar ul li span {
+  margin-left: 0.2rem;
+}
+.contain .bar ul li i {
+  position: absolute;
+  right: 0.25rem;
+  top: 0.08rem;
+}

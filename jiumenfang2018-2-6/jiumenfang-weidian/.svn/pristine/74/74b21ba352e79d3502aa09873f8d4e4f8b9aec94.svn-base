@@ -1,0 +1,192 @@
+.wrap{
+  width:100%;
+  .contain{
+    width:100%;
+    position: relative;
+    .header{
+      width:100%;
+      position: relative;
+      text-align: center;
+      line-height: 0.7rem;
+      top:0.2rem;
+      color: #000;
+      .fa-long-arrow-left{
+        color: #ABABAB;
+        position: absolute;
+        left:0.2rem;
+      }
+      .fa-remove{
+        color: #ABABAB;
+        position: absolute;
+        top:0.1rem;
+        right:0.1rem;
+        font-size: 0.5rem;
+      }
+    }
+    .con-list-wrap{
+      width:100%;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #ccc;
+      .con-list{
+        width:95%;
+        margin-left:0.5rem;
+        position: relative;
+        top:0.5rem;
+        .con-list-item{
+          margin-bottom: 0.3rem;
+          font-size:0.3733rem;
+          .item-num{
+            float: left;
+            .recipient{
+              float: left;
+            }
+            .tel{
+              float: left;
+              margin-left: 3.5rem;
+            }
+          }
+          .item-price{
+            float: right;
+            margin-right: 1rem;
+            color: red;
+          }
+        }
+        .pay-btn{
+            padding:0.1rem 0.2rem;
+            position: absolute;
+            top:50%;
+            right:0;
+            font-size: 0.3rem;
+            background-color: #FF9933;
+            a{
+              color: #fff;
+              text-decoration: none;
+            }
+
+          }
+        .shipments-btn{
+            padding:0.1rem 0.2rem;
+            position: absolute;
+            top:50%;
+            right:0;
+            font-size: 0.3rem;
+            background-color: #C9C9C9;
+            a{
+              color: #000;
+              text-decoration: none;
+            }
+
+          }
+        .refund-btn{
+          padding:0.1rem 0.2rem;
+          position: absolute;
+          top:50%;
+          right:0;
+          font-size: 0.3rem;
+          background-color: #C9C9C9;
+          a{
+            color: #000;
+            text-decoration: none;
+          }
+
+        }
+      }
+    }
+    .mask-pop{
+      width:100%;
+      background-color: rgba(0,0,0,0.65);
+      position: absolute;
+      top:0;
+      left:0;
+      display: none;
+      .pop-info{
+        width:5rem;
+        border:1px solid #7E7E7E;
+        border-radius: 0.25rem;
+        padding:1rem 1rem;
+        background-color: #fff;
+        margin:50% auto;
+        text-align: center;
+        font-size: 0.3733rem;
+        .pop-txt{
+          margin-bottom: 1rem;
+          color: #3C3333;
+        }
+        .pop-cancel{
+          float: left;
+          padding:0.1rem 0.8rem;
+          border-radius: 0.13rem;
+          border:1px solid #A0A0A0;
+          background-color: #F4F4F4;
+          color: #656567;
+        }
+        .pop-confirm{
+          float: right;
+          padding:0.1rem 0.8rem;
+          border-radius: 0.13rem;
+          border:1px solid #A0A0A0;
+          background-color: #F4F4F4;
+          color:#656567;
+        }
+      }
+      .pop-del{
+        width:0.75rem;
+        height:0.75rem;
+        border:2px solid #fff;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 0.75rem;
+        color: #fff;
+        margin:6rem auto 0;
+      }
+    }
+    .mask-pop-logistics{
+      width:100%;
+      background-color: rgba(0,0,0,0.65);
+      position: absolute;
+      top:0;
+      left:0;
+      display: none;
+      .pop-info{
+        width:5rem;
+        border:1px solid #7E7E7E;
+        border-radius: 0.25rem;
+        padding:1rem 1rem;
+        background-color: #fff;
+        margin:50% auto;
+        text-align: center;
+        font-size: 0.3733rem;
+        .pop-txt{
+          margin-bottom: 1rem;
+          color: #3C3333;
+        }
+        .pop-cancel{
+          float: left;
+          padding:0.1rem 0.8rem;
+          border-radius: 0.13rem;
+          border:1px solid #A0A0A0;
+          background-color: #F4F4F4;
+          color: #656567;
+        }
+        .pop-confirm{
+          float: right;
+          padding:0.1rem 0.8rem;
+          border-radius: 0.13rem;
+          border:1px solid #A0A0A0;
+          background-color: #F4F4F4;
+          color:#656567;
+        }
+      }
+      .pop-del{
+        width:0.75rem;
+        height:0.75rem;
+        border:2px solid #fff;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 0.75rem;
+        color: #fff;
+        margin:6rem auto 0;
+      }
+    }
+  }
+}

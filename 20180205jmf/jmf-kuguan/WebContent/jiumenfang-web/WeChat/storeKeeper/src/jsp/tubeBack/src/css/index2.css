@@ -1,0 +1,150 @@
+.contain {
+  width: 100%;
+  background-color: #F7F8FD;
+}
+.contain .header {
+  width: 100%;
+}
+.contain .header .header-left {
+  width: 16%;
+  float: left;
+  background-color: #FD6C6E;
+  font-size: 1.8rem;
+  padding: 20px 0;
+  text-align: center;
+}
+.contain .header .header-right {
+  width: 84%;
+  float: right;
+  background-color: #5B6478;
+  padding: 15px 0;
+}
+.contain .header .header-right img {
+  width: 160px;
+  float: right;
+  margin-right: 50px;
+}
+.contain .con {
+  width: 100%;
+}
+.contain .con .con-left {
+  width: 16%;
+  height: 100%;
+  float: left;
+}
+.contain .con .con-left ul {
+  width: 100%;
+  height: 100%;
+  background-color: #E5EDEF;
+}
+.contain .con .con-left ul li {
+  padding: 20px 0;
+  border: 1px solid #000;
+  border-top: none;
+  border-right: none;
+  text-align: center;
+  font-size: 24px;
+  background-color: #E5EDEF;
+  cursor: pointer;
+}
+.con-left ul li a{
+  text-decoration: none;
+  color: #000;
+  
+}
+.contain .con .con-right {
+  width: 84%;
+  height: 100%;
+  background-color: #F7F8FD;
+  float: right;
+}
+.contain .con .con-right .select {
+  display: block;
+}
+.contain .con .con-right .noselect {
+  display: none;
+}
+
+
+.contain .con .con-right .shipmentOrder-page {
+  width: 100%;
+}
+.contain .con .con-right .shipmentOrder-page .order-inquire {
+  font-size: 14px;
+}
+.contain .con .con-right .shipmentOrder-page .order-inquire select {
+  float: left;
+  width: 60px;
+  height: 30px;
+}
+.contain .con .con-right .shipmentOrder-page .order-inquire #year {
+  margin: 18px 30px 18px 50px;
+}
+.contain .con .con-right .shipmentOrder-page .order-inquire #month {
+  margin: 18px 0;
+}
+.contain .con .con-right .shipmentOrder-page .order-inquire .inquire-btn {
+  float: left;
+  margin: 18px 50px 18px 30px;
+  color: #fff;
+  padding: 6px 18px;
+  background-color: #5B6478;
+  cursor: pointer;
+  border: 1px solid #fff;
+  border-radius: 6px;
+}
+.contain .con .con-right .shipmentOrder-page .order-inquire .export-excel {
+  float: right;
+  margin: 18px 100px;
+  color: #fff;
+  padding: 6px 15px;
+  background-color: #5B6478;
+  cursor: pointer;
+  border: 1px solid #fff;
+  border-radius: 6px;
+}
+.contain .con .con-right .shipmentOrder-page .order-list .pop-up {
+  width: 150px;
+  height: 120px;
+  border: 1px solid #000;
+  font-size: 16px;
+  background-color: #fff;
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  z-index: 999;
+  display: none;
+}
+.contain .con .con-right .shipmentOrder-page .order-list .pop-up p {
+  margin-top: 15px;
+  cursor: pointer;
+}
+.contain .con .con-right .shipmentOrder-page .order-list table {
+  width: 95%;
+  float: left;
+  margin: 20px 30px;
+  background-color: #fff;
+  font-size: 18px;
+}
+.contain .con .con-right .shipmentOrder-page .order-list .s{
+  width: 95%;
+  float: left;
+  margin: 20px 30px;
+  background-color: #fff;
+  font-size: 18px;
+}
+.contain .con .con-right .shipmentOrder-page .order-list table tr {
+  height: 50px;
+  border-bottom: 1px solid #ccc;
+}
+.contain .con .con-right .shipmentOrder-page .order-list table tr .td-txt {
+  color: #3399FF;
+}
+.contain .con .con-right .shipmentOrder-page .order-list table tr td {
+  text-align: center;
+}
+.contain .con .con-right .shipmentOrder-page .order-list table tr td .con-txt {
+  width: 100px;
+  height: 30px;
+  text-align: center;
+}

@@ -1,0 +1,160 @@
+.wrap {
+  width: 100%;
+  background-color: #F2F5f5;
+}
+.contain {
+  width: 100%;
+  background-color: #F2F5f5;
+  border-top: 1px solid #fff;
+  position: relative;
+  top:0.3rem;
+}
+.contain .header {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  position: relative;
+  margin-top: 0.3rem;
+  padding: 0.2rem 0;
+  font-size: 0.5rem;
+}
+.contain .header .fa-arrow-left {
+  position: absolute;
+  left: 0.3rem;
+  color: #ccc;
+}
+.contain .header .fa-remove {
+  position: absolute;
+  right: 0.3rem;
+  color: #ccc;
+}
+.contain .pay-infoWrap, .contain .pay-addressWrap{
+  width:100%;
+  background-color: #FFF;
+  margin: 0 auto;
+}
+.pay-info, .pay-address{
+  width:96%;
+  margin-left:4%;
+  margin-bottom:0.2rem;
+  background-color: #fff;
+}
+.pay-info .info-num, .pay-address .info-num{
+  padding:0.35rem 0;
+  color: #000;
+  font-size: 0.4rem;
+  border-bottom:1px solid #F2F5f5;
+    position: relative;
+}
+.pay-info .pay-lay, .pay-address  .pay-lay{
+  float: left;
+}
+.pay-info .pay-iptWrap, .pay-address .pay-iptWrap{
+  float: left;
+  margin-left: 0.5rem;
+}
+.pay-iptWrap .pay-ipt{
+  border:none;
+  margin-top:0.12rem;
+}
+.pay-ipt::placeholder{
+  color: #c7c7cd;
+}
+.user-address .detailed-address, .user-address input, .info-num .site-name, .info-num #province{
+    float: left;
+}
+.user-address input{
+    border:none;
+}
+.info-num #province{
+    margin-left: 0.8rem;
+}
+.user-address input::placeholder{
+    color: #c7c7cd;
+}
+.contain .foods-list {
+    width: 100%;
+    padding: 0.35rem 0;
+    margin-top: 0.04rem;
+    background-color: #fff;
+}
+.contain .foods-list .foods-list-item {
+  width: 90%;
+  margin: 0 auto;
+}
+.contain .foods-list .foods-list-item .foods-item-img {
+  float: left;
+}
+.contain .foods-list .foods-list-item .foods-item-img img {
+  width: 3rem;
+  height: 2.5rem;
+}
+.contain .foods-list .foods-list-item .foods-item-name {
+  float: left;
+  margin-left: 5%;
+  margin-top: 0.3rem;
+}
+.contain .foods-list .foods-list-item .foods-item-name .item-name {
+    color: #000;
+    font-size: 0.32rem;
+}
+.contain .foods-list .foods-list-item .foods-item-name .item-number{
+    font-size:0.2667rem;
+    color: #474344;
+    margin-top: 0.1rem;
+}
+.contain .foods-list .foods-list-item .foods-item-name .item-old{
+    margin-top: 0.25rem;
+
+}
+.contain .foods-list .foods-list-item .foods-item-name .item-old i {
+    font-size: 0.32rem;
+    color: #000;
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+.contain .foods-list .foods-list-item .foods-item-name .item-new{
+    margin-top: 0.2rem;
+}
+.contain .foods-list .foods-list-item .foods-item-name .item-new i {
+    font-size: 0.48rem;
+    color: #ff4891;
+}
+.contain .foods-list .foods-list-item .foods-item-num {
+  float: right;
+  margin-top: 1rem;
+}
+.footer {
+     width: 100%;
+    padding: 0.3rem 0;
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+    margin-top:0.5rem;
+}
+.footer .footer-paid-name {
+    width: 60%;
+    padding:0.4rem 0;
+    float: left;
+    text-align: center;
+    font-size: 0.4267rem;
+}
+.footer .footer-paid-name span{
+    color: #000;
+}
+.footer .footer-paid-name i{
+    color: #ff4891;
+}
+.footer .footer-paid-btn{
+    width:40%;
+    float: right;
+    color: #fff;
+}
+.footer .footer-paid-btn .paid-btn{
+    width:90%;
+    padding:0.4rem 0;
+    background-color: #ff4891;
+    font-size: 0.4267rem;
+    text-align: center;
+    border-radius: 0.3rem;
+}

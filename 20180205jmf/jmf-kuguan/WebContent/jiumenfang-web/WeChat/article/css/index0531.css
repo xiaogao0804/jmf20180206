@@ -1,0 +1,48 @@
+html,body{
+    font-size:10px;
+}
+.box{
+    width:94%;
+    margin:0 auto;
+}
+.box .header{
+    margin:1.5rem 0;
+    border:1px solid #fff;
+}
+.header .userTime{
+    margin: 0.5rem 0;
+    color: #8C8C8C;
+    font-size: 1.6rem;
+}
+.header .name{
+    color: rgb(56, 142, 221);
+}
+.box .content img{
+    width:100%;
+}
+.box .content p{
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+    color: #333;
+    margin: 1rem 0;
+}
+.content-con h3{
+    margin:2rem 0;
+    color: #FF2941;
+    font-size: 1.8rem;
+}
+.box .footer{
+    margin: 1.2rem 0 0.3rem 0;
+}
+.footer ul{
+    height:2rem;
+}
+.footer ul li{
+    color:#8C8C8C;
+    float: left;
+    margin-right:1rem;
+    font-size: 1.6rem;
+}
+.footer ul li i{
+    color: rgb(56, 142, 221);
+}

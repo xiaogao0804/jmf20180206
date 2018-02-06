@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<!--<script src="../../../../publicJs/flexible.js"></script>-->
+    <link rel="stylesheet" href="../../../../publicCss/reset.css">
+    <link rel="stylesheet" href="../css/singlePro.css">
+    <link rel="stylesheet" href="../../../../publicCss/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../../../publicCss/swiper.min.css">
+    <title>商品详情</title>
+</head>
+<body>
+   <div class="wrap">
+       <div class="single-con">
+           <div class="single-header">
+               <i class="fa fa-angle-left fa-2x"></i>
+               <a href="./myOrder.html">
+                   <span>我的订单</span>
+               </a>
+
+           </div>
+           <div class="single-banner swiper-container">
+               <div class="swiper-wrapper">
+                   <div class="swiper-slide">
+                       <a href="#">
+                           <img src="../image/banner.jpg" alt="">
+                       </a>
+                   </div>
+                   <div class="swiper-slide">
+                       <a href="#">
+                           <img src="../image/banner.jpg" alt="">
+                       </a>
+                   </div>
+                   <div class="swiper-slide">
+                       <a href="#">
+                           <img src="../image/banner.jpg" alt="">
+                       </a>
+                   </div>
+           </div>
+           </div>
+           <div class="single-info">
+             <div class="single-price">
+                 <p>
+                     <span>香菇炸酱</span>
+                     <i class="fa fa-rmb">12</i>
+                 </p>
+                 <p class="num">已卖出9999份</p>
+             </div>
+               <div class="single-activity">
+                   <p>
+                       <span>促销活动</span>
+                       <span class="coupon">点击领取优惠券</span>
+                       <i class="fa fa-angle-right"></i>
+                   </p>
+               </div>
+           </div>
+           <div class="single-list">
+               <ul class="tab-nav clearFix">
+                   <li class="tab-nav-active">商品详情</li>
+                   <li>规格参数</li>
+                   <!--<li>商品评论</li>-->
+               </ul>
+               <ul class="tab-info clearFix">
+                   <li class="tab-info-active">
+                       <p>化学与使用电池的充电也差不多也差不多要承担补充一点不吃的也差不多也差不多远程吧</p>
+                       <img src="../image/banner.jpg" alt="">
+                       <p>化学与使用电池的充电也差不多也差不多要承担补充一点不吃的也差不多也差不多远程吧</p>
+                       <img src="../image/banner.jpg" alt="">
+                       <div class="tab-info-info clearFix">
+                           <div class="tab-info-text">
+                               大家都金额达呢到呢到呢U盾呢U盾呢U盾呢U盾呢U盾呢
+                           </div>
+                           <div class="tab-info-img">
+                               <img src="../image/banner.jpg" alt="">
+                           </div>
+                       </div>
+                       <div class="tab-info-info clearFix">
+                           <div class="tab-info-img">
+                               <img src="../image/banner.jpg" alt="">
+                           </div>
+                           <div class="tab-info-text">
+                               大家都金额达呢到呢到呢U盾呢U盾呢U盾呢U盾呢U盾呢
+                           </div>
+                       </div>
+                   </li>
+                   <li class="format clearFix">
+                       <div class="format-icon">
+                           <img src="../image/icon.png" alt="">
+                           <p class="icon-name">包装规格</p>
+                           <p class="icon-info">金属盖子、钢化玻璃瓶、包装纸</p>
+                       </div>
+                       <div class="format-icon">
+                           <img src="../image/icon.png" alt="">
+                           <p class="icon-name">颜色规格</p>
+                           <p class="icon-info">黑色、黄色、红色</p>
+                       </div>
+                       <div class="format-icon">
+                           <img src="../image/icon.png" alt="">
+                           <p class="icon-name">毛重、净重</p>
+                           <p class="icon-info">毛重180g、净重120g</p>
+                       </div>
+                       <div class="format-icon">
+                           <img src="../image/icon.png" alt="">
+                           <p class="icon-name">产地</p>
+                           <p class="icon-info">河北省三河市区</p>
+                       </div>
+                       <div class="format-icon">
+                           <img src="../image/icon.png" alt="">
+                           <p class="icon-name">保质期</p>
+                           <p class="icon-info">保质期6个月</p>
+                       </div>
+                       <div class="format-icon">
+                           <img src="../image/icon.png" alt="">
+                           <p class="icon-name">存放</p>
+                           <p class="icon-info">常温保存、避免阳光直射及高温、鼓胀</p>
+                       </div>
+                       <div class="format-icon">
+                           <img src="../image/icon.png" alt="">
+                           <p class="icon-name">配方</p>
+                           <p class="icon-info">黄豆酱、鲜猪肉、色拉油、葱、姜、八角、白砂糖、味精、料酒、添加剂（山梨酸钾）</p>
+                       </div>
+                       <div class="format-icon">
+                           <img src="../image/icon.png" alt="">
+                           <p class="icon-name">批号</p>
+                           <p class="icon-info">产品标准号：Q/YZSP 0001S-2014</p>
+                           <p class="icon-info">食品生产许可编号：SC10313108200244</p>
+                       </div>
+                       <div class="clear"></div>
+                       <div class="nutrient">
+                           <span>营养成分表：</span>
+                           <table border="1">
+                               <tr>
+                                   <td>项目</td>
+                                   <td>每100g</td>
+                                   <td>营养参考值%</td>
+                               </tr>
+                               <tr>
+                                   <td>能量</td>
+                                   <td>899千焦</td>
+                                   <td>11%</td>
+                               </tr>
+                               <tr>
+                                   <td>蛋白质</td>
+                                   <td>11.0g</td>
+                                   <td>18%</td>
+                               </tr>
+                               <tr>
+                                   <td>脂肪</td>
+                                   <td>14.6g</td>
+                                   <td>24%</td>
+                               </tr>
+                               <tr>
+                                   <td>碳水化合物</td>
+                                   <td>9.5g</td>
+                                   <td>3%</td>
+                               </tr>
+                               <tr>
+                                   <td>钠</td>
+                                   <td>2148mg</td>
+                                   <td>107%</td>
+                               </tr>
+                           </table>
+                       </div>
+                   </li>
+                  <!-- <li>xxxxxxx</li>-->
+               </ul>
+           </div>
+       </div>
+       <div class="single-footer-wrap">
+           <div class="single-footer clearFix">
+               <div class="shopping-bag">
+                   <i class="fa fa-shopping-cart"></i>
+                   <span class="shopping-bag-font">购物车</span>
+                   <span class="shopping-num"></span>
+               </div>
+               <div class="shopping-bag-add">
+                   加入购物车
+               </div>
+               <div class="shopping-bag-settlement">
+                   立刻购买
+               </div>
+           </div>
+           <!--加入购物车-->
+           <div class="shopping-pop-cart">
+               <div class="pop-remove">X</div>
+               <div class="pop-name">
+                   <img src="../image/icon.png" alt="">
+                   <p>香菇炸酱</p>
+                   <p class="pop-price">
+                       <i class="fa fa-rmb">12</i>
+                   </p>
+               </div>
+               <div class="pop-num">
+                   <div>数量</div>
+                   <div class="pop-change clearFix">
+                       <p class="pop-change-subtract">-</p>
+                       <p class="pop-change-num">1</p>
+                       <p class="pop-change-add">+</p>
+                   </div>
+               </div>
+               <div class="pop-footer">确定</div>
+           </div>
+           <!--立即购买-->
+           <div class="shopping-pop">
+               <div class="pop-remove">X</div>
+               <div class="pop-name">
+                   <img src="../image/icon.png" alt="">
+                   <p>香菇炸酱</p>
+                   <p class="pop-price">
+                       <i class="fa fa-rmb">12</i>
+                   </p>
+               </div>
+               <div class="pop-num">
+                   <div>数量</div>
+                   <div class="pop-change clearFix">
+                       <p class="pop-change-subtract">-</p>
+                       <p class="pop-change-num">1</p>
+                       <p class="pop-change-add">+</p>
+                   </div>
+               </div>
+               <div class="pop-footer">确定</div>
+           </div>
+       </div>
+       <div class="top-back">
+           <i class="fa fa-long-arrow-up"></i>
+       </div>
+ </div>
+</body>
+<script src="../../../../publicJs/zepto.js"></script>
+<script src="../../../../publicJs/swiper.min.js"></script>
+<script src="../js/singlePro.js"></script>
+</html>

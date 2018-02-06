@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+	http://www.springframework.org/schema/context 
+	http://www.springframework.org/schema/context/spring-context-3.2.xsd
+	http://www.springframework.org/schema/mvc 
+    http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd">
+    <!--扫描包-->
+    <context:component-scan base-package="com.jiumenfang.user.controller"/>
+    <!--开启注解-->
+    <mvc:annotation-driven>
+     <mvc:message-converters>
+         <bean class="org.springframework.http.converter.StringHttpMessageConverter">
+          <property name="supportedMediaTypes">
+     <list>
+      <value>text/plain;charset=UTF-8</value>
+     </list>
+    </property>
+         </bean>
+     </mvc:message-converters>
+ </mvc:annotation-driven>
+    <!--视图 解析器-->
+	<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/jiumenfang-web/WeChat/storeKeeper/src/jsp/"/>
+		<property name="suffix" value=".jsp"/>
+	</bean>
+<!-- 配置拦截器 -->
+  <!-- <mvc:interceptors>
+     多个拦截器，按顺序执行        
+    <mvc:interceptor>
+        <mvc:mapping path="/**"/>  表示拦截所有的url包括子url路径
+        <bean class="com.jiumenfang.user.intercepter.LoginIntercepter"/>
+    </mvc:interceptor>
+</mvc:interceptors> -->
+	
+	<!-- 定义文件解释器 -->  
+<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">    
+    <!-- 设置默认编码   -->
+    <property name="defaultEncoding" value="utf-8"></property>  
+    <!-- 上传图片最大大小5M    -->
+    <property name="maxUploadSize" value="100000000000"></property>    
+</bean> 
+	
+</beans>

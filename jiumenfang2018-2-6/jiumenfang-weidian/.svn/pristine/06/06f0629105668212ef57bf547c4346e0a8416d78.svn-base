@@ -1,0 +1,203 @@
+.wrap{
+    width: 100%;
+    position:relative;
+}
+.wrap .header{
+    width:100%;
+    height:100px;
+    background-color: #000;
+    vertical-align: 100px;
+    position: fixed;
+    z-index: 9999;
+}
+.header .logo-wrap{
+	width:40%;
+    float: left;
+}
+.header .tab-wrap{
+	width:60%;
+    float: right;
+    position: relative;
+    top:70%;
+    transform: translateY(-50%); 
+}
+.tab-wrap .tab{
+	width:500px;
+	height:30px;
+	float:right;
+}
+.header .header-wrap{
+	width:60%;
+	height:100px;
+	margin:0 auto;
+}
+.tab-wrap .tab li {
+    float: left;
+    padding:3px 6%;	
+}
+@media screen and (max-width: 1200px) {
+	.tab-wrap .tab{
+	   width:290px;
+	}
+   .tab-wrap .tab li {
+       padding:3px 3%;
+   }	
+}
+.tab-wrap .tab li:nth-child(5){
+	padding-right:0;
+}
+.tab-wrap .tab li a{
+    color: #fff;
+    font-size: 20px;
+}
+.tab-wrap .tab li a:hover{
+    color: #f58466;
+    text-decoration:none;
+}
+
+/*滚到上部*/
+.top-wrap{
+    position: fixed;
+    bottom:30px;
+    right:20px;
+    cursor: pointer;
+    z-index: 99999;
+}
+/* .top-wrap img{
+    position: fixed;
+    top:3px;
+    left:100px;
+    cursor: pointer;
+    z-index: 99999;
+} */
+
+/*底部*/
+.footer{
+    width:100%;
+}
+.footer img{
+    width:100%;
+}
+area{
+	outline:0;
+}
+.info{
+	margin-top:-18px;
+}
+.map1{
+	padding:37px 115px;
+    position:absolute;
+    right:27%;
+    bottom:15%;
+}
+
+.map2{
+	padding:30px 100px;
+    position:absolute;
+    right:21%;
+    bottom:6%;
+}
+.map3{
+	padding:30px 90px;
+    position:absolute;
+    right:18%;
+    bottom:32%;
+}
+.map4{
+	padding:20px 80px;
+    position:absolute;
+    left:15%;
+    bottom:22%;
+}
+.map5{
+	padding:20px 80px;
+    position:absolute;
+    right:36%;
+    bottom:22%;
+}
+.map6{
+	padding:20px 80px;
+    position:absolute;
+    left:8%;
+    bottom:26%;
+}
+
+.map-lun1{
+	padding:15px 60px;
+    position:absolute;
+    right:20%;
+    bottom:26%;
+}
+.map-lun2{
+	padding:15px 60px;
+    position:absolute;
+    right:19%;
+    bottom:36%;
+}
+.map-lun3{
+	padding:15px 60px;
+    position:absolute;
+    right:19%;
+    bottom:29%;
+}
+.map-lun4{
+	padding:15px 60px;
+    position:absolute;
+    right:19%;
+    bottom:30%;
+}
+.map-lun5{
+	padding:15px 60px;
+    position:absolute;
+    right:19%;
+    bottom:34%;
+}
+.map-lun6{
+	padding:15px 60px;
+    position:absolute;
+    right:19%;
+    bottom:32%;
+}	
+.map-lun7{
+	padding:15px 60px;
+    position:absolute;
+    right:19%;
+    bottom:28%;
+}
+
+/* 尺寸大于1600 */
+@media screen and (min-width:1600px){
+	.map-lun1{
+	   padding:18px 75px;
+	   right:20%;
+	}
+	.map-lun2{
+	   padding:18px 75px;
+	   right:20%;
+	}
+	.map-lun3{
+	   padding:18px 75px;
+	   right:20%;
+	   bottom:30%;
+	}
+	.map-lun4{
+	   padding:18px 75px;
+	   right:20%;
+	   bottom:31%;
+	}
+	.map-lun7{
+	   padding:18px 75px;
+	   right:20%;
+	}
+	.map-lun5{
+	   padding:18px 75px;
+	   right:20%;
+	}
+	.map-lun6{
+	   padding:18px 75px;
+	   right:20%;
+	}
+/* 	.info{
+	margin-top:-1px;
+	} */
+}

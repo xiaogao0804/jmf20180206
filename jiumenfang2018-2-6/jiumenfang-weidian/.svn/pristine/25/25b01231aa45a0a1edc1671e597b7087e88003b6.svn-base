@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="../../../../publicJs/flexible.js"></script>
+    <link rel="stylesheet" href="../../../../publicCss/reset.css">
+    <link rel="stylesheet" href="../../../../publicCss/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/pay.css">
+    <title>支付</title>
+</head>
+<body>
+ <div class="wrap">
+    <div class="contain">
+        <!--订单列表-->
+        <div class="pay-infoWrap">
+            <ul class="pay-info">
+                <li class="info-num clearFix">
+                    <p class="pay-lay">订单号</p>
+                    <p class="pay-iptWrap">
+                        <input type="text" class="pay-ipt">
+                    </p>
+                </li>
+                <li class="info-num clearFix">
+                    <p class="pay-lay">收货人</p>
+                    <p class="pay-iptWrap user-ipt-name">
+                        <input type="text" class="pay-ipt" placeholder="请输入收货人真实姓名">
+                    </p>
+                </li>
+                <li class="info-num clearFix">
+                    <p class="pay-lay">手机号</p>
+                    <p class="pay-iptWrap user-ipt-tel">
+                        <input type="text" class="pay-ipt" placeholder="请输入收货人手机号">
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="pay-addressWrap">
+         <ul class="pay-address">
+            <li class="info-num clearFix">
+                <p class="site-name">所在地</p>
+                <div id="province" style="position: relative;top: -0.1rem;">
+                    <select name="" id="">
+
+                    </select>
+                    <select name="">
+                    </select>
+                    <select name="">
+                    </select>
+                </div>
+            </li>
+            <li class="info-num">
+                <div class="user-address clearFix">
+                    <p class="detailed-address">详细地址：</p>
+                    <input type="text" value="" placeholder="请输入门牌号">
+                </div>
+            </li>
+        </ul>
+        </div>
+        <div class="clear"></div>
+        <div class="foods-list">
+            <div class="foods-list-item clearFix">
+                <div class="foods-item-img">
+                    <img src="../image/icon.png" alt="">
+                </div>
+                <div class="foods-item-name">
+                    <p class="item-name">香菇炸酱</p>
+                    <p class="item-number">50*5</p>
+                    <p class="item-old"><i class="fa fa-rmb">28.9</i></p>
+                    <p class="item-new"><i class="fa fa-rmb">19.9</i></p>
+                </div>
+                <div class="foods-item-num">
+                    X<span>2</span>
+                </div>
+            </div>
+        </div>
+        <div class="foods-list">
+            <div class="foods-list-item clearFix">
+                <div class="foods-item-img">
+                    <img src="../image/icon.png" alt="">
+                </div>
+                <div class="foods-item-name">
+                    <p class="item-name">香菇炸酱</p>
+                    <p class="item-number">50*5</p>
+                    <p class="item-old"><i class="fa fa-rmb">28.9</i></p>
+                    <p class="item-new"><i class="fa fa-rmb">19.9</i></p>
+                </div>
+                <div class="foods-item-num">
+                    X<span>2</span>
+                </div>
+            </div>
+        </div>
+
+        <!--底部支付-->
+        <div class="footer clearFix">
+            <div class="footer-paid-name">
+                <span>应付总额:</span>
+                <i class="fa fa-rmb">39.8</i>
+            </div>
+            <div class="footer-paid-btn">
+                <div class="paid-btn">
+                    立即支付
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+</body>
+<script src="../../../../publicJs/jquery-3.2.1.min.js"></script>
+<script src="../../../../publicJs/jquery.provincesCity.js"></script>
+<script src="../../../../publicJs/provincesData.js"></script>
+<script src="../js/order.js"></script>
+<script src="../js/pay.js"></script>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/index0531.css">
+    <link rel="stylesheet" href="../css/index0609.css">
+    <link rel="stylesheet" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <title>九门坊新品</title>
+</head>
+<body>
+  <div class="box">
+    <div class="header">
+        <h1>九门坊新品</h1>
+        <p class="userTime">
+            <span class="header-time"></span>
+            <span style="color: rgb(56, 142, 221)"> &nbsp;爱小酱</span>
+        </p>
+       <!-- <p class="name"> 北京九门坊商贸股份有限公司</p>-->
+    </div>
+      <div class="content">
+              <h2>一、香菇炸酱</h2>
+              <img src="../image/3.jpg" alt="">
+              <p>
+                  <span style="font-weight: 600">香菇炸酱采用：</span>黄豆酱、香菇、色拉油、葱、姜、八角、料酒等配料精制而成。<br>
+                  <span style="font-weight: 600">食用方法：</span>开盖即食，本品可拌面、拌菜、烧菜、烧汤、拌馅等，加热后更美味。<br>
+                  <span style="font-weight: 600">食用功效：</span><br>
+                  1、提高机体免疫功能：香菇可提高巨噬细胞等吞噬功能，还可促进T淋巴细胞的产生，并提高T淋巴细胞等杀伤活性。<br>
+                  2、延缓衰来：香菇等水提取物对过氧化氢有清除作用，对体内的过氧化氢有一定的消除作用。<br>
+                  3、防癌抗癌：香菇菌盖部分含有双链结构的核糖核酸，进入人体后，会产生抗癌作用的干扰素。<br>
+                  4、降血压、降血脂、降胆固醇：香菇中含有嘌呤、胆碱、酪胺酸、氧化酶以及某些核酸物质，能起到降血压、降血脂、降胆固醇的作用，又可预防动脉硬化、肝硬化等疾病。<br>
+                  5、香菇还对肺结核、传染性肝炎、神经炎等起治疗作用，又可用于消化不良、便秘等。              </p>
+              <h2>二、肉丁炸酱</h2>
+              <img src="../image/1.jpg" alt="">
+              <p>
+                  <span style="font-weight: 600">肉丁杂酱采用：</span>黄豆酱、鲜猪肉、色拉油、葱、姜、八角、白砂糖、味精、料酒等精制而成。<br>
+                  <span style="font-weight: 600">食用方法：</span>开盖即食，本品可拌面、拌菜、烧菜、烧汤、拌馅等，加热后更美味。<br>
+                  <span style="font-weight: 600">食用功效：</span><br>
+                  1、有助于身材保持：适当的肉丁富含高蛋白，能使皮肤富有弹性不易松弛，能使皮肤看起来光滑润泽且不易干燥粗糙，能使身体匀称，富有曲线美感。<br>
+                  2、抵抗病菌：肉丁含有大量的铁和锌，他们是建立人体健康免疫系统不可或缺的物质。此外，还提供了丰富的维生素D和维生素A，能够帮助身体有效对抗病菌。<br>
+              </p>
+              <h2>三、西红柿鸡蛋炸酱</h2>
+              <img src="../image/4.jpg" alt="">
+              <p>
+                 <span style="font-weight: 600">西红柿炸酱采用：</span>黄豆酱、西红柿、鸡蛋、色拉油、葱、姜、八角、白砂糖、味精、料酒等精制而成。<br>
+                 <span style="font-weight: 600">食用方法：</span>开盖即食，本品可拌面、拌菜、烧菜、烧汤、拌馅等，加热后更美味。<br>
+                 <span style="font-weight: 600">食用功效：</span><br>
+                  1、美容抗皱：西红柿中含有丰富的抗氧化剂，抗氧化剂可以防止自由基对皮肤的破坏，具有明显的抗皱效果。<br>
+                  2、补充人体元素：西红柿含有丰富的胡萝不素、维生素C和B族维生素。<br>
+                  3、常吃西红柿，不易出现黑眼圈，不易被晒伤。<br>
+                  4、鸡蛋黄中的卵磷脂、甘油三酯、胆固醇和卵黄素，对神经系统和身体发育有着重要作用。<br>
+                  5、鸡蛋富含蛋白质，这种蛋白质属于优质蛋白，常被用做度量其他蛋白质的标准。<br>
+              </p>
+      </div>
+      <div class="explain">还有很多系列新品炸酱，已经研发完毕，计划近期陆续上线，感谢您的支持与关注...</div>
+      <div class="footer">
+          <ul class="clearFix">
+              <li>
+                  <span>阅读</span>
+                  <span class="num">2</span>
+              </li>
+              <li>
+                  <i class="fa fa-thumbs-o-up"></i>
+                  <span class="num-zan">赞</span>
+              </li>
+          </ul>
+      </div>
+  </div>
+</body>
+<script src="../../../publicJs/jquery-3.2.1.min.js"></script>
+<script src="../js/index.js"></script>
+</html>

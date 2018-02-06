@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="keywords" content="九门坊，小酱仙，酱，面，料理">
+    <meta name="description" content="九门坊，小酱仙，酱，面，料理">
+    <link rel="stylesheet" href="swiper.min.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>九门坊官网</title>
+</head>
+<body>
+   <div class="wrap">
+       <div class="header">
+         <div class="header-wrap">
+              <div class="logo-wrap">
+                <img src="image/logo.png" alt="">
+            </div>
+           <div class="tab-wrap">
+               <ul class="tab">
+                   <li>
+                       <a href="index.html">首页</a>
+                   </li>
+                   <li>
+                       <a href="brand.html">品牌</a>
+                   </li>
+                   <li>
+                       <a href="products.html">产品</a>
+                   </li>
+                   <li>
+                       <a href="info.html">公司</a>
+                   </li>
+                   <li>
+                       <a href="contact.html" style="color: #f58466;">联系</a>
+                   </li>
+               </ul>
+           </div>
+        </div>
+       </div>
+       <div class="content">
+           <div class="banner" style="position:relative">
+               <img src="image/banner.png" border="0">
+               <a href="https://shop316095576.taobao.com/?spm=a230r.7195193.1997079397.2.y8UwWC" class="map1"></a>
+         </div>
+           <div class="brand" style="position:relative;">
+               <img src="image/project4.png" border="0">
+               <a href="http://www.jiumenfang.cn/brand.html" class="map2"></a>
+               
+         </div>
+          <div class="products" style="position:relative;">
+             <img src="image/project1.png" border="0">
+              <a href="http://www.jiumenfang.cn/products.html" class="map3"></a>
+
+         </div>
+           <div class="lun swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="position:relative">
+                        <img src="image/lun1.png" alt="葱油拌面料" title="葱油拌面料">
+                        <a href="https://shop316095576.taobao.com/?spm=a230r.7195193.1997079397.2.y8UwWC" class="map-lun1"></a>
+                    </div>
+                    <div class="swiper-slide" style="position:relative">
+                        <img src="image/lun2.png"  alt="番茄拌面料" title="番茄拌面料">
+                        <a href="https://shop316095576.taobao.com/?spm=a230r.7195193.1997079397.2.y8UwWC" class="map-lun1"></a>                        
+                    </div>
+                    <div class="swiper-slide" style="position:relative">
+                        <img src="image/lun3.png"  alt="鸡蛋炸酱" title="鸡蛋炸酱">
+                        <a href="https://shop316095576.taobao.com/?spm=a230r.7195193.1997079397.2.y8UwWC" class="map-lun2"></a>                      
+                    </div>
+                    <div class="swiper-slide" style="position:relative">
+                        <img src="image/lun4.png" alt="香菇鸡汤料" title="香菇鸡汤料">
+                        <a href="https://shop316095576.taobao.com/?spm=a230r.7195193.1997079397.2.y8UwWC" class="map-lun3"></a> 
+                    </div>
+                    <div class="swiper-slide" style="position:relative">
+                        <img src="image/lun5.png" alt="辣酱拌面料" title="辣酱拌面料">
+                        <a href="https://shop316095576.taobao.com/?spm=a230r.7195193.1997079397.2.y8UwWC" class="map-lun4"></a> 
+                    </div>
+                    <div class="swiper-slide" style="position:relative">
+                        <img src="image/lun6.png" alt="牛肉汤面料" title="牛肉汤面料">
+                        <a href="https://shop316095576.taobao.com/?spm=a230r.7195193.1997079397.2.y8UwWC" class="map-lun7"></a> 
+                    </div>
+                    <div class="swiper-slide" style="position:relative">
+                        <img src="image/lun7.png" alt="肉丁炸酱" title="肉丁炸酱">
+                        <a href="https://shop316095576.taobao.com/?spm=a230r.7195193.1997079397.2.y8UwWC" class="map-lun5"></a> 
+                    </div>
+                    <div class="swiper-slide" style="position:relative">
+                        <img src="image/lun8.png" alt="酸菜汤面料" title="酸菜汤面料">
+                        <a href="https://shop316095576.taobao.com/?spm=a230r.7195193.1997079397.2.y8UwWC" class="map-lun6"></a> 
+                    </div>
+                    <div class="swiper-slide" style="position:relative">
+                        <img src="image/lun9.png"  alt="香菇炸酱" title="香菇炸酱">
+                        <a href="https://shop316095576.taobao.com/?spm=a230r.7195193.1997079397.2.y8UwWC" class="map-lun1"></a> 
+                    </div>
+                    <div class="swiper-slide" style="position:relative">
+                        <img src="image/lun10.png" alt="重庆小面料" title="重庆小面料">
+                        <a href="https://shop316095576.taobao.com/?spm=a230r.7195193.1997079397.2.y8UwWC" class="map-lun1"></a> 
+                    </div>
+                </div>
+               <!-- 如果需要分页器 -->
+               <div class="swiper-pagination" style="left:20%;bottom: 40px;"></div>
+.
+               <!-- 如果需要导航按钮 -->
+               <div class="swiper-button-prev"></div>
+               <div class="swiper-button-next"></div>
+           </div>
+           <div class="info" style="position:relative;">
+               <img src="image/project2.png" alt="">
+               <a href="http://www.jiumenfang.cn/info.html" class="map4"></a>
+               <a href="https://shop316095576.taobao.com/?spm=a230r.7195193.1997079397.2.y8UwWC" class="map5"></a>
+           </div>
+           <div class="top-wrap">
+               <img src="image/top.png" alt="" class="returnTop" style="top:-35px">
+           </div>
+           <div class="contact">
+               <img src="image/project3.png" alt="">
+           </div>
+       </div>
+       <div class="footer">
+           <img src="image/footer.png" alt="">
+       </div>
+   </div>
+</body> 
+<script src="jquery-3.2.1.min.js"></script>
+<script src="swiper.min.js"></script>
+<script>
+    //轮播
+    var mySwiper = new Swiper ('.swiper-container', {
+        direction: 'horizontal',
+        loop: true,
+        autoplay:3000,
+
+
+        // 如果需要分页器
+        pagination: '.swiper-pagination',
+        clickable :true,
+
+        // 如果需要前进后退按钮
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+
+    })
+    //滚到顶部
+    $('.returnTop').click(function(){
+        $('body,html').animate({ scrollTop: 0 }, 500);
+        return false;
+    });
+
+     //滚到底部
+    var num=$('.wrap').height();
+    console.log(num);
+    $('body,html').animate({ scrollTop: num }, 1);
+</script>
+</html>

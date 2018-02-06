@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="../../../publicJs/flexible.js"></script>
+    <link rel="stylesheet" href="../../../publicCss/reset.css">
+    <link rel="stylesheet" href="../../../publicCss/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/stockupInfo.css">
+    <title>出货</title>
+</head>
+<body>
+   <div class="stockupInfo-contain">
+       <div class="receiving-header">
+           <i class="fa fa-angle-left fa-3x"></i>
+           <span>出货详情</span>
+       </div>
+       <div class="stockUp-name clearFix">
+            <p class="stock-name">备货人 <span>嗯嗯</span></p>
+            <button class="stock-btn">备货完成</button>
+       </div>
+       <div class="stockUp-con">
+          <table>
+              <tr>
+                  <td>出货单号</td>
+                  <td>20170910001</td>
+              </tr>
+              <tr>
+                  <td>渠道类型</td>
+                  <td>天猫</td>
+              </tr>
+              <tr>
+                  <td>运行方式</td>
+                  <td>天天快递</td>
+              </tr>
+              <tr>
+                  <td>收件姓名</td>
+                  <td>呵呵</td>
+              </tr>
+              <tr>
+                  <td>收件地址</td>
+                  <td>哈哈哈哈哈哈啊纠结啊</td>
+              </tr>
+          </table>
+       </div>
+       <div class="stockUp-con">
+           <table>
+               <tr>
+                   <td>产品批号</td>
+                   <td colspan="3">G695667920001920170702</td>
+               </tr>
+               <tr>
+                   <td>产品名称</td>
+                   <td colspan="3">老北京肉丁杂酱</td>
+               </tr>
+               <tr>
+                   <td>备货数量</td>
+                   <td>1</td>
+                   <td style="width:1.5rem">库位</td>
+                   <td>A</td>
+               </tr>
+           </table>
+       </div>
+   </div>
+</body>
+<script src="../../../publicJs/jquery-3.2.1.min.js"></script>
+<script>
+    //获取高度
+    var winHeight = window.innerHeight;
+    window.addEventListener('resize', function(event){
+        winHeight = window.innerHeight;
+        console.log(winHeight);
+    });
+    $('.stockupInfo-contain').height(winHeight);
+
+    //返回上一页
+    $('.receiving-header i').on('click',function(){
+        window.history.back();
+    });
+    //
+</script>
+</html>

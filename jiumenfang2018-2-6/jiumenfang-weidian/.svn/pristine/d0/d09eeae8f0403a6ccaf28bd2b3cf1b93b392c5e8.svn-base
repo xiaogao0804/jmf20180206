@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jiumenfang.user.dao.JMFDao">
+ <resultMap type="Commodity" id="jmf"></resultMap> 
+ 
+ <!-- 商品系列展示 -->
+ <select id="startList" resultMap="jmf">
+	select * from start;
+ </select>
+ <!-- 商品类别图片-->
+ <select id="leibieimg" parameterType="String" resultType="Commodity">
+	select * from start where start_id=#{start_id};
+ </select>
+
+ <select id="commodityList"  parameterType="String" resultMap="jmf">
+	select * from start_com sc LEFT JOIN start s on sc.start_id = s.start_id LEFT JOIN commodity c on sc.com_id = c.com_id where sc.start_id = #{start_id}
+ </select>
+ 
+ <!-- 商品详情动态轮播图 -->
+ <select id="dynamicimg"  parameterType="String" resultMap="jmf">
+	select * from com_dynamic cd LEFT JOIN dynamicimg d on cd.dynamic_id = d.dynamic_id LEFT JOIN commodity c on cd.com_id = c.com_id where cd.com_id = #{com_id}
+ </select>
+ 
+ <!-- 商品详情展示数据 -->
+ <select id="comList" parameterType="int" resultType="Commodity">
+	select * from commodity c where c.com_id=#{com_id}
+ </select>
+ 
+<!-- 添加用户信息 -->
+ <insert id="addUser" parameterType="map" >
+ 	insert into user set user_name=#{user_name},openid=#{openid};
+ </insert>
+ 
+<!-- 查询用户id -->
+ <select id="findUserId" parameterType="map" resultType="int">
+ 	select user_id from user where openid=#{openid};
+ </select>
+ 
+ <!-- 添加到购物车 -->
+ <insert id="addshop" parameterType="map" >
+ 	insert into shop set com_id=#{com_id},user_id=#{user_id},shop_time=#{shop_time},shop_num=#{shop_num},openid=#{openid};
+ </insert>
+ 
+ <!-- 判断该用户是否登录过 -->
+ <select id="openidlength" parameterType="map" resultType="Commodity">
+ 	select u.user_id from user u where openid=#{openid};
+ </select>
+ 
+ <!-- 判断该用户购物车是否有此商品 -->
+ <select id="findshopid" parameterType="map" resultType="Commodity">
+ 	select * from shop where openid=#{openid} and com_id=#{com_id};
+ </select>
+ 
+ <!-- 根据用户openid查询购物车表是否为空 -->
+ <select id="chaUser" parameterType="String" resultMap="jmf">
+ 	select shop_id from shop where openid=#{openid};
+ </select>
+ 
+  <!-- 修改该用户购物车商品数量 -->
+  <update id="updateShop_Num" parameterType="map">
+ 	update shop set shop_num=#{shop_numm} where openid=#{openid} and com_id=#{com_id};
+ </update>
+ 
+  <!-- 退款 -->
+  <update id="tuikuan" parameterType="map">
+ 	update orders set status_id=#{status_id} where order_id=#{order_id};
+ </update>
+ 
+  <!-- 修改该用户昵称 -->
+  <update id="updateUserName" parameterType="map">
+ 	update user set user_name=#{user_name} where openid=#{openid};
+ </update>
+ 
+ <!-- 查询该用户的该商品数量 -->
+ <select id="shopNum" parameterType="map" resultType="int">
+ 	select s.shop_num from shop s where openid=#{openid} and com_id=#{com_id};
+ </select>
+ 
+ <!-- 判断该用户购物车是否有此商品 -->
+ <select id="ShopIds" parameterType="String" resultMap="jmf">
+ 	select shop_id from shop where openid=#{openid};
+ </select>
+ 
+  <!-- 根据openid查询该用户的订单-->
+ <select id="fingOrder" parameterType="String" resultMap="jmf">
+   select * from orders o left join status s on o.status_id = s.status_id where openid=#{openid} order by order_time desc;
+ </select>  
+ 
+  <!-- 根据openid查询该用户的地址-->
+ <select id="fingAddre" parameterType="String" resultType="Commodity">
+   select * from address where openid=#{openid};
+ </select>  
+
+ <!-- 把用户id和购物车id存入中间表 -->
+ <insert id="addUserIdAndShopId" parameterType="map" >
+ 	insert into user_shop set user_id=#{user_id},shop_id=#{shop_id} ;
+ </insert>
+ 
+ <!-- 根据用户id查询购物车的商品id -->
+ <select id="findShopIds" parameterType="int" resultMap="jmf">
+ 	select com_id,shop_num from shop where user_id=#{user_id};
+ </select>
+ 
+  <!-- 查询购物车商品 -->
+ <select id="findCom" parameterType="map" resultType="Commodity">
+ 	select com_id,com_name,com_price,com_img from commodity where com_id=#{com_id};
+ </select>
+ 
+ <!-- 修改购物车商品 -->
+ <update id="updateShopNum" parameterType="map">
+ 	update shop set shop_num = #{shop_num} where shop_id = #{shop_id};
+ </update>
+ 
+  <!-- 根据用户openid和商品id查询购物车id -->
+ <select id="Ids" parameterType="map" resultType="int">
+ 	select shop_id from shop where openid=#{openid} and com_id=#{com_id};
+ </select>
+ 
+ <!-- 根据商品id删除购物车的商品 -->
+ <delete id="deleteShop" parameterType="map">
+   delete from shop where shop_id=${shop_id} and openid = #{openid};
+ </delete>  
+ 
+ <!-- 根据商品id删除购物车的中间表 -->
+ <delete id="deleteUserShop" parameterType="map">
+   delete from user_shop where shop_id=${shop_id};
+ </delete>  
+ 
+ <!-- 通过com_id和openid查询商品数量-->
+ <select id="findShopNum" parameterType="map" resultType="String">
+   select shop_num from shop where openid=#{openid} and com_id=#{com_id};
+ </select>  
+ 
+ <!-- 通过订单号查看是否是用户返回继续支付 -->
+ <select id="Forders" parameterType="String" resultMap="jmf">
+   select * from orders where orders=#{orders};
+ </select>  
+ 
+   <!-- 根据openid判断收货地址是否是空 -->
+ <select id="findAddressId" parameterType="String" resultType="Commodity">
+   select * from address where openid=#{openid};
+ </select>  
+ 
+   <!-- 添加openid到收货地址 -->
+ <insert id="addAddress" parameterType="String" >
+ 	insert into address set openid=#{openid};
+ </insert>
+ 
+   <!-- 修改收货地址 -->
+ <update id="updateAddress" parameterType="map">
+ 	update address set address_name=#{address_name},address_tel=#{address_tel},city=#{city},district=#{district},area=#{area},address=#{address} where openid=#{openid};
+ </update> 
+ 
+  <!-- 获取收货地址id-->
+ <select id="address_id" parameterType="String" resultType="int">
+   select address_id from address where openid=#{openid};
+ </select> 
+ 
+  <!-- 添加订单表 -->
+ <insert id="addOrder" parameterType="map" >
+ 	insert into orders set orders=#{orders},order_price=#{order_price},order_time=#{order_time},order_com=#{order_com},address_id=#{address_id},openid=#{openid},status_id=#{status_id},sheng=#{city},shi=#{district},qu=#{area},xingming=#{address_name},dizhi=#{address},dianhua=#{address_tel};
+ </insert>
+ 
+ 
+ <select id="findShop_numm" parameterType="map" resultType="Commodity">
+ 	select shop_num from shop where com_id=#{com_id} and openid=#{openid};
+ </select>
+ 
+
+
+ 
+ 
+ <!-- 登录 -->
+ <select id="loginAdmin" parameterType="Commodity" resultType="Commodity">
+ 	select * from admin where admin_name=#{admin_name} and admin_pwd=#{admin_pwd};
+ </select>
+
+<!-- 查询用户表获取到所有的openid -->
+  <select id="findAllOpenId" resultType="Commodity">
+ 	select openid from user;
+ </select>
+ 
+<!-- 后台显示订单信息 -->
+  <select id="orderAllList" resultMap="jmf">
+	select * from orders o left join user u on o.openid=u.openid 
+	left join address a on o.openid = a.openid 
+	left join status s on o.status_id=s.status_id 
+	where o.orders like concat('%',#{orders},'%') and 
+	a.address_tel like concat('%',#{address_tel},'%') and 
+	a.address_name like concat('%',#{address_name},'%') and 
+	s.status_id like concat('%',#{status_id},'%')
+	  <if test="start!='' and start!=null"> 
+	  and o.order_time &gt;= #{start} 
+	  </if>
+	  <if test="end!='' and end!=null">
+	  and o.order_time &lt;= #{end} 
+	  </if> 
+	  order by o.order_time desc limit #{index},#{pagesize};
+  </select>
+ 
+ <!-- 后台显示订单信息 -->
+  <select id="orderAllList3" resultMap="jmf">
+	select * from orders o left join user u on o.openid=u.openid 
+	left join address a on o.openid = a.openid 
+	left join status s on o.status_id=s.status_id 
+	where o.orders like concat('%',#{orders},'%') and 
+	a.address_tel like concat('%',#{address_tel},'%') and 
+	a.address_name like concat('%',#{address_name},'%') and 
+	s.status_id like concat('%',#{status_id},'%')
+	  <if test="start!='' and start!=null"> 
+	  and o.order_time &gt;= #{start} 
+	  </if>
+	  <if test="end!='' and end!=null">
+	  and o.order_time &lt;= #{end} 
+	  </if> 
+	  order by o.order_time desc limit #{index},#{pagesize};
+  </select>
+ 
+<!-- 查询总条数 -->
+  <select id="findCount" parameterType="map" resultType="int">
+  select count(*) from orders o left join user u on o.openid=u.openid left join address a on o.openid = a.openid left join status s on o.status_id=s.status_id where o.orders like concat('%',#{orders},'%') and a.address_tel like concat('%',#{address_tel},'%') and a.address_name like concat('%',#{address_name},'%') and s.status_id like concat('%',#{status_id},'%')
+  <if test="start!='' and start!=null"> 
+  and o.order_time &gt;= #{start} 
+  </if> 
+  <if test="end!='' and end!=null"> 
+  and o.order_time &lt;= #{end} 
+  </if>
+  </select>
+ 
+ <!-- 查询总条数 -->
+  <select id="findCount2" parameterType="map" resultType="int">
+  select count(*) from orders o left join user u on o.openid=u.openid left join address a on o.openid = a.openid left join status s on o.status_id=s.status_id where o.orders like concat('%',#{orders},'%') and a.address_tel like concat('%',#{address_tel},'%') and a.address_name like concat('%',#{address_name},'%') and s.status_id like concat('%',#{status_id},'%')
+  <if test="start!='' and start!=null"> 
+  and o.order_time &gt;= #{start} 
+  </if> 
+  <if test="end!='' and end!=null"> 
+  and o.order_time &lt;= #{end} 
+  </if>
+  </select>
+  
+ <select id="status" resultType="Commodity">
+ 	select * from status;
+ </select>
+ 
+ <!-- 后台订单查询 -->
+  <select id="orderAllList2" parameterType="String" resultType="Commodity">
+	select * from orders o left join user u on o.openid=u.openid 
+	left join address a on o.openid = a.openid 
+	left join status s on o.status_id=s.status_id 
+	where o.orders = #{orders} order by o.order_time asc;
+  </select>
+ 
+ 
+ <update id="updateStarts" parameterType="map">
+ 	update orders set status_id = #{status_id} where order_id = #{order_id};
+ </update>
+ 
+ <update id="updateAddre" parameterType="map">
+ 	update address set city = #{city},district = #{district},area = #{area},address = #{address},address_name = #{address_name},address_tel = #{address_tel} where openid = #{openid};
+ </update>
+ 
+ <update id="updateOrders" parameterType="map">
+ 	update orders set order_com = #{order_com},order_price = #{order_price},logistics = #{logistics} where openid = #{openid};
+ </update>
+
+<!--  查询原密码输入正确与否 -->
+<select id="findByPwd" parameterType="map" resultType="Commodity">
+	select * from admin where admin_pwd = #{password} and admin_id = #{admin_id};
+</select>
+
+
+<!--  修改管理密码 -->
+ <update id="updatePwd" parameterType="map">
+ 	update admin set admin_pwd = #{password1} where admin_id = #{admin_id};
+ </update>
+ 
+<!--  查询所有密码 -->
+<select id="allPwdFind"  resultMap="jmf">
+	select * from admin;
+</select> 
+
+<!--  查询用户名是否存在 -->
+<select id="findName"  resultMap="jmf">
+	select * from admin where admin_name = #{admin_name};
+</select> 
+ 
+<!--  添加管理账号 -->
+ <insert id="addAdminUser" parameterType="Commodity">
+ 	insert into admin set admin_name = #{admin_name},admin_pwd = #{admin_pwd};
+ </insert>
+ 
+ <select  id="updateAdminPw"  parameterType="String" resultType="Commodity">
+ 	select * from admin where admin_id = #{admin_id};
+ </select>
+ 
+ <select  id="findOrderId"  parameterType="String" resultType="Commodity">
+ 	select * from orders where orders = #{orders};
+ </select>
+ 
+ <!--  z管理修改管理密码 -->
+ <update id="xgAdmin" parameterType="map">
+ 	update admin set admin_pwd = #{admin_pwd} where admin_id = #{admin_id};
+ </update>
+ 
+ <!--  修改订单状态 -->
+ <update id="updateStatus" parameterType="map">
+ 	update orders set status_id = #{status_id} where orders = #{orders};
+ </update>
+ 
+ <delete id="deleteAdmin" parameterType="String">
+ 	delete from admin where admin_id = #{admin_id};
+ </delete>
+ <!-- 购物车支付后删除购物车 -->
+<!--  <delete id="pldelete" parameterType="list" >
+    delete from news where nid in
+    <foreach collection="list" item="item" open="(" separator="," close=")">
+		#{id}
+    </foreach>
+ </delete> -->
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ 
+</mapper>

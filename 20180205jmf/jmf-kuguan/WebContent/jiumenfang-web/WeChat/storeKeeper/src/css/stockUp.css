@@ -1,0 +1,92 @@
+.stockUp-contain {
+  width: 100%;
+  background-color: #F4F2F4;
+}
+.stockUp-contain .receiving-header {
+  width: 100%;
+  background-color: #5B6478;
+  padding: 0.1rem 0;
+  color: #fff;
+  position: relative;
+}
+.stockUp-contain .receiving-header i {
+  text-indent: 0.2rem;
+}
+.stockUp-contain .receiving-header span {
+  position: absolute;
+  left: 50%;
+  top: 28%;
+  transform: translateX(-50%);
+  font-size: 0.5367rem;
+}
+.stockUp-contain .goods-date {
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 0.1rem;
+  padding: 0.25rem 0;
+}
+.stockUp-contain .goods-date form {
+  margin-left: 0.5rem;
+  font-size: 0.3733rem;
+}
+.stockUp-contain .goods-date form select {
+  width: 1.5rem;
+}
+.stockUp-contain .goods-date form  .submit{
+  float: right;
+  font-size: 0.32rem;
+  padding: 0.05rem 0.35rem;
+  color: #fff;
+  background-color: #169BD5;
+  border-radius: 0.15rem;
+  border-style: none;
+  margin-right: 0.3rem;
+}
+.stockUp-contain ul {
+  width: 94%;
+  margin: 0 auto;
+}
+.stockUp-contain ul li {
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 0.4rem;
+}
+.stockUp-contain ul li .goods-img {
+  float: left;
+  padding: 0.2rem 0.2rem;
+}
+.stockUp-contain ul li .goods-img img {
+  width: 1.3rem;
+  height: 1.7rem;
+}
+.stockUp-contain ul li .goods-info {
+  float: left;
+  padding: 0.2rem 0.2rem;
+}
+.stockUp-contain ul li .goods-info .goods-info-odd {
+  font-size: 0.5333rem;
+  margin-top: 0.1rem;
+}
+.stockUp-contain ul li .goods-info .goods-info-num {
+  margin-top: 0.4rem;
+  font-size: 0.3733rem;
+  color: #666;
+}
+.stockUp-contain ul li .goods-state {
+  float: right;
+  position: relative;
+}
+.stockUp-contain ul li .goods-state span {
+  display: inline-block;
+  margin: 1rem 1.5rem 0 0;
+  font-size: 0.7467rem;
+  color: #FF9900;
+}
+.stockUp-contain ul li .goods-state i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0.15rem;
+  font-size: 0.64rem;
+  color: #CACACA;
+}

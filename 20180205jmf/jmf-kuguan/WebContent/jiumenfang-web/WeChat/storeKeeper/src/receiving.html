@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="../../../publicJs/flexible.js"></script>
+    <link rel="stylesheet" href="../../../publicCss/reset.css">
+    <link rel="stylesheet" href="../../../publicCss/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/receiving.css">
+    <title>收货</title>
+</head>
+<body>
+   <div class="receiving-contain">
+      <div class="receiving-header">
+          <i class="fa fa-angle-left fa-3x"></i>
+          <span>收货</span>
+      </div>
+       <ul class="receiving-info">
+          <li>
+              <p class="receiving-info-name">批号</p>
+              <div  class="receiving-info-select clearFix">
+                  <p class="internation">
+                      国际&nbsp;
+                      <select name="">
+                          <option value="全部">  </option>
+                          <option value="G">G</option>
+                          <option value="W">W</option>
+                      </select>
+                 </p>
+                 <p class="barCode">
+                     条码&nbsp;
+                     <select name="">
+                         <option value="全部">  </option>
+                         <option value="">6956679200019</option>
+                         <option value="">6956679200019</option>
+                     </select>
+                 </p>
+              </div>
+          </li>
+           <li>
+               <p class="receiving-info-name">库位</p>
+               <div  class="receiving-info-select clearFix">
+                   <p class="goodsShelf">
+                       货架&nbsp;
+                       <select name="">
+                           <option value="全部">  </option>
+                           <option value="">A&nbsp;&nbsp;</option>
+                           <option value="">B&nbsp;&nbsp;</option>
+                           <option value="">C&nbsp;&nbsp;</option>
+                           <option value="">D&nbsp;&nbsp;</option>
+                       </select>
+                   </p>
+                   <p class="cargoLayer">
+                       货层&nbsp;
+                       <select name="">
+                           <option value="全部">  </option>
+                           <option value="">1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                           <option value="">2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                           <option value="">3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                           <option value="">4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                       </select>
+                   </p>
+               </div>
+           </li>
+       </ul>
+       <div class="enterNum">
+           <input type="text" placeholder="输入数量" class="num">
+       </div>
+       <div class="keyBoard">
+           <table border="1">
+               <tr>
+                   <td class="td-num">7</td>
+                   <td class="td-num">8</td>
+                   <td class="td-num">9</td>
+                   <td rowspan="2" class="keyBoard-delete">
+                       <img src="image/delete.png" alt="">
+                   </td>
+               </tr>
+               <tr>
+                   <td class="td-num">4</td>
+                   <td class="td-num">5</td>
+                   <td class="td-num">6</td>
+
+               </tr>
+               <tr>
+                   <td class="td-num">1</td>
+                   <td class="td-num">2</td>
+                   <td class="td-num">3</td>
+                   <td rowspan="2" class="keyBoard-confirm">确认</td>
+               </tr>
+               <tr>
+                   <td class="td-num" colspan="3">0</td>
+               </tr>
+           </table>
+       </div>
+   </div>
+</body>
+<script src="../../../publicJs/jquery-3.2.1.min.js"></script>
+<script src="js/receiving.js"></script>
+</html>

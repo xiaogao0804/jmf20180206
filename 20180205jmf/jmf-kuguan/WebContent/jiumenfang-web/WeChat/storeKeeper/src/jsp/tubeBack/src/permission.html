@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../../publicCss/reset.css">
+    <link rel="stylesheet" href="../../../publicCss/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>后台</title>
+</head>
+<body>
+   <div class="contain">
+       <div class="header clearFix">
+           <div class="header-left">超级管理员</div>
+           <div class="header-right clearFix">
+               <img src="image/logo.png" alt="">
+           </div>
+
+       </div>
+       <div class="con clearFix">
+           <div class="con-left">
+               <ul>
+                   <li>
+                       <a href="inventory.html">库存</a>
+                   </li>
+                   <li>
+                       <a href="shipmentOrder.html">出货订单</a>
+                   </li>
+                   <li>
+                       <a href="check.html">盘点</a>
+                   </li>
+                   <li>
+                       <a href="pappers.html">单证</a>
+                   </li>
+                   <li>
+                       <a href="returns.html">退货</a>
+                   </li>
+                   <li style="background-color:#F7F8FD;color:#FD6C6E;">
+                       <a href="permission.html">权限管理</a>
+                   </li>
+               </ul>
+           </div>
+           <div class="con-right clearFix">
+               <div class="permission-page page clearFix">
+                    <div class="establish-top clearFix">
+                        <div class="establish-ipt">
+                            <form action="">
+                                <lable>创建账号</lable>
+                                <input type="text">
+                            </form>
+                            <form action="">
+                                <lable>创建密码</lable>
+                                <input type="text">
+                            </form>
+                        </div>
+                        <div class="establish-sle clearFix">
+                            <div class="sle-left">
+                                <p class="sle-left-name">库管端权限</p>
+                                <div class="sle-left-check clearFix">
+                                    <input type="checkbox"><span>入库</span>
+                                    <input type="checkbox"><span>出库</span>
+                                    <input type="checkbox"><span>订单</span>
+                                    <input type="checkbox"><span>盘点</span>
+                                    <input type="checkbox"><span>单证</span>
+                                    <input type="checkbox"><span>退货</span>
+                                </div>
+                            </div>
+                            <div class="sle-right">
+                                <p class="sle-right-name">后台权限</p>
+                                <div class="sle-right-check clearFix">
+                                    <input type="checkbox"><span>库存</span>
+                                    <input type="checkbox"><span>订单</span>
+                                    <input type="checkbox"><span>盘点</span>
+                                    <input type="checkbox"><span>单证</span>
+                                    <input type="checkbox"><span>退货</span>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="button" value="创建" class="establish-btn">
+                    </div>
+                   <h5></h5>
+                   <div class="clear"></div>
+                   <div class="management-below">
+                       <h1>账号管理</h1>
+                       <table>
+                           <tr>
+                               <th>账号</th>
+                               <th>库管端权限</th>
+                               <th>库管端权限</th>
+                               <th>修改</th>
+                               <th>删除</th>
+                           </tr>
+                           <tr>
+                               <td>韦益</td>
+                               <td>
+                                   <input type="checkbox">入库
+                                   <input type="checkbox">出库
+                                   <input type="checkbox">订单
+                                   <input type="checkbox">盘点
+                                   <input type="checkbox">单证
+                                   <input type="checkbox">退货
+                               </td>
+                               <td>
+                                   <input type="checkbox">库存
+                                   <input type="checkbox">订单
+                                   <input type="checkbox">盘点
+                                   <input type="checkbox">单证
+                                   <input type="checkbox">退货
+                               </td>
+                               <td>
+                                   <input type="button" value="确定">
+                               </td>
+                               <td>
+                                   <input type="button" value="确定">
+                               </td>
+                           </tr>
+                           <tr>
+                               <td style="width:10%">韦益</td>
+                               <td style="width:30%">
+                                   <input type="checkbox">入库
+                                   <input type="checkbox">出库
+                                   <input type="checkbox">订单
+                                   <input type="checkbox">盘点
+                                   <input type="checkbox">单证
+                                   <input type="checkbox">退货
+                               </td>
+                               <td style="width:30%">
+                                   <input type="checkbox">库存
+                                   <input type="checkbox">订单
+                                   <input type="checkbox">盘点
+                                   <input type="checkbox">单证
+                                   <input type="checkbox">退货
+                               </td>
+                               <td>
+                                   <input type="button" value="确定">
+                               </td>
+                               <td>
+                                   <input type="button" value="确定">
+                               </td>
+                           </tr>
+                           <tr>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                           </tr>
+                           <tr>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                           </tr>
+                       </table>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+</body>
+<script src="../../../publicJs/jquery-3.2.1.min.js"></script>
+<script src="../../../publicJs/jquery.provincesCity.js"></script>
+<script src="../../../publicJs/provincesData.js"></script>
+<script src="js/index.js"></script>
+</html>

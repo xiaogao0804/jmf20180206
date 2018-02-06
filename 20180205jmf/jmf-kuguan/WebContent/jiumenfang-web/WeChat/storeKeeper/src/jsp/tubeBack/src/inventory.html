@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../../publicCss/reset.css">
+    <link rel="stylesheet" href="../../../publicCss/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>后台</title>
+</head>
+<body>
+   <div class="contain">
+       <div class="header clearFix">
+           <div class="header-left">超级管理员</div>
+           <div class="header-right clearFix">
+               <img src="image/logo.png" alt="">
+           </div>
+
+       </div>
+       <div class="con clearFix">
+           <div class="con-left">
+               <ul>
+                   <li style="background-color:#F7F8FD;color:#FD6C6E;">
+                       <a href="inventory.html">库存</a>
+                   </li>
+                   <li>
+                       <a href="shipmentOrder.html">出货订单</a>
+                   </li>
+                   <li>
+                       <a href="check.html">盘点</a>
+                   </li>
+                   <li>
+                       <a href="pappers.html">单证</a>
+                   </li>
+                   <li>
+                       <a href="returns.html">退货</a>
+                   </li>
+                   <li>
+                       <a href="permission.html">权限管理</a>
+                   </li>
+               </ul>
+           </div>
+           <div class="con-right clearFix">
+               <div class="inventory-page page">
+                   <div class="shipments-page clearFix select">
+                       <table>
+                           <tr>
+                               <th style="width:28%">入库批次</th>
+                               <th>产品信息</th>
+                               <th>初存</th>
+                               <th>结存</th>
+                               <th>库位</th>
+                               <th>出库数</th>
+                               <th>明细</th>
+                           </tr>
+                           <tr>
+                               <td>
+                                   <input type="checkbox">
+                                   <span>G695667920001920170702</span>
+                               </td>
+                               <td>老北京肉丁杂酱</td>
+                               <td>500</td>
+                               <td style="color:#3399FF">备货后</td>
+                               <td>A</td>
+                               <td>
+                                   <input type="number" class="con-txt">
+                               </td>
+                               <td>
+                                    <i class="fa fa-list-ul" style="color:#6BBCE0;font-size: 26px"></i>
+                               </td>
+
+                           </tr>
+                           <tr>
+                               <td>
+                                   <input type="checkbox">
+                                   <span>G695667920001920170702</span>
+                               </td>
+                               <td>老北京肉丁杂酱</td>
+                               <td>500</td>
+                               <td style="color:#3399FF">备货后</td>
+                               <td>A</td>
+                               <td>
+                                   <input type="number" class="con-txt">
+                               </td>
+                               <td>
+                                   <i class="fa fa-list-ul" style="color:#6BBCE0;font-size: 26px"></i>
+                               </td>
+
+                           </tr>
+                           <tr>
+                               <td>
+                                   <input type="checkbox">
+                                   <span>G695667920001920170702</span>
+                               </td>
+                               <td>老北京肉丁杂酱</td>
+                               <td>500</td>
+                               <td style="color:#3399FF">备货后</td>
+                               <td>A</td>
+                               <td>
+                                   <input type="number" class="con-txt">
+                               </td>
+                               <td>
+                                   <i class="fa fa-list-ul" style="color:#6BBCE0;font-size: 26px"></i>
+                               </td>
+
+                           </tr>
+                           <tr>
+                               <td>
+                                   <input type="checkbox">
+                                   <span>G695667920001920170702</span>
+                               </td>
+                               <td>老北京肉丁杂酱</td>
+                               <td>500</td>
+                               <td style="color:#3399FF">备货后</td>
+                               <td>A</td>
+                               <td>
+                                   <input type="number" class="con-txt">
+                               </td>
+                               <td>
+                                   <i class="fa fa-list-ul" style="color:#6BBCE0;font-size: 26px"></i>
+                               </td>
+
+                           </tr>
+                           <tr>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                           </tr>
+                           <tr>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                           </tr>
+                           <tr>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                           </tr>
+                           <tr>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                           </tr>
+                           <tr>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                           </tr>
+                           <tr></tr>
+                       </table>
+                       <div class="con-btn">
+                           <input type="button" value="发货">
+                       </div>
+                   </div>
+                   <div class="order-page clearFix noselect">
+                       <div class="order-ipt clearFix">
+                           <div class="order-slt">
+                               <form action="">
+                                   <lable class="order-slt-name">渠道类型 </lable>
+                                   <select name="" class="channel">
+                                       <option value="选择销售渠道">选择销售渠道</option>
+                                       <option value="天猫">天猫</option>
+                                       <option value="京东">京东</option>
+                                       <option value="微店">微店</option>
+                                       <option value="711">711</option>
+                                       <option value="全时">全时</option>
+                                       <option value="好邻居">好邻居</option>
+                                       <option value="加拿大">加拿大</option>
+                                       <option value="日本">日本</option>
+                                   </select>
+                               </form>
+                               <form action="">
+                                   <lable class="order-slt-name">运输类型 </lable>
+                                   <select name="" class="carriage">
+                                       <option value="选择运输方式">选择运输方式</option>
+                                       <option value="天天快递">天天快递</option>
+                                       <option value="圆通快递">圆通快递</option>
+                                       <option value="中通快递">中通快递</option>
+                                       <option value="申通快递">申通快递</option>
+                                       <option value="顺丰快递">顺丰快递</option>
+                                       <option value="整车运输">整车运输</option>
+                                       <option value="国际运输">国际运输</option>
+                                   </select>
+                               </form>
+                               <form action="">
+                                   <lable class="order-slt-name">目标城市 </lable>
+                                   <select name=""  class="city">
+                                       <option value="选择城市">选择城市</option>
+                                       <option value="北京">北京</option>
+                                       <option value="上海">上海</option>
+                                       <option value="天津">天津</option>
+                                       <option value="广州">广州</option>
+                                       <option value="深圳">深圳</option>
+                                   </select>
+                               </form>
+                           </div>
+                           <div class="clear"></div>
+                           <div class="order-site clearFix">
+                               <form action="">
+                                   <lable class="remark-name">备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 注</lable>
+                                   <input type="text" class="remark">
+                               </form>
+                                   <p class="site-name">国内地址</p>
+                                   <div id="province">
+                                       <select name="" class="prov">
+                                       </select>省
+                                       <select name="">
+                                       </select>市
+                                       <select name="">
+                                       </select>区
+                                       <input type="text" class="area">
+                                   </div>
+                               <div class="clear"></div>
+                               <form action="">
+                                   <lable>收件人</lable>&nbsp;&nbsp;&nbsp;
+                                   <input type="text" class="addressee-name">&nbsp;电话
+                                   <input type="text" class="tel">
+                               </form>
+                           </div>
+                       </div>
+                       <div class="order-btn">
+                           <input type="button" value="生成订单">
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+</body>
+<script src="../../../publicJs/jquery-3.2.1.min.js"></script>
+<script src="../../../publicJs/jquery.provincesCity.js"></script>
+<script src="../../../publicJs/provincesData.js"></script>
+<script src="js/index.js"></script>
+</html>

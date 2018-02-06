@@ -1,0 +1,77 @@
+.product-contain {
+  width: 100%;
+  background-color: #F4F2F4;
+}
+.product-contain .receiving-header {
+  width: 100%;
+  background-color: #5B6478;
+  padding: 0.1rem 0;
+  color: #fff;
+  position: relative;
+}
+.product-contain .receiving-header i {
+  text-indent: 0.2rem;
+}
+.product-contain .receiving-header span {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  font-size: 0.5367rem;
+}
+.product-contain .product-name {
+  width: 93%;
+  margin: 0 auto;
+  border-bottom:1px solid #495165;
+}
+.product-contain .product-name .name-letter {
+  float: left;
+  font-size: 2rem;
+  color:#495165;
+  font-weight:'Helvetica Neue';
+}
+.product-contain .product-name .name-btn {
+  	float: right;
+  	background-color: #495165;
+ 	color: #fff;
+  	font-size: 0.5333rem;
+  	padding: 0.2rem 0.5rem;
+  	border-radius: 0.2rem;
+  	margin-top: 0.8rem;
+}
+.product-contain .product-info {
+  	width: 93%;
+ 	margin: 0 auto;
+   	border-bottom:1px solid #495165;
+    padding-bottom:0.6rem;
+}
+.product-contain .product-info h1 {
+ 	 margin: 0.1rem 0 0 0.25rem;
+}
+.product-contain .product-info table {
+  	width: 100%;
+  	font-size: 0.5333rem; 
+  	color:#495165;
+
+}
+.product-contain .product-info table td{
+	padding-top:0.3rem;
+}
+.product-contain .product-info .trading-num {
+  width: 2.5rem;
+  height:25px;
+  border-radius: 10px;
+  border: 1px solid #95989a;
+}
+.product-contain .product-remarks {
+  margin: 0.5rem auto;
+  width: 78%;
+}
+.product-contain .product-remarks .remarks-name {
+  font-size: 0.48rem;
+}
+.product-contain .product-remarks .remarks-con {
+  width: 100%;
+  height: 2rem;
+  background-color: #fff;
+}

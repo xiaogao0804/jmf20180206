@@ -1,0 +1,109 @@
+.pappers-contain{
+  width:100%;
+  background-color: #F4F2F4;
+  .receiving-header{
+    width:100%;
+    background-color: #5B6478;
+    padding:0.1rem 0;
+    color: #fff;
+    position: relative;
+    i{
+      text-indent: 0.2rem;
+    }
+    span{
+      position: absolute;
+      left:50%;
+      top:28%;
+      transform: translateX(-50%);
+      font-size: 0.5367rem;
+    }
+  }
+  .pappers-info{
+    width:90%;
+    margin:0.5rem auto;
+    .pappers-ipt{
+      font-size: 0.5867rem;
+      margin-top: 0.5rem;
+      input{
+        border-style:none;
+        border-bottom: 1px solid #000;
+        border-color:#999999;
+        background-color: #F4F2F4;
+      }
+    }
+    .pappers-num{
+      font-size: 0.5867rem;
+      margin-top: 0.5rem;
+      input{
+        width:30%;
+        border-style: none;
+        border-radius: 0.3rem;
+        border-color: #999;
+      }
+    }
+  }
+  .pappers-txt{
+    width:80%;
+    margin: 1rem auto;
+  }
+  .pappers-camera{
+    width: 100%;
+    .pappers-photograph{
+      width:88%;
+      margin:0 auto;
+      img{
+        width:15%;
+      }
+    }
+    .pappers-picture{
+      width:85%;
+      margin:0 auto;
+      li{
+        width:26%;
+        height:2.6rem;
+        border:1px solid #ccc;
+        background-color: #fff;
+        float: left;
+        text-align: center;
+        margin-right: 0.75rem;
+        margin-top: 0.3rem;
+        font-size: 0.64rem;
+        position: relative;
+        line-height: 2.6rem;
+        input{
+          width:100%;
+          height:100%;
+          position: absolute;
+          top:0;
+          left:0;
+          z-index: 999;
+          opacity: 0;
+          filter:Alpha(opacity=0)
+        }
+        span{
+          position:absolute;
+          left:50%;
+          top:0;
+          transform: translate(-50%);
+        }
+        &:nth-child(3n){
+          margin-right: 0;
+        }
+      }
+    }
+    .pappers-btn{
+      width:2.5rem;
+      height:1rem;
+      margin:0.8rem auto;
+      text-align: center;
+      input{
+        width:100%;
+        height:100%;
+        font-size: 0.48rem;
+        color: #fff;
+        border-radius: 0.2rem;
+        background-color: #169BD5;
+      }
+    }
+  }
+}

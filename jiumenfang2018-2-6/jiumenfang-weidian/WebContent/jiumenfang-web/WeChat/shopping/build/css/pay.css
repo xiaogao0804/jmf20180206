@@ -1,0 +1,160 @@
+.contain {
+  width: 100%;
+  border-top: 1px solid #fff;
+}
+.contain .header {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  position: relative;
+  margin-top: 0.3rem;
+  padding: 0.2rem 0;
+  font-size: 0.5rem;
+}
+.contain .header .fa-arrow-left {
+  position: absolute;
+  left: 0.3rem;
+  color: #ccc;
+}
+.contain .header .fa-remove {
+  position: absolute;
+  right: 0.3rem;
+  color: #ccc;
+}
+.contain .foods-list {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  padding: 0.35rem 0;
+}
+.contain .foods-list .foods-list-item {
+  width: 93%;
+  margin: 0 auto;
+}
+.contain .foods-list .foods-list-item .foods-item-img {
+  float: left;
+}
+.contain .foods-list .foods-list-item .foods-item-img img {
+  width: 2rem;
+  height: 1.5rem;
+}
+.contain .foods-list .foods-list-item .foods-item-name {
+  float: left;
+  margin-left: 20%;
+  margin-top: 0.3rem;
+}
+.contain .foods-list .foods-list-item .foods-item-name p {
+  font-size: 0.3733rem;
+}
+.contain .foods-list .foods-list-item .foods-item-name p i {
+  color: red;
+}
+.contain .foods-list .foods-list-item .foods-item-num {
+  float: right;
+  margin-top: 1rem;
+}
+.contain .carriage {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+.contain .carriage p {
+  float: left;
+}
+.contain .carriage .carriage-name {
+  margin: 0.3rem 0.55rem;
+  font-size: 0.3733rem;
+}
+.contain .carriage .carriage-price {
+  margin: 0.3rem 0 0 6rem;
+}
+.contain .user-info {
+  width: 100%;
+}
+.contain .user-info .user-info-name {
+  width: 100%;
+  margin-top: 0.4rem;
+  color: #555555;
+  font-size: 0.3733rem;
+}
+.contain .user-info .user-info-name .user-name {
+  float: left;
+  margin-left: 0.55rem;
+}
+.contain .user-info .user-info-name .user-name p {
+  float: left;
+}
+.contain .user-info .user-info-name .user-name .user-ipt-name {
+  border-bottom: 1px solid #ccc;
+}
+.contain .user-info .user-info-name .user-name .user-ipt-name input {
+  width: 1.5rem;
+  padding-left: 0.2rem;
+  border: none;
+  color: #555555;
+}
+.contain .user-info .user-info-name .user-tel {
+  float: right;
+  margin-right: 0.5rem;
+}
+.contain .user-info .user-info-name .user-tel p {
+  float: left;
+}
+.contain .user-info .user-info-name .user-tel .user-ipt-tel {
+  border-bottom: 1px solid #ccc;
+}
+.contain .user-info .user-info-name .user-tel .user-ipt-tel input {
+  width: 3rem;
+  border: none;
+  padding-left: 0.2rem;
+  color: #555;
+}
+.contain .user-info .user-info-site {
+  margin-top: 0.5rem;
+  color: #555555;
+  font-size: 0.3733rem;
+}
+.contain .user-info .user-info-site .site-name {
+  float: left;
+  margin-left: 0.55rem;
+}
+.contain .user-info .user-info-site #province {
+  float: left;
+  margin-left: 0.1rem;
+}
+.contain .user-info .user-info-site #province select {
+  color: #555;
+  margin-left: 0.1rem;
+  width: 2.3rem;
+}
+.contain .user-info .user-info-site .clear {
+  clear: both;
+}
+.contain .user-info .user-info-site .user-address {
+  width: 88%;
+  margin: 0.5rem 0 0 0.55rem;
+  border-bottom: 1px solid #ccc;
+}
+.contain .user-info .user-info-site .user-address input {
+  border: none;
+  color: #555;
+}
+.contain .user-info .user-info-site .order-num {
+  margin: 0.5rem 0.55rem;
+}
+.contain .user-info .user-info-site .unpaid {
+  text-align: center;
+}
+.contain .user-info .user-info-site .unpaid i {
+  color: red;
+}
+.contain .footer {
+  width: 100%;
+}
+.contain .footer .footer-paid {
+  width: 100%;
+  padding: 0.3rem 0;
+  background-color: #FF9933;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}

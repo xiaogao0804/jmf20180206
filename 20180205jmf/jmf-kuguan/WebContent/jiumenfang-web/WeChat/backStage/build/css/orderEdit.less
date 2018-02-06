@@ -1,0 +1,168 @@
+.contain-edit{
+  width:100%;
+  min-width:1200px;
+  .con-left{
+    width:12%;
+    height:100%;
+    float: left;
+    border:1px solid #797979;
+    background-color:#66CC99;
+    .con-left-name{
+      width:100%;
+      text-align: center;
+      margin:10px 0;
+      font-size:18px;
+      color: #668575;
+    }
+    .con-left-list{
+      width:100%;
+      margin:40px auto;
+      .con-left-item{
+        width:100%;
+        margin:40px auto;
+        .con-admin{
+          text-indent: 12px;
+          i{
+            color: #767676;
+            font-size: 26px;
+          }
+          span{
+            font-size: 20px;
+            padding-left: 8px;
+            color: #333;
+          }
+          .con-admin-name{
+            margin-left: 35px;
+          }
+        }
+        .con-admin-list{
+          width:100px;
+          margin:10px auto;
+          font-size: 16px;
+          li{
+            margin:8px 0;
+            color: #333;
+            cursor: pointer;
+            a{
+              color: #000;
+            }
+            i{
+              color: #747474;
+            }
+          }
+          .order-edit{
+            color: #783886;
+          }
+          li:nth-child(2){
+            text-indent: 15px;
+          }
+        }
+      }
+
+    }
+  }
+  .con-right{
+    width:87.5%;
+    height:100%;
+    float: right;
+    .order-edit-seek{
+      margin:50px 30px;
+      font-size: 14px;
+      input{
+        height:20px;
+        margin-right:20px;
+      }
+      i{
+        font-size: 16px;
+        color:#747474;
+      }
+      button{
+        width:40px;
+        cursor: pointer;
+      }
+    }
+    .order-edit-noedit{
+      margin:50px 20px;
+      p{
+        height:20px;
+        position: relative;
+        cursor: pointer;
+        span{
+          color: #3B3B3B;
+          position: absolute;
+          top:1px;
+          left: 20px;
+        }
+      }
+      table{
+        width:80%;
+        text-align: center;
+        tr{
+          height:30px;
+          font-size: 14px;
+          td{
+            input{
+              width: 100px;
+            }
+          }
+        }
+      }
+    }
+    .order-edit-edit{
+      margin:50px 20px;
+      p{
+        height:20px;
+        position: relative;
+        cursor: pointer;
+        span{
+          color: #3B3B3B;
+          position: absolute;
+          top:1px;
+          left: 20px;
+        }
+      }
+      table{
+        width:80%;
+        text-align: center;
+        tr{
+          height:30px;
+          font-size: 14px;
+        }
+      }
+    }
+    .save-pop{
+      width:250px;
+      height:140px;
+      display: none;
+      border:1px solid #999;
+      position: relative;
+      left:35%;
+      p{
+        position: absolute;
+        left:50%;
+        transform: translateX(-50%);
+        margin:25px auto;
+        font-size: 14px;
+        color: #7B7B7B;
+      }
+      .pop-btn{
+        position: absolute;
+        top:80px;
+        left:50%;
+        transform: translateX(-50%);
+        button{
+          padding:0 10px;
+          border-radius: 5px;
+          cursor: pointer;
+          background-color: #F3F3F3;
+          border:1px solid #696969;
+          color:#7B7B7B;
+          font-size: 14px;
+        }
+        .pop-cancel-btn{
+           margin-right:20px;
+        }
+      }
+    }
+  }
+}
